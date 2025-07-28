@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>The dark side of big data</title>
+  <meta name="description" content="Everybody (1, 2, 3) is talking about big data and the chances that are not to be missed. So it would be fatal to miss this opportunity, for instance, by impo...">
+  <meta name="keywords" content="Martin Rünz, Martin Ruenz, Martin Runz, Computer Vision, Computer Graphics, Research, Blog">
+  <!-- <link rel="stylesheet" href="/js/lightgallery/css/lightgallery.css"> -->
+  <link rel="stylesheet" href="/js/lightgallery/css/lightgallery.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/hl-native.css">
+  <link rel="canonical" href="https://www.martinruenz.de/article/data-privacy/2016/02/14/the-dark-side-of-big-data.html">
+  <link rel="alternate" type="application/rss+xml" title="Martin Rünz" href="https://www.martinruenz.de/feed.xml">
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+    <div class="nav-area">
+    <div class="wrapper">
+    <a class="site-title" href="/#page-content">Blog</a><a href="/feed.xml"><div class="icon icon--rss"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M12.8 16C12.8 8.978 7.022 3.2 0 3.2V0c8.777 0 16 7.223 16 16h-3.2zM2.194 11.61c1.21 0 2.195.985 2.195 2.196 0 1.21-.985 2.194-2.196 2.194C.984 16 0 15.017 0 13.806c0-1.21.983-2.195 2.194-2.195zM10.606 16h-3.11c0-4.113-3.383-7.497-7.496-7.497v-3.11c5.818 0 10.606 4.79 10.606 10.607z"/></svg></div></a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/talks/#page-content">Talks / Presentations</a>
+          
+        
+          
+          <a class="page-link" href="/publications#page-content">Publications</a>
+          
+        
+          
+          <a class="page-link" href="/about/#page-content">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+  </div>
+  </div>
+
+  <div class="thats-me">
+    <img src="/media/martin_150.jpg" class="animated hinge fadeInDown">
+    <h2 class="animated hinge fadeInDown" itemscope itemtype="http://schema.org/Person">
+      Hi, my name is <strong itemprop="name">Martin Rünz</strong>I am a Lead Research Scientist at <a href="https://www.synthesia.io/">Synthesia</a>!
+    </h2>
+  </div>
+  <!--<nav class="actions">
+    <a href="/about" class="button ghost">About</a>
+    <a href="/archive/master.zip" class="button ghost">Download</a>
+  </nav>-->
+
+</header>
+
+
+    <div class="page-content" id="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <span class="icon--post"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 150 150" height="150px" id="Layer_1" version="1.1" viewBox="0 0 150 150" width="150px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><circle cx="75.008" cy="75" fill="#F15B5B" r="75"/></g><path d="M135.937,59.022L17.95,87.578l41.128,32.061L37.487,139.93c11.039,6.394,23.847,10.071,37.521,10.071  c39.556,0,71.937-30.63,74.773-69.463L135.937,59.022z" opacity="0.07"/><rect fill="#D1D3D4" height="9.657" transform="matrix(0.9873 0.1588 -0.1588 0.9873 18.0952 -8.4318)" width="4.864" x="59.376" y="104.184"/><path d="M54.249,121.801l-18.478,17.12c1.448,0.89,2.933,1.725,4.442,2.517l17.29-16.018L54.249,121.801z" fill="#D1D3D4"/><path d="M66.896,120.732c0.603-3.752-1.949-7.284-5.701-7.887c-3.754-0.605-7.286,1.945-7.89,5.697  c-0.604,3.756,1.947,7.285,5.701,7.891C62.758,127.037,66.292,124.484,66.896,120.732z" fill="#B1B3B6"/><path d="M52.302,93.787c0.388,5.494,4.493,10.211,10.171,11.125c5.674,0.915,11.055-2.272,13.148-7.372  L52.302,93.787z" fill="#B1B3B6"/><path d="M73.811,100.564c0.737-0.906,1.354-1.918,1.811-3.024l-23.319-3.753c0.085,1.192,0.354,2.348,0.768,3.439  L73.811,100.564z" opacity="0.15"/><path d="M129.613,75.097c0.358-2.189-1.139-4.274-3.328-4.633l-7.262-1.189c-2.189-0.358-4.275,1.14-4.634,3.33  l-2.472,15.067c-0.359,2.189,1.138,4.274,3.328,4.634l7.261,1.19c2.19,0.359,4.276-1.139,4.636-3.328L129.613,75.097z" fill="#B1B3B6"/><path d="M125.799,66.595c0.358-2.189-1.139-4.275-3.328-4.634l-12.25-2.008c-2.19-0.359-4.276,1.139-4.636,3.328  l-4.176,25.481c-0.36,2.19,1.138,4.275,3.328,4.635l12.248,2.01c2.189,0.359,4.275-1.139,4.634-3.328L125.799,66.595z" fill="#546670"/><path d="M104.359,97.498c-0.835,2.553-2.822,4.293-5.367,3.885L20.424,88.736c-2.545-0.409-4.293-2.822-3.885-5.367  l6.05-37.814c0.406-2.546,2.822-4.294,5.366-3.887l84.263,13.555c2.545,0.41,4.294,2.823,3.886,5.366L104.359,97.498z" fill="#D1D3D4"/><path d="M27.955,41.668c-2.544-0.408-4.96,1.34-5.366,3.887l-6.05,37.814c-0.408,2.545,1.34,4.958,3.885,5.367  l9.234,1.477l7.531-47.069L27.955,41.668z" fill="#B1B3B6"/><polygon opacity="0.2" points="19.912,62.287 19.563,64.459 110.231,79.044 110.908,76.924 "/><path d="M27.95,41.665c-2.553-0.406-4.953,1.332-5.359,3.882l-2.679,16.74l90.941,14.626l15.34-5.718l9.316-9.513  l0.427-2.66L27.95,41.665z" fill="#F1F1F3"/><path d="M27.95,41.667c-1.848-0.296-3.604,0.543-4.594,1.992l102.837,27.536l9.316-9.513l0.427-2.66L27.95,41.667z" fill="#FFFFFF"/><path d="M16.592,85.094c0.398,1.832,1.872,3.329,3.825,3.643l78.568,12.646c1.989,0.318,3.626-0.686,4.651-2.35  L16.592,85.094z" opacity="0.15"/><path d="M63.233,119.638c0-1.728-1.404-3.13-3.133-3.13s-3.134,1.402-3.134,3.13c0,1.731,1.405,3.132,3.134,3.132  S63.233,121.369,63.233,119.638z" fill="#939598"/><path d="M91.041,85.648c0.281-1.752-0.915-3.4-2.667-3.682c-1.752-0.279-3.398,0.914-3.68,2.666  c-0.279,1.752,0.912,3.4,2.666,3.682C89.113,88.592,90.761,87.4,91.041,85.648z" fill="#62BF82"/><circle cx="96.049" cy="86.365" fill="#DA5253" r="1.989"/></svg></span>
+    <h1 class="post-title" itemprop="name headline">The dark side of big data</h1><hr/>
+    <p class="post-meta">
+      <time datetime="2016-02-14T15:10:02+01:00" itemprop="datePublished">Feb 14, 2016</time>
+      
+    </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>Everybody (<a href="http://www.reuters.com/article/us-germany-technology-merkel-idUSKBN0OP2EM20150609">1</a>, <a href="http://images.forbes.com/forbesinsights/StudyPDFs/RocketFuel_BigData_REPORT.pdf">2</a>, <a href="http://www.economistinsights.com/sites/default/files/downloads/EIU_SAS_BigData_4.pdf">3</a>) is talking about big data and the chances that are not to be missed. So it would be fatal to miss this opportunity, for instance, by imposing too many regulations, right?</p>
+
+<h4 id="first-things-first-what-is-big-data-about">First things first, what is big data about?</h4>
+<p>Control. While data analysts looked into a murky pond waiting to observe a fish every now and then, <a href="https://en.wikipedia.org/wiki/Big_data">big data</a> promises clear water and a thorough understanding of ongoing processes – what are all the fish doing? At its heart, the term doesn’t describe anything more than making the most of as much data as possible.
+Even though it is natural that one wishes to have as much knowledge as possible, one should keep in mind that <strong>information always brings the danger of being exploited</strong>. Obviously, burglars are not supposed to know when families are on holidays. But likewise, a government should not keep track of who is voting against them. The more data you collect on processes, the better you can control them. And as the amount of data that modern societies produce keeps growing significantly, the threat of misuse of this data grows in accordance.</p>
+
+<h4 id="what-kind-of-digital-data-do-we-produce">What kind of digital data do we produce?</h4>
+<p>Only a few years ago most of us didn’t produce any digital data at all. These days, <strong>we generate data actively as well as passively</strong>. When we search online, shop online, book trips online, communicate online (which includes uploading images and videos), organise contacts and calendars online, then we upload our data actively – some people generously upload all of their personal data. In addition, a lot of web pages use tools that analyse our browsing behaviour, mobile apps create usage statistics or sometimes even spy on personal data, and most disconcerting: Our friends and colleagues share information about us – commonly without thinking about it by uploading all their contacts (often automatically, including profile pictures) and mentioning us in chatrooms or by sharing pictures of us. This happens passively, as we don’t share the data willingly.</p>
+
+<p>By accumulating passive data only, it would be possible to obtain an accurate picture of most persons, composed of interests, social contacts and images. Regarding active data as well, <strong>digital fingerprints become alarmingly complete</strong>. Let’s say you want to go on a sight-seeing trip. Already during planning you produce data like: When are you going where, with which budget, how long did you look at which websites and as a result, what are you interested in? Which of your probably best friends did you ask to join you, are these friends actually joining you? If not, did they make up an excuse or are they prevented for any reason? And then, when you are actually travelling you are tracked non-stop, your automatic uploads reveal what you are looking at and with whom you are meeting.</p>
+
+<p>Most of this information is available straight away, but from a big data perspective much more is deducible: Based on how you describe the trip in chat records, do you like it? <a href="http://arxiv.org/pdf/1310.6753v1.pdf">Are you going to break up your relationship?</a> Does your activity correlate with someone you know? Is there a chance you are having an affair, <a href="http://www.bbc.co.uk/news/technology-35101662">are you susceptible to blackmailing?</a> …</p>
+
+<p>If you are lucky, you want to go to Paris and some service provider tries to make as much money out of you as possible. If you are unlucky, you want to see Tibet and a whole government might be working against you.</p>
+
+<p>I would like to finish this section by quoting a friend of mine:</p>
+
+<blockquote>
+  <p>„Not having a [company name] account does not mean that they have no information about you. It’s more like you don’t have a password to access your data.”</p>
+</blockquote>
+
+<h4 id="how-could-such-data-be-exploited">How could such data be exploited?</h4>
+<p>Some experts claim that <a href="http://www.nytimes.com/2013/03/24/technology/big-data-and-a-renewed-debate-over-privacy.html?_r=0">there is no bad data, but only bad uses of data</a>. This logic is tempting, but then you could also say there are no bad weapons but only bad persons. Admittedly, there are countries relying on this logic but the <a href="http://www.theguardian.com/us-news/ng-interactive/2015/oct/02/mass-shootings-america-gun-violence">consequences are well-known</a>. I guess that most people would feel better knowing that this embarrassing picture taken at last New Year’s Eve party wouldn’t exist instead of hoping that nobody is going to prey on it.</p>
+
+<p>For now, assume that all your digital data is accessible by a single instance, say your government. In this case <strong>you provide your government with incredible control over yourself</strong> and also your relatives. A mere measurement of how defiant you are could be dangerous for you, depending on where you live. Furthermore, someone gazing at your data is not required to remain inactive. One might try to manipulate your opinion by <a href="http://www.theatlantic.com/technology/archive/2014/06/everything-we-know-about-facebooks-secret-mood-manipulation-experiment/373648/">placing solely the content on (social) media platforms that you are supposed to see</a>.</p>
+
+<p>Let’s try another thought experiment – <a href="http://utotherescue.blogspot.de/2016/01/ucop-ordered-spyware-installed-on-uc.html">surveillance of education</a>. I believe that a biased education system is especially dangerous, as it allows to manipulate the awareness of people which in turn <a href="http://www.huffingtonpost.com/2013/09/16/nigerian-student-gay-marriage_n_3934518.html">allows to advocate radical beliefs</a>.
+Edsger W. Dijkstra once said:</p>
+
+<blockquote>
+  <p>„It is not the task of the University to offer what society asks for, but to give what society needs.”</p>
+</blockquote>
+
+<p>The more data-driven and controlled life becomes, the more <a href="https://www.pen.org/sites/default/files/Chilling%20Effects_PEN%20American.pdf">self-censorship</a> will emerge, ultimately affecting research. Imagine you are forced to wear a GPS fitness tracking device and your employer, say the <em>O.R.-well</em> University, has access to your data. Such a state of affairs would immediately affect the behaviour of students, which has to be as expected. Quick learners, for instance, that skipped a lecture every now and then might be punished for absence, as well as students that leave their dorm after a certain time or persons that show non-heterosexual patterns might be penalized. This scenario is ridiculously far-fetched? <a href="www.thedailybeast.com/articles/2016/01/11/the-college-with-mandatory-fitness-tracking-devices.html">Well, apparently we are there already.</a></p>
+
+<p>The good news is that there is no single instance that has immediate access to all the data we produce. Some popular corporations that collect lots of personal data are: Google / Alphabet, Facebook, VK, Amazon, Microsoft, Dropbox, Apple and WeChat. There are also companies – called <a href="http://www.stopdatamining.me/">data brokers</a> – behind the scenes, being just as interested in your data.</p>
+
+<p>The bad news is that <strong>data monopolies get bigger and bigger</strong>, buying as many competitors as possible. And worse, governments are <a href="https://www.washingtonpost.com/investigations/us-intelligence-mining-data-from-nine-us-internet-companies-in-broad-secret-program/2013/06/06/3a0c0da8-cebf-11e2-8845-d970ccb04497_story.html">very successful</a> at spying on these corporations both <a href="https://www.aclu.org/infographic/surveillance-under-patriot-act">legally</a> and <a href="http://www.theguardian.com/uk-news/2015/feb/06/gchq-mass-internet-surveillance-unlawful-court-nsa">illegally</a>. It is somehow paradoxical that our lives become increasingly global, but that at the same time our digital trails are more and more centralised. Clearly, a more decentralised distribution of data would be more robust against exploitation.</p>
+
+<h4 id="but-we-can-trust-our-governments-why-would-they-want-to-exploit-our-data">But we can trust our governments, why would they want to exploit our data?</h4>
+<p>Regarding history, I am afraid that there is no reason at all to trust any government. <a href="http://www.theguardian.com/commentisfree/2016/jan/07/polish-democracy-destroyed-constitution-media-poland">Seemingly stable states can acquire fascistic characteristics surprisingly fast</a>, but potentially dangerous data will not simply disappear. I am not aware of any region of the earth with a history free of human rights violations. Minority groups were and still are suppressed in many places. A very common example pro data privacy is the creation of the so called ‘pink lists’ in Germany. In the 19th century, prior to Nazi-Germany, lists of homosexuals were maintained without the intention to suppress homosexuals. When the Nazis obtained those files years later, they were used to systematically kill the listed individuals. Sure, this is an extreme case, but the possibilities with big data are also much more serious. And <strong>it is the pattern that worries me: Supposedly harmless data becoming very dangerous later</strong>.</p>
+
+<p>Having large-scale in-depth data on a society could be used for subtle and effective propaganda, not to mention persecution. I doubt that another French Revolution would be possible as soon as there is a government exploiting big data. For more inspiration on this matter you might want to read George Orwell’s “1984” or Dave Eggers’ “The Circle”.</p>
+
+<h4 id="anything-else">Anything else?</h4>
+<p>It is not only governments that are in a rage for collecting data. Companies, especially these that are data driven, such as insurance companies, sense new profits by acquiring new data. This isn’t necessarily bad and maybe more of a personal opinion, but I don’t like some of the implications. There is a trend towards <a href="https://en.wikipedia.org/wiki/Usage-based_insurance">usage-based insurances</a>. For example, <a href="http://business.time.com/2013/08/06/big-data-is-my-copilot-auto-insurers-push-devices-that-track-driving-habits/">you get a cheaper car insurance when you drive safely and accept that your driving behaviour is fully tracked</a>. The recorded data is very sensitive, which raises data privacy concerns and insurance companies don’t simply provide free discounts of course. In the end, <strong>customers that do not agree to the tracking will pay higher prices</strong>, which I think is discriminating. The same concept applies to sharing your fitness data with your health insurance, using fitness tracking devices. Ultimately, you adjust your behaviour in order to function as some instances expect you to, whilst being transparent – or you pay the price. There are also concerns regarding data misinterpretation, which is briefly covered on the second webpage linked in this section.</p>
+
+<h4 id="what-will-be-possible-in-the-future">What will be possible in the future?</h4>
+<p>Currently, machine learning techniques are more popular than ever before and <a href="http://spectrum.ieee.org/tech-talk/computing/software/monster-machine-defeats-prominent-pro-player">one breakthrough in research</a> is followed by <a href="http://spectrum.ieee.org/tech-talk/semiconductors/processors/a-deep-learning-ai-chip-for-your-phone">another one</a>, which is great! Related methods are well suited to interpret big data and with increasing capabilities, potential threats also solidify. Very frequently, for instance, I see pictures of children posted on social media platforms or in non-encrypted chatrooms. As a result, children that grow up now probably have a perfect face recognition descriptor trained without ever touching a digital device themselves and without having had any choice. In theory, this could be used to identify billions of people in vast amounts of images uploaded in the future and also in video data like from surveillance cameras.
+Further, I think <strong>there is a danger of becoming slaves to our data</strong>. People love ratings. We are not only rating restaurants and hotels, but also doctors and teachers. Why not let big data do the job of rating for us? The more data, the more accurate the rating. But what if you grew up in the wrong neighbourhood, had criminal friends and have pictures showing you drunk? You might not get a job, as you are rated as potentially dangerous – this is related to the car insurance example above. In such a future, you would make every decision based on how nice your digital trail would look like. Freedom? I don’t think so.
+For those that have concerns about <a href="https://en.wikipedia.org/wiki/Technological_singularity">technological singularity</a>, please include big data into your nightmares. A lot of <a href="http://www.bbc.co.uk/news/technology-30290540">bright minds</a> are discussing the danger of machines becoming more intelligent than us and related threats. I believe this threat is amplified by big data.
+Moreover, with the emerging <a href="https://en.wikipedia.org/wiki/Internet_of_Things">Internet of Things</a> the amount of data we produce will increase sharply in the near future. This is gold for data-driven companies and <a href="www.forbes.com/sites/rakeshsharma/2014/01/13/googles-acquisition-of-nest-and-your-privacy">big players are already buying themselves in</a>, whilst <a href="http://www.theguardian.com/technology/2016/feb/09/internet-of-things-smart-home-devices-government-surveillance-james-clapper">security agencies are not unaware of upcoming ways to spy</a>. Bruce Schneier just <a href="https://www.schneier.com/blog/archives/2016/02/the_internet_of_1.html">published an article</a> sharing similar concerns, but focusing on the Internet of Things.</p>
+
+<h4 id="arent-these-concerns-rather-theoretical">Aren’t these concerns rather theoretical?</h4>
+<p>I agree that most of my concerns relate to potential threats. Yet, the world is changing fast and I am pretty sure that due to the Internet of Things, robotics and AI it will look as different in 60 years as it did 60 years ago. There will be awesome new possibilities but we should not be ignorant to involved dangers. Instead, we should try to find secure solutions as soon as possible.
+If it were North Korea we are talking about, everybody would understand that big data might be a bad idea – it’s always the foreign that is dangerous. But regarding that resources are getting rare, climate is changing and that conflicts are out of control, it might take less than we think to get suspicious governments fueled by the fear of people.</p>
+
+<h4 id="what-can-we-do">What can we do?</h4>
+<p>Everybody can do do one’s bit, here are a few things I perceive as important:</p>
+
+<ul>
+  <li><strong>Awareness:</strong> Start having discussions on this topic, raise your voice. Without awareness there is little chance of being represented by politicians. Or maybe you are even politically active yourself.</li>
+  <li>
+    <p><strong>Education, education, education!</strong> I genuinely believe that many problems would not exist, if we had a more comprehensive education system. Douglas C. Engelbart once said something very true:</p>
+
+    <blockquote>
+      <p>„The key thing about all the world’s big problems is that they have to be dealt with collectively. If we don’t get collectively smarter, we’re doomed.“</p>
+    </blockquote>
+
+    <p>When only 5% are aware of big data and even fewer people understand the implications, we  have a problem. Education is the fundament for both, a meaningful discussion and awareness.</p>
+  </li>
+  <li><strong>Decentralization:</strong> I understand that offering a variety of services brings important effects of synergy and it is very difficult to find an appropriate amount of regulatisation. And, maybe most important from a user’s perspective: Having as much data as possible with a single provider makes things easy. Yet, distributing data over many service providers clearly increases protection from exploitation. Sometimes, paying little money for a service guarantees encryption and you <strong>switch from being a product to using a product</strong>.</li>
+  <li><strong>Self-hosting:</strong> Even better than distributing your data would be to host as many services as possible by yourself or a person you trust. Perhaps, you know somebody with server administration expertise who can help you out, for instance, by setting up a family cloud.</li>
+  <li><strong>Open-Source:</strong> Using open-source software, it is not you who is transparent but the software you use, which is a major advantage. Regarding the <a href="http://www.slate.com/articles/technology/bitwise/2015/08/windows_10_privacy_problems_here_s_how_bad_they_are_and_how_to_plug_them.html">user agreements of some closed-source products</a>, you can’t really know what’s happening with the data on your own devices. The code of popular open-source projects on the other hand is inspected by many independent people, resulting in trustworthiness. Have a look at <a href="https://prism-break.org/en/">prism-break</a>, there might be open-source products suiting you well.</li>
+  <li><strong>Security audits:</strong> For some, especially commercial products, there are comprehensible reasons for not publishing the source-code. In this case, the company should at least allow security audits to allow some level of transparency.</li>
+  <li><strong>No backdoors!</strong> The discussion about forcing companies to implement backdoors in products reappears again and again. This is snakeoil. First, it leads to one instance – most likely some security agency, which is typically <a href="http://www.rollingstone.com/politics/news/q-a-senator-ron-wyden-on-nsa-surveillance-and-government-transparency-20130815">only superficially controlled</a> by democratic institutions – having access to all your data. Second, backdoors themselves impose a security risk. How could you know that they are not used for industrial espionage or by hackers?
+Choose your products wisely. By preferring products of companies that care about data privacy you hit those that treat your data irresponsibly. <a href="https://thehackernews.com/2015/09/lenovo-laptop-virus.html">Some vendors</a> for instance, have a record of including backdoors, which should not be tolerated by customers.</li>
+  <li><strong>Encryption:</strong> Last but not least, encrypt your data. It will be much harder to exploit your data, if it is encrypted; maybe even impossible. I can’t see any reason why you would choose an unencrypted messenger over an encrypted one. Modern ones are easy to use and when none of your friends has one, you could at least install both. I am sure someone will follow your example. You wouldn’t simply share your house key with strangers or allow them to listen to your phone calls – why allow them to read your digital communication?</li>
+</ul>
+
+<h3 id="conclusion">Conclusion</h3>
+<p>This article covered my big data and data-privacy concerns at the same time. Synergy. There definitely are some potential threats and I hope that I could raise some awareness with this post. I am not trying to say that you should delete your account at any service provider, but you should know which data is generated, what can be deduced and how it could be used in the future.</p>
+
+<p>I am by far not the only person concerned about data privacy. Robin Doherty wrote <a href="https://robindoherty.com/2016/01/06/nothing-to-hide.html">a nice article</a> about the problems with the “I have nothing to hide” argument and Philip E. Agre elaborates more on <a href="http://polaris.gseis.ucla.edu/pagre/arguments.html">pro privacy arguments</a>. Also, John Oliver dedicates <a href="https://www.youtube.com/watch?v=XEVlyP4_11M">one episode</a> of his famous Last Week Tonight show to Government Surveillance. Furthermore, <a href="http://surveillance.rsf.org/en/category/state-enemies/">Reporters Without Borders</a> and <a href="http://www.theguardian.com/world/surveillance">The Guardian</a> provide special pages covering digital surveillance.</p>
+
+<p>Let’s bring this article to a close with the words of Edward Snowden:</p>
+
+<blockquote>
+  <p>I don’t want to live in a world where everything that I say, everything I do, everyone I talk to, every expression of creativity or love or friendship is recorded.</p>
+</blockquote>
+
+  </div>
+
+  
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="footer">
+  <div class="container">
+    <ul class="icons">
+      
+      
+      <li>
+        <a href="https://github.com/martinruenz" class="icon-github" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="https://scholar.google.com/citations?user=Pz6kr-gAAAAJ" class="icon-scholar" target="_blank">
+          <i class="fa-solid fa-user-graduate"></i>
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/martin_ruenz" class="icon-twitter" target="_blank">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+      </li>
+      
+      
+      <li>
+        <a rel="me" href="https://sigmoid.social/@martin_ruenz" class="icon-mastodon" target="_blank">
+          <i class="fa-brands fa-mastodon"></i>
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/in/martinruenz" class="icon-linkedin" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </li>
+      
+    </ul>
+
+    <!--
+    <p class="quote">
+      <i>“The key thing about all the world's big problems is that they have to be dealt with collectively. If we don't get collectively smarter, we're doomed.”</i>
+      <small>– Douglas Engelbart</small>
+    </p>
+    -->
+    <p><small>Created with <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, theme inspired by <a href="http://nandomoreira.me/nandomoreira-jekyll-theme">Fernando Moreira</a></small></p>
+    <!--
+    <small class="clearfix">
+      Made with <a href="http://jekyllrb.com" target="_blank">Jekyll</a> • <a href="" target="_blank">Open source <i class="fa fa-heart"></i></a>
+    </small>
+    -->
+  </div>
+</footer>
+
+<a class="scroll-up fa fa-chevron-up bounce" href="#" data-position="0"></a>
+
+
+  </body>
+
+</html>

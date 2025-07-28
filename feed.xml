@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Martin Rünz</title>
+    <description>This is my private page and its purpose is to present some of my research and to blog about things that interest me.
+</description>
+    <link>https://www.martinruenz.de/</link>
+    <atom:link href="https://www.martinruenz.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 28 Jul 2025 09:53:08 +0200</pubDate>
+    <lastBuildDate>Mon, 28 Jul 2025 09:53:08 +0200</lastBuildDate>
+    <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>Internship and papers</title>
+        <description>&lt;p&gt;Several things happened since my last update, which has been a while ago. We published &lt;a href=&quot;/publications#maskfusion-2018&quot;&gt;MaskFusion&lt;/a&gt; at &lt;a href=&quot;https://www.ismar2018.org/&quot;&gt;ISMAR2018&lt;/a&gt;, I interned and contracted for &lt;a href=&quot;https://research.fb.com/category/augmented-reality-virtual-reality&quot;&gt;Facebook Reality Labs&lt;/a&gt; in Redmond, WA and in the course of that we are going to publish &lt;a href=&quot;/publications#frodo-2020&quot;&gt;FroDO&lt;/a&gt; at &lt;a href=&quot;http://cvpr2020.thecvf.com/&quot;&gt;CVPR2020&lt;/a&gt; – which sadly has to be purely virtual.&lt;/p&gt;
+
+&lt;p&gt;The two publications follow my trail of work on modelling scenes in an object-aware fashion. While MaskFusion is a real-time method for the tracking and mapping of dynamic objects from RGBD video, FroDO is object-aware on the reconstruction level and facilitates a shape embedding which functions as a shape prior.&lt;/p&gt;
+
+&lt;p&gt;The time in the US has been great, working with a fantastic team in an amazing environment. Just look at how beautiful Mnt. Rainier is &lt;i class=&quot;fa fa-heart&quot; aria-hidden=&quot;true&quot; style=&quot;color: #ff0000;&quot;&gt;&lt;/i&gt;
+:&lt;/p&gt;
+
+&lt;script src=&quot;/js/lightgallery/js/lightgallery.js&quot;&gt;&lt;/script&gt;
+
+&lt;script src=&quot;/js/lightgallery/js/lg-thumbnail.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;div id=&quot;gallery-seattle_2018&quot; class=&quot;gallery&quot;&gt;
+
+&lt;a class=&quot;gallery-link&quot; href=&quot;/galleries/seattle_2018/rainier1.jpg&quot; title=&quot;&quot; rel=&quot;seattle_2018&quot;&gt;&lt;div class=&quot;gallery-overlay&quot; style=&quot;height: 160px; width: 160px;&quot;&gt;&lt;/div&gt;&lt;img src=&quot;/galleries/thumbnails/seattle_2018/rainier1-thumb.jpg&quot; class=&quot;thumbnail&quot; width=&quot;160&quot; height=&quot;160&quot; /&gt;&lt;/a&gt;&lt;a class=&quot;gallery-link&quot; href=&quot;/galleries/seattle_2018/rainier2.jpg&quot; title=&quot;&quot; rel=&quot;seattle_2018&quot;&gt;&lt;div class=&quot;gallery-overlay&quot; style=&quot;height: 160px; width: 160px;&quot;&gt;&lt;/div&gt;&lt;img src=&quot;/galleries/thumbnails/seattle_2018/rainier2-thumb.jpg&quot; class=&quot;thumbnail&quot; width=&quot;160&quot; height=&quot;160&quot; /&gt;&lt;/a&gt;&lt;a class=&quot;gallery-link&quot; href=&quot;/galleries/seattle_2018/rainier3.jpg&quot; title=&quot;&quot; rel=&quot;seattle_2018&quot;&gt;&lt;div class=&quot;gallery-overlay&quot; style=&quot;height: 160px; width: 160px;&quot;&gt;&lt;/div&gt;&lt;img src=&quot;/galleries/thumbnails/seattle_2018/rainier3-thumb.jpg&quot; class=&quot;thumbnail&quot; width=&quot;160&quot; height=&quot;160&quot; /&gt;&lt;/a&gt;&lt;a class=&quot;gallery-link&quot; href=&quot;/galleries/seattle_2018/rainier4.jpg&quot; title=&quot;&quot; rel=&quot;seattle_2018&quot;&gt;&lt;div class=&quot;gallery-overlay&quot; style=&quot;height: 160px; width: 160px;&quot;&gt;&lt;/div&gt;&lt;img src=&quot;/galleries/thumbnails/seattle_2018/rainier4-thumb.jpg&quot; class=&quot;thumbnail&quot; width=&quot;160&quot; height=&quot;160&quot; /&gt;&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;lightGallery(document.getElementById(&apos;gallery-seattle_2018&apos;),{thumbnail:true});&lt;/script&gt;
+
+</description>
+        <pubDate>Fri, 05 Jun 2020 11:00:00 +0200</pubDate>
+        <link>https://www.martinruenz.de/article/research/2020/06/05/papers-internship.html</link>
+        <guid isPermaLink="true">https://www.martinruenz.de/article/research/2020/06/05/papers-internship.html</guid>
+        
+        
+        <category>article</category>
+        
+        <category>research</category>
+        
+      </item>
+    
+      <item>
+        <title>Photostory: An open-source workflow for creating slideshows</title>
+        <description>&lt;p&gt;&lt;img style=&quot;float:left;max-width: 120px; margin:10px; margin-right:20px;&quot; src=&quot;/media/photostory/photostory.svg&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;tldr-&quot;&gt;TL;DR …&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/martinruenz/photostory&quot;&gt;Photostory&lt;/a&gt; is a tool to generate slideshows using Blender. It can generate videos directly, but also offers more customization using the following workflow: &lt;strong&gt;GUI&lt;/strong&gt; ➜ JSON ➜ &lt;strong&gt;Blender&lt;/strong&gt; ➜ render. Videos below.&lt;/p&gt;
+
+&lt;h4 id=&quot;-continued&quot;&gt;… continued:&lt;/h4&gt;
+
+&lt;p&gt;There is a bunch of people – including myself – that is keen about photography, as well as open-source software. The two are not always coming along greatly, as companies behind professional software for digital photographers usually neglect our niche audience. Linux is scarcely supported and &lt;a href=&quot;http://www.winehq.com&quot;&gt;Wine&lt;/a&gt; / VM workarounds are not entirely optimal. Luckily, though, there is significant effort by the community to improve the landscape of professional-level tools. Anyhow, in this post I don’t want to write about photography tools in general, but about something more specific: &lt;em&gt;How to show selected pictures to family and friends?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;After taking countless pictures during a back-packing tour, I recently wanted to generate a
+slideshow to present some of the captured moments to my family. Ideally, such a slideshow is a
+plain video file which can be played universally, for instance on the TV of my parents. In the Mac
+world, I guess, you could use iPhoto for this task but I was disappointed with the alternatives
+offered for Windows or Linux. Even professional tools, such as Lightroom, provide a rather
+cumbersome workflow and in the end I decided to write a small tool that allows you to easily arrange
+photos and create a video. The rendering part is handled by &lt;a href=&quot;http://www.blender.org&quot;&gt;Blender&lt;/a&gt;, which
+also allows you to customize the generated scene. The features I wanted to have are the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;GUI&lt;/strong&gt;: A graphical user-interface to drag-and-drop photographs&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Multi-picture&lt;/strong&gt; slides: Each slide can have an arbitrary amount of pictures&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Auto-layout&lt;/strong&gt;: The layout is generated automatically (but can be customized)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Background pictures&lt;/strong&gt;: Ability to set foreground and background pictures for each slide&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Routes&lt;/strong&gt;: Support of GPS-slides, which animate a route given a set of GPS coordinates&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Extensibility&lt;/strong&gt;: An extensible tool-chain that allows to add different effects and designs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;My first idea was to write a single C++ application with a front-end to do the arrangement of photographs and a back-end for the rendering, using image libraries such as &lt;a href=&quot;https://opencv.org&quot;&gt;opencv&lt;/a&gt; or &lt;a href=&quot;https://www.imagemagick.org&quot;&gt;imagemagick&lt;/a&gt;.
+After some considerations, however, I realised that some 3D effects like ambient occlusion and the animation of routes would involve more development than I was willing to invest and making such a tool extensible would lead to a fair amount of planning and overhead on its own. Instead, I opted for a scriptable animation software to do the rendering and my clear choice was to opt for &lt;a href=&quot;https://www.blender.org&quot;&gt;Blender&lt;/a&gt;. Ultimately, the front-end is a &lt;a href=&quot;https://en.wikipedia.org/wiki/Qt_(software)&quot;&gt;Qt&lt;/a&gt; C++ application, which exports the arrangement of slides to a &lt;a href=&quot;https://en.wikipedia.org/wiki/JSON&quot;&gt;JSON&lt;/a&gt; file. This file is then loaded by a blender-plugin that automatically generates geometry, textures and camera movement. The user interface is able to completely hide the execution of Blender, but also allows you to get your hands dirty and tweak or augment the scene if you wish to do so.&lt;/p&gt;
+
+&lt;h4 id=&quot;automatic-workflow&quot;&gt;Automatic workflow&lt;/h4&gt;
+
+&lt;p&gt;The automatic workflow hides details of the manual process away, but obviously gives you fewer settings to adjust. The following video shows how to arrange slides using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;photo-selector&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;row&quot; style=&quot;margin: 1.2em auto; text-align: center;&quot;&gt;
+  &lt;video width=&quot;100%&quot; height=&quot;auto&quot; controls=&quot;&quot;&gt;
+    &lt;source src=&quot;/media/photostory/photo-selector.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+  	Here should be a video, but your browser does not support it.
+  &lt;/video&gt;
+&lt;/div&gt;
+
+&lt;p&gt;And here is the result after rendering:&lt;/p&gt;
+
+&lt;div class=&quot;row&quot; style=&quot;margin: 1.2em auto; text-align: center;&quot;&gt;
+  &lt;video width=&quot;100%&quot; height=&quot;auto&quot; controls=&quot;&quot;&gt;
+    &lt;source src=&quot;/media/photostory/demo.webm&quot; /&gt;
+    &lt;source src=&quot;/media/photostory/demo.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+  	Here should be a video, but your browser does not support HTML5 (webm-)videos.
+  &lt;/video&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&quot;manual-workflow&quot;&gt;Manual workflow&lt;/h4&gt;
+
+&lt;p&gt;Instead of rendering the video directly from the GUI it is possible to save the JSON exchange format in order to import it into Blender manually. The resulting file describes slides like this:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-json&quot; data-lang=&quot;json&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;photo_slide&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;3&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;background_paths&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;foreground_paths&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;joshua-earle-560344-unsplash.jpg&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;kea-mowat-574639-unsplash.jpg&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pascal-debrunner-634122-unsplash.jpg&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;In Blender load the slideshow via &lt;strong&gt;File ➜ Import ➜ Photostory (.json)&lt;/strong&gt;. This importer gives you the options:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Unroll map&lt;/strong&gt;: If set, adds an unrolling map animation to the beginning of the scene (see example).&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Skip duplicates&lt;/strong&gt;: If set, placeholder images for duplicate frames are created in the output directory (this directory needs to be specified in Blender before importing). This will speed up the rendering process significantly as long as the &lt;strong&gt;overwrite&lt;/strong&gt; flag in Blender is not set. After rendering, placeholders need to be replaced using the script &amp;lt;/br&amp;gt; &lt;strong&gt;photo-selector/generate_duplicates.py&lt;/strong&gt;, which replaces empty image files with the previous non-empty image.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Setup scene&lt;/strong&gt;: If set, scene properties such as start and end frame are adjusted as well.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Default slide duration&lt;/strong&gt;: Default duration of slides (might be overwritten by JSON).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/media/photostory/cast-import.gif&quot; alt=&quot;blender-import&quot; title=&quot;Importing a slideshow in blender&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now you have the opportunity to customize the slideshow in 3D using Blender. The generated scene should work with the internal as well as Cycles renderer. Rendering is done usual, only make sure not to change the output directory if you generated placeholders with be setting &lt;em&gt;skip duplicates&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;features-i-like&quot;&gt;Features I like&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The Blender addon sets up materials compatible with &lt;strong&gt;Cycles&lt;/strong&gt; and the &lt;strong&gt;internal renderer&lt;/strong&gt; of Blender&lt;/li&gt;
+  &lt;li&gt;The map uses a height-map and (optionally) shows an &lt;em&gt;unrolling&lt;/em&gt; animation when it’s shown for the first time&lt;/li&gt;
+  &lt;li&gt;Videos are supported as well. If a slide contains a video, it is shown long enough for the video to finish&lt;/li&gt;
+  &lt;li&gt;The addon tries to reduce rendering time by skipping identical frames&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;limitations&quot;&gt;Limitations&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The workflow is one-directional. Adjustments that were done manually in Blender stay in Blender. Of course, the modified Blender scene can be saved and used as always, but if you re-order slides in the GUI you have to import a new JSON file which generates a new Blender scene. Hence, modifications you did in Blender with an old iteration of you slideshow will not be applied to the new version. As a consequence, think of Blender as an optional tool for post-production that is used after finalizing the JSON slideshow.&lt;/li&gt;
+  &lt;li&gt;Even if identical frames are skipped and the internal renderer is used, rendering can easily take hours. (Hopefully this will improve with &lt;a href=&quot;https://code.blender.org/2018/03/eevee-f-a-q/&quot;&gt;EEVEE&lt;/a&gt;, which is not supported yet)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;contribute&quot;&gt;Contribute&lt;/h4&gt;
+
+&lt;p&gt;Photostory is &lt;a href=&quot;https://github.com/martinruenz/photostory&quot;&gt;hosted on github&lt;/a&gt; and you are more than welcome to contribute. Please open issues if you find bugs or have recommendations and ideally, create pull requests if you can fix issues yourself. Maybe you also have good ideas for generating layouts or scenes with different styles.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 03 Jul 2018 23:00:00 +0200</pubDate>
+        <link>https://www.martinruenz.de/article/open-source/2018/07/03/photostory.html</link>
+        <guid isPermaLink="true">https://www.martinruenz.de/article/open-source/2018/07/03/photostory.html</guid>
+        
+        
+        <category>article</category>
+        
+        <category>open-source</category>
+        
+      </item>
+    
+      <item>
+        <title>Co-Fusion and ICRA</title>
+        <description>&lt;p&gt;In one of my last articles I mentioned my excitement about a paper we had submitted to a conference. Now, few months later, I already had the pleasure to present the work at ICRA. The whole experience was fantastic! ICRA offered a plethora of interesting presentations, industry exhibitions, activities and even robot competitions. I got valuable feedback for my own presentation – which I think went really well – and last but not least got the chance to swim in the &lt;a href=&quot;https://duckduckgo.com/?q=Marina+Sands+Bay+Hotel+infinity+pool&amp;amp;t=hz&amp;amp;iax=1&amp;amp;iar=images&amp;amp;ia=images&amp;amp;iaf=type%3Aphoto-photo&amp;amp;kae=d&quot;&gt;infinity pool&lt;/a&gt; of the Marina Sands Bay Hotel.&lt;/p&gt;
+
+&lt;p&gt;To return to the work: We presented &lt;strong&gt;Co-Fusion&lt;/strong&gt;: &lt;em&gt;Real-time Segmentation,
+Tracking and Fusion of Multiple Objects&lt;/em&gt;. Check the system out, if you are interested in visual SLAM. It is open-source and you can find more information under projects or &lt;a href=&quot;http://visual.cs.ucl.ac.uk/pubs/cofusion/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;By the way, Singapore is a great city for night time photography:&lt;/p&gt;
+
+&lt;!--
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://code.jquery.com/jquery-latest.min.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;js/fancybox/source/jquery.fancybox.css?v=2.1.7&quot; type=&quot;text/css&quot; media=&quot;screen&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/fancybox/source/jquery.fancybox.pack.js?v=2.1.7&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/js/jquery-3.2.1.slim.min.js&quot;&gt;&lt;/script&gt;
+--&gt;
+&lt;script src=&quot;/js/lightgallery/js/lightgallery.js&quot;&gt;&lt;/script&gt;
+
+&lt;script src=&quot;/js/lightgallery/js/lg-thumbnail.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;div id=&quot;gallery-singapore_2017&quot; class=&quot;gallery&quot;&gt;
+
+&lt;a class=&quot;gallery-link&quot; href=&quot;/galleries/singapore_2017/IMG_1302-HDR.jpg&quot; title=&quot;&quot; rel=&quot;singapore_2017&quot;&gt;&lt;div class=&quot;gallery-overlay&quot; style=&quot;height: 160px; width: 160px;&quot;&gt;&lt;/div&gt;&lt;img src=&quot;/galleries/thumbnails/singapore_2017/IMG_1302-HDR-thumb.jpg&quot; class=&quot;thumbnail&quot; width=&quot;160&quot; height=&quot;160&quot; /&gt;&lt;/a&gt;&lt;a class=&quot;gallery-link&quot; href=&quot;/galleries/singapore_2017/IMG_1313.jpg&quot; title=&quot;&quot; rel=&quot;singapore_2017&quot;&gt;&lt;div class=&quot;gallery-overlay&quot; style=&quot;height: 160px; width: 160px;&quot;&gt;&lt;/div&gt;&lt;img src=&quot;/galleries/thumbnails/singapore_2017/IMG_1313-thumb.jpg&quot; class=&quot;thumbnail&quot; width=&quot;160&quot; height=&quot;160&quot; /&gt;&lt;/a&gt;&lt;a class=&quot;gallery-link&quot; href=&quot;/galleries/singapore_2017/IMG_1353.jpg&quot; title=&quot;&quot; rel=&quot;singapore_2017&quot;&gt;&lt;div class=&quot;gallery-overlay&quot; style=&quot;height: 160px; width: 160px;&quot;&gt;&lt;/div&gt;&lt;img src=&quot;/galleries/thumbnails/singapore_2017/IMG_1353-thumb.jpg&quot; class=&quot;thumbnail&quot; width=&quot;160&quot; height=&quot;160&quot; /&gt;&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;lightGallery(document.getElementById(&apos;gallery-singapore_2017&apos;),{thumbnail:true});&lt;/script&gt;
+
+</description>
+        <pubDate>Tue, 27 Jun 2017 23:53:02 +0200</pubDate>
+        <link>https://www.martinruenz.de/article/research/2017/06/27/Co-Fusion-and-ICRA.html</link>
+        <guid isPermaLink="true">https://www.martinruenz.de/article/research/2017/06/27/Co-Fusion-and-ICRA.html</guid>
+        
+        
+        <category>article</category>
+        
+        <category>research</category>
+        
+      </item>
+    
+      <item>
+        <title>Something is wrong when the ‘telephone app’ on your phone becomes 3rd party</title>
+        <description>&lt;p&gt;Since I am not living in my home country, I frequently use two different SIM cards and prefer having a phone with dual-sim support. This limits your choice significantly when buying a new device and last time I bought one, I opted for the Wileyfox Swift. It was cheap, had most features I desired and shipped with CyanogenMod (Android) – which, I thought, might indicate that Wileyfox delivers a slim, privacy-aware system.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/media/truecaller/1.jpg&quot;&gt;&lt;img src=&quot;/media/truecaller/t1.jpg&quot; alt=&quot;truecaller&quot; title=&quot;truecaller&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;/media/truecaller/2.jpg&quot;&gt;&lt;img src=&quot;/media/truecaller/t2.jpg&quot; alt=&quot;truecaller disable&quot; title=&quot;truecaller disable&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Yesterday, I was delighted to see that Wileyfox provides an update to a new version of Android (7.1.1) and I didn’t hesitate long to install the upgrade. Concerns that the hardware might not hold-up to the new system showed to be unfounded and everything seemed to work just fine. But when I realised that the &lt;em&gt;dialler&lt;/em&gt; now labelled itself as ‘&lt;em&gt;truecaller&lt;/em&gt;’ – something I had never heard of, shoot, I didn’t even know the &lt;em&gt;dialler&lt;/em&gt; is an app – it gave rise to a bad suspicion: Is some of my phone’s core functionality now provided by a 3rd party app? Indeed. Does it respect my privacy? No. Can I uninstall it again? No. Was I ever asked to comply with their terms and conditions? Of course not.&lt;/p&gt;
+
+&lt;p&gt;Here is an excerpt of &lt;em&gt;truecaller&lt;/em&gt;’s privacy policy:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;When You install and use the Services, Truecaller will collect personal information from You and any devices You may use in Your interaction with our Services. This information may include e.g.: &lt;strong&gt;geo-location&lt;/strong&gt;; Your &lt;strong&gt;IP address&lt;/strong&gt;; &lt;strong&gt;device ID&lt;/strong&gt; or &lt;strong&gt;unique identifier&lt;/strong&gt;; &lt;strong&gt;device manufacturer&lt;/strong&gt; and &lt;strong&gt;type&lt;/strong&gt;; &lt;strong&gt;device and hardware settings&lt;/strong&gt;; &lt;strong&gt;SIM card usage&lt;/strong&gt;; &lt;strong&gt;applications installed&lt;/strong&gt; on your device; &lt;strong&gt;ID for advertising&lt;/strong&gt;; &lt;strong&gt;ad data&lt;/strong&gt;, &lt;strong&gt;operating system&lt;/strong&gt;; &lt;strong&gt;web browser&lt;/strong&gt;; &lt;strong&gt;operator&lt;/strong&gt;; &lt;strong&gt;IMSI&lt;/strong&gt;; &lt;strong&gt;connection information&lt;/strong&gt;; &lt;strong&gt;screen resolution&lt;/strong&gt;; &lt;strong&gt;usage statistics&lt;/strong&gt;; default &lt;strong&gt;communication applications&lt;/strong&gt;; access to device &lt;strong&gt;address book&lt;/strong&gt;; &lt;strong&gt;device log&lt;/strong&gt; and event information; logs, keywords and meta &lt;strong&gt;data of incoming and outgoing calls and messages&lt;/strong&gt;; &lt;strong&gt;version of the Services&lt;/strong&gt; You use and other information based on Your interaction with our Services such as how the Services are being accessed (via another service, web site or a search engine); the &lt;strong&gt;pages You visit&lt;/strong&gt; and &lt;strong&gt;features you use&lt;/strong&gt; on the Services; the services and &lt;strong&gt;websites You engage with&lt;/strong&gt; from the Services; &lt;strong&gt;content viewed by You&lt;/strong&gt;, &lt;strong&gt;content You have commented on&lt;/strong&gt; or sent to us and information about the ads You see and/or engage with; the &lt;strong&gt;search terms You use&lt;/strong&gt;; &lt;strong&gt;order information&lt;/strong&gt; and other usage activity and data logged by Truecaller’s servers from time to time. Truecaller may collect some of this information automatically through use of cookies and You can learn more about our use of cookies in our Cookie Policy.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And somewhere later, not surprisingly:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;We transfer information to trusted vendors&lt;/strong&gt;, service providers, and other partners who support our business and Services, such as providing technical infrastructure services, bug testing, analyzing how our Services are used, measuring the effectiveness of ads and services and facilitating payments as well as potential partners who may wish to work with us to provide other services.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;After reading this, the first thing I did was to send an email to the Wileyfox support to kindly ask for a way to uninstall the app and recover the the default &lt;em&gt;dialler&lt;/em&gt;. The answer came quickly but was unsatisfying and of a generic type:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Hello Martin,&lt;/p&gt;
+
+  &lt;p&gt;Thank you very much for your Email,&lt;/p&gt;
+
+  &lt;p&gt;[…]&lt;/p&gt;
+
+  &lt;p&gt;Truecaller Pro&lt;/p&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;Wileyfox users receive 90 days of Truecaller Pro for free.&lt;/li&gt;
+    &lt;li&gt;Truecaller Pro enables you to send contact requests to people outside of your network.&lt;/li&gt;
+    &lt;li&gt;Truecaller Pro gives you an ad-free experience and Wileyfox users will not receive ads in  Truecaller even after the Pro subscription ends.&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;Privacy Questions&lt;/p&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;If you don’t register in Truecaller it works as an ordinary dialler.&lt;/li&gt;
+    &lt;li&gt;To improve accuracy of the Caller ID service, users can share their contacts with the Truecaller community. This feature is optional and users can skip giving access to this.&lt;/li&gt;
+    &lt;li&gt;Users who do not wish to use Truecaller as their dialler can opt-out and deactivate their account without impacting the usage of their dialler.&lt;/li&gt;
+    &lt;li&gt;You can deactivate and unlist your number from Truecaller via this website: https://www.truecaller.com/unlist&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;&lt;strong&gt;Unfortunately you are unable to uninstall truecaller&lt;/strong&gt; as this is the default dialer, you can use a 3rd party app if you would like to..&lt;/p&gt;
+
+  &lt;p&gt;Many Kind Regards,&lt;/p&gt;
+
+  &lt;p&gt;[…]&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;My second email, asking if they can guarantee that no information is collected when not creating a &lt;em&gt;truecaller&lt;/em&gt; account, received no answer until now. When disabling the application, the dialer simply disappears from the home-screen, without any replacement:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/media/truecaller/3.jpg&quot;&gt;&lt;img src=&quot;/media/truecaller/t3.jpg&quot; alt=&quot;truecaller enabled&quot; title=&quot;truecaller enabled&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;/media/truecaller/4.jpg&quot;&gt;&lt;img src=&quot;/media/truecaller/t4.jpg&quot; alt=&quot;truecaller disabled: dialler gone&quot; title=&quot;truecaller disabled: dialler gone&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This leaves me in an unpleasant spot as I, where I can, avoid using google services and now need to find an alternative dialling application. Isn’t this sweet? &lt;strong&gt;I am searching for a dialling application for my smartphone. A DIALLING application.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Of course, you can always root the phone and install custom roms. But this process takes some time and the development and compatibility with these roms is less than satisfactory. I’ll have to figure out my options when I have some spare time and hope, for the moment at least, to find a usable replacement on F-Droid.&lt;/p&gt;
+
+&lt;p&gt;I am not sure if this move if even legal, but it’s certainly not an act of kindness to impose this kind of affiliate program on customers.&lt;/p&gt;
+
+&lt;p&gt;What does this tell us about the state of Android? Well, two out of the three Android devices I’ve owned (different manufacturers) suffered from bloat / adware. But to be fair, a system should be open and as a consequence customisable by a manufacturer. It should not be designed, however, to have vital core functionality easily replaced with dubious 3rd party apps. I guess the burden is on the customers now: Double check which software you get with which device. Not being an apple fanboy, I have to admit: At least you know what you get when buying an Iphone. Heck, switching operating systems on mobiles should be as easy as on PCs.&lt;/p&gt;
+
+&lt;p&gt;I would be glad to hear recommendations for smartphone hardware / software that values open-source and data-privacy, preferably dual-sim.&lt;/p&gt;
+
+&lt;p&gt;Let’s finish this short article with the words of Ernst F. Schumacher:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius — and a lot of courage to move in the opposite direction.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;strong&gt;UPDATE:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In the meantime, both &lt;em&gt;Wileyfox&lt;/em&gt; and &lt;em&gt;truecaller&lt;/em&gt; reached out to me – probably not unrelated to the attention this article got on &lt;a href=&quot;https://news.ycombinator.com/item?id=14266423&quot;&gt;hacknews&lt;/a&gt;. Here are their statements:&lt;/p&gt;
+
+&lt;p&gt;Wileyfox &lt;em&gt;(answering my mail asking weather truecaller collects data)&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Hello Martin,
+Yes Truecaller will not &lt;strong&gt;have access&lt;/strong&gt; to any information unless you sign up to their services.
+Kind Regards
+Wileyfox Customer Support&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And &lt;em&gt;truecaller&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Hi Martin,&lt;/p&gt;
+
+  &lt;p&gt;[…]&lt;/p&gt;
+
+  &lt;p&gt;– It is completely optional to use the Truecaller service. While we do offer our service of identifying spam calls and unknown numbers, if the user does not want those services, simply just say ’Later’ on the first screen and the user will be able to use the dialler just like a standard Android dialler (it will still have Truecaller branding, but no information is being &lt;strong&gt;shared by Truecaller&lt;/strong&gt; or vice versa) This means no profile will be created with your details, and no numbers will be shared. The &lt;strong&gt;privacy policy only applies for when you create an account&lt;/strong&gt;.&lt;/p&gt;
+
+  &lt;p&gt;– This also means, if you have already opted-in by creating an account and want to opt-out and stop using the features, and just use the app like a normal dialler, then you can just go to settings &amp;gt; about &amp;gt; deactivate. This will return the app to the state before you sign up (so as a normal dialler).&lt;/p&gt;
+
+  &lt;p&gt;[…]&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I highly appreciate that both companies take customer relations serious and reached out to me.&lt;/p&gt;
+
+&lt;p&gt;However, I am missing a clear statement, saying that &lt;strong&gt;no&lt;/strong&gt; data is send to &lt;em&gt;truecaller&lt;/em&gt; servers when I am not signing up – it should be commonly known by now that &lt;em&gt;anonymous&lt;/em&gt; data usually is not really anonymous. Further, and more importantly, it doesn’t change the fact that there is a 3rd party app hooked into my phone’s system now and I have to to trust this party. The statement that &lt;em&gt;truecaller&lt;/em&gt; has no access to my data is clearly false, as the app has all the privileges it requires to spy on lots of data. Given the recent history of privacy violations, I certainly do not intend to add &lt;em&gt;truecaller&lt;/em&gt; to the list of companies I trust, especially regarding their buisness model.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 03 May 2017 23:53:02 +0200</pubDate>
+        <link>https://www.martinruenz.de/article/data-privacy/2017/05/03/something-is-wrong.html</link>
+        <guid isPermaLink="true">https://www.martinruenz.de/article/data-privacy/2017/05/03/something-is-wrong.html</guid>
+        
+        
+        <category>article</category>
+        
+        <category>data-privacy</category>
+        
+      </item>
+    
+      <item>
+        <title>Afcea award &amp; GCPR</title>
+        <description>&lt;h4 id=&quot;tldr-&quot;&gt;TL;DR …&lt;/h4&gt;
+
+&lt;p&gt;A lot happened in the last couple of weeks: I received an award for my master thesis, which I also presented as a poster at GCPR and submitted a paper about my current work.&lt;/p&gt;
+
+&lt;h4 id=&quot;-continued&quot;&gt;… continued:&lt;/h4&gt;
+
+&lt;p&gt;The AFCEA describes itself as&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;„a professional association that connects innovative people, great ideas and vital solutions to advance global security”.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The German branch of &lt;a href=&quot;http://www.afcea.de&quot;&gt;AFCEA&lt;/a&gt; (&lt;em&gt;Anwenderforum für Fernmeldetechnik, Computer, Elektronik und Automatisierung e.V.&lt;/em&gt;) organises events such as the &lt;a href=&quot;http://www.afcea.de/news/detail-news/news/es-wird-zeit-fuer-eine-neue-it-sicherheit.html&quot;&gt;Koblenzer IT-Tagung&lt;/a&gt;, in which’s context computer science theses are awarded. After a few German universities pre-select the most promising final projects, the AFCEA then awards the best submission with generous prices. I am grateful that the AFCEA approved my thesis and &lt;a href=&quot;http://www.afcea.de/news/detail-news/news/studienpreis-erneut-verliehen.html&quot;&gt;awarded me with the second place&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/media/gcpr-2016-medium.jpg&quot;&gt;&lt;img src=&quot;/media/gcpr-2016-small.jpg&quot; alt=&quot;GCPR 2016&quot; title=&quot;GCPR 2016&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;A week later &lt;a href=&quot;http://www.kcmweb.de/conferences/gcpr2016&quot;&gt;GCPR&lt;/a&gt; took place and I got the chance to present the results of my master thesis as a poster. For this purpose, GCPR has a special submission process:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;„Following the tradition of DAGM/GCPR, GCPR 2016 again hosts a Young Researchers Forum (YRF) dedicated to the presentation of outstanding achievements during Bachelor, Masters or Diploma studies.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Last but not least, I worked hard within the last weeks and submitted my current work to a conference. I plan to post more on this in the next months.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 04 Oct 2016 18:32:00 +0200</pubDate>
+        <link>https://www.martinruenz.de/article/research/2016/10/04/afcea-and-gcpr.html</link>
+        <guid isPermaLink="true">https://www.martinruenz.de/article/research/2016/10/04/afcea-and-gcpr.html</guid>
+        
+        
+        <category>article</category>
+        
+        <category>research</category>
+        
+      </item>
+    
+      <item>
+        <title>The dark side of big data</title>
+        <description>&lt;p&gt;Everybody (&lt;a href=&quot;http://www.reuters.com/article/us-germany-technology-merkel-idUSKBN0OP2EM20150609&quot;&gt;1&lt;/a&gt;, &lt;a href=&quot;http://images.forbes.com/forbesinsights/StudyPDFs/RocketFuel_BigData_REPORT.pdf&quot;&gt;2&lt;/a&gt;, &lt;a href=&quot;http://www.economistinsights.com/sites/default/files/downloads/EIU_SAS_BigData_4.pdf&quot;&gt;3&lt;/a&gt;) is talking about big data and the chances that are not to be missed. So it would be fatal to miss this opportunity, for instance, by imposing too many regulations, right?&lt;/p&gt;
+
+&lt;h4 id=&quot;first-things-first-what-is-big-data-about&quot;&gt;First things first, what is big data about?&lt;/h4&gt;
+&lt;p&gt;Control. While data analysts looked into a murky pond waiting to observe a fish every now and then, &lt;a href=&quot;https://en.wikipedia.org/wiki/Big_data&quot;&gt;big data&lt;/a&gt; promises clear water and a thorough understanding of ongoing processes – what are all the fish doing? At its heart, the term doesn’t describe anything more than making the most of as much data as possible.
+Even though it is natural that one wishes to have as much knowledge as possible, one should keep in mind that &lt;strong&gt;information always brings the danger of being exploited&lt;/strong&gt;. Obviously, burglars are not supposed to know when families are on holidays. But likewise, a government should not keep track of who is voting against them. The more data you collect on processes, the better you can control them. And as the amount of data that modern societies produce keeps growing significantly, the threat of misuse of this data grows in accordance.&lt;/p&gt;
+
+&lt;h4 id=&quot;what-kind-of-digital-data-do-we-produce&quot;&gt;What kind of digital data do we produce?&lt;/h4&gt;
+&lt;p&gt;Only a few years ago most of us didn’t produce any digital data at all. These days, &lt;strong&gt;we generate data actively as well as passively&lt;/strong&gt;. When we search online, shop online, book trips online, communicate online (which includes uploading images and videos), organise contacts and calendars online, then we upload our data actively – some people generously upload all of their personal data. In addition, a lot of web pages use tools that analyse our browsing behaviour, mobile apps create usage statistics or sometimes even spy on personal data, and most disconcerting: Our friends and colleagues share information about us – commonly without thinking about it by uploading all their contacts (often automatically, including profile pictures) and mentioning us in chatrooms or by sharing pictures of us. This happens passively, as we don’t share the data willingly.&lt;/p&gt;
+
+&lt;p&gt;By accumulating passive data only, it would be possible to obtain an accurate picture of most persons, composed of interests, social contacts and images. Regarding active data as well, &lt;strong&gt;digital fingerprints become alarmingly complete&lt;/strong&gt;. Let’s say you want to go on a sight-seeing trip. Already during planning you produce data like: When are you going where, with which budget, how long did you look at which websites and as a result, what are you interested in? Which of your probably best friends did you ask to join you, are these friends actually joining you? If not, did they make up an excuse or are they prevented for any reason? And then, when you are actually travelling you are tracked non-stop, your automatic uploads reveal what you are looking at and with whom you are meeting.&lt;/p&gt;
+
+&lt;p&gt;Most of this information is available straight away, but from a big data perspective much more is deducible: Based on how you describe the trip in chat records, do you like it? &lt;a href=&quot;http://arxiv.org/pdf/1310.6753v1.pdf&quot;&gt;Are you going to break up your relationship?&lt;/a&gt; Does your activity correlate with someone you know? Is there a chance you are having an affair, &lt;a href=&quot;http://www.bbc.co.uk/news/technology-35101662&quot;&gt;are you susceptible to blackmailing?&lt;/a&gt; …&lt;/p&gt;
+
+&lt;p&gt;If you are lucky, you want to go to Paris and some service provider tries to make as much money out of you as possible. If you are unlucky, you want to see Tibet and a whole government might be working against you.&lt;/p&gt;
+
+&lt;p&gt;I would like to finish this section by quoting a friend of mine:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;„Not having a [company name] account does not mean that they have no information about you. It’s more like you don’t have a password to access your data.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;how-could-such-data-be-exploited&quot;&gt;How could such data be exploited?&lt;/h4&gt;
+&lt;p&gt;Some experts claim that &lt;a href=&quot;http://www.nytimes.com/2013/03/24/technology/big-data-and-a-renewed-debate-over-privacy.html?_r=0&quot;&gt;there is no bad data, but only bad uses of data&lt;/a&gt;. This logic is tempting, but then you could also say there are no bad weapons but only bad persons. Admittedly, there are countries relying on this logic but the &lt;a href=&quot;http://www.theguardian.com/us-news/ng-interactive/2015/oct/02/mass-shootings-america-gun-violence&quot;&gt;consequences are well-known&lt;/a&gt;. I guess that most people would feel better knowing that this embarrassing picture taken at last New Year’s Eve party wouldn’t exist instead of hoping that nobody is going to prey on it.&lt;/p&gt;
+
+&lt;p&gt;For now, assume that all your digital data is accessible by a single instance, say your government. In this case &lt;strong&gt;you provide your government with incredible control over yourself&lt;/strong&gt; and also your relatives. A mere measurement of how defiant you are could be dangerous for you, depending on where you live. Furthermore, someone gazing at your data is not required to remain inactive. One might try to manipulate your opinion by &lt;a href=&quot;http://www.theatlantic.com/technology/archive/2014/06/everything-we-know-about-facebooks-secret-mood-manipulation-experiment/373648/&quot;&gt;placing solely the content on (social) media platforms that you are supposed to see&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Let’s try another thought experiment – &lt;a href=&quot;http://utotherescue.blogspot.de/2016/01/ucop-ordered-spyware-installed-on-uc.html&quot;&gt;surveillance of education&lt;/a&gt;. I believe that a biased education system is especially dangerous, as it allows to manipulate the awareness of people which in turn &lt;a href=&quot;http://www.huffingtonpost.com/2013/09/16/nigerian-student-gay-marriage_n_3934518.html&quot;&gt;allows to advocate radical beliefs&lt;/a&gt;.
+Edsger W. Dijkstra once said:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;„It is not the task of the University to offer what society asks for, but to give what society needs.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The more data-driven and controlled life becomes, the more &lt;a href=&quot;https://www.pen.org/sites/default/files/Chilling%20Effects_PEN%20American.pdf&quot;&gt;self-censorship&lt;/a&gt; will emerge, ultimately affecting research. Imagine you are forced to wear a GPS fitness tracking device and your employer, say the &lt;em&gt;O.R.-well&lt;/em&gt; University, has access to your data. Such a state of affairs would immediately affect the behaviour of students, which has to be as expected. Quick learners, for instance, that skipped a lecture every now and then might be punished for absence, as well as students that leave their dorm after a certain time or persons that show non-heterosexual patterns might be penalized. This scenario is ridiculously far-fetched? &lt;a href=&quot;www.thedailybeast.com/articles/2016/01/11/the-college-with-mandatory-fitness-tracking-devices.html&quot;&gt;Well, apparently we are there already.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The good news is that there is no single instance that has immediate access to all the data we produce. Some popular corporations that collect lots of personal data are: Google / Alphabet, Facebook, VK, Amazon, Microsoft, Dropbox, Apple and WeChat. There are also companies – called &lt;a href=&quot;http://www.stopdatamining.me/&quot;&gt;data brokers&lt;/a&gt; – behind the scenes, being just as interested in your data.&lt;/p&gt;
+
+&lt;p&gt;The bad news is that &lt;strong&gt;data monopolies get bigger and bigger&lt;/strong&gt;, buying as many competitors as possible. And worse, governments are &lt;a href=&quot;https://www.washingtonpost.com/investigations/us-intelligence-mining-data-from-nine-us-internet-companies-in-broad-secret-program/2013/06/06/3a0c0da8-cebf-11e2-8845-d970ccb04497_story.html&quot;&gt;very successful&lt;/a&gt; at spying on these corporations both &lt;a href=&quot;https://www.aclu.org/infographic/surveillance-under-patriot-act&quot;&gt;legally&lt;/a&gt; and &lt;a href=&quot;http://www.theguardian.com/uk-news/2015/feb/06/gchq-mass-internet-surveillance-unlawful-court-nsa&quot;&gt;illegally&lt;/a&gt;. It is somehow paradoxical that our lives become increasingly global, but that at the same time our digital trails are more and more centralised. Clearly, a more decentralised distribution of data would be more robust against exploitation.&lt;/p&gt;
+
+&lt;h4 id=&quot;but-we-can-trust-our-governments-why-would-they-want-to-exploit-our-data&quot;&gt;But we can trust our governments, why would they want to exploit our data?&lt;/h4&gt;
+&lt;p&gt;Regarding history, I am afraid that there is no reason at all to trust any government. &lt;a href=&quot;http://www.theguardian.com/commentisfree/2016/jan/07/polish-democracy-destroyed-constitution-media-poland&quot;&gt;Seemingly stable states can acquire fascistic characteristics surprisingly fast&lt;/a&gt;, but potentially dangerous data will not simply disappear. I am not aware of any region of the earth with a history free of human rights violations. Minority groups were and still are suppressed in many places. A very common example pro data privacy is the creation of the so called ‘pink lists’ in Germany. In the 19th century, prior to Nazi-Germany, lists of homosexuals were maintained without the intention to suppress homosexuals. When the Nazis obtained those files years later, they were used to systematically kill the listed individuals. Sure, this is an extreme case, but the possibilities with big data are also much more serious. And &lt;strong&gt;it is the pattern that worries me: Supposedly harmless data becoming very dangerous later&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Having large-scale in-depth data on a society could be used for subtle and effective propaganda, not to mention persecution. I doubt that another French Revolution would be possible as soon as there is a government exploiting big data. For more inspiration on this matter you might want to read George Orwell’s “1984” or Dave Eggers’ “The Circle”.&lt;/p&gt;
+
+&lt;h4 id=&quot;anything-else&quot;&gt;Anything else?&lt;/h4&gt;
+&lt;p&gt;It is not only governments that are in a rage for collecting data. Companies, especially these that are data driven, such as insurance companies, sense new profits by acquiring new data. This isn’t necessarily bad and maybe more of a personal opinion, but I don’t like some of the implications. There is a trend towards &lt;a href=&quot;https://en.wikipedia.org/wiki/Usage-based_insurance&quot;&gt;usage-based insurances&lt;/a&gt;. For example, &lt;a href=&quot;http://business.time.com/2013/08/06/big-data-is-my-copilot-auto-insurers-push-devices-that-track-driving-habits/&quot;&gt;you get a cheaper car insurance when you drive safely and accept that your driving behaviour is fully tracked&lt;/a&gt;. The recorded data is very sensitive, which raises data privacy concerns and insurance companies don’t simply provide free discounts of course. In the end, &lt;strong&gt;customers that do not agree to the tracking will pay higher prices&lt;/strong&gt;, which I think is discriminating. The same concept applies to sharing your fitness data with your health insurance, using fitness tracking devices. Ultimately, you adjust your behaviour in order to function as some instances expect you to, whilst being transparent – or you pay the price. There are also concerns regarding data misinterpretation, which is briefly covered on the second webpage linked in this section.&lt;/p&gt;
+
+&lt;h4 id=&quot;what-will-be-possible-in-the-future&quot;&gt;What will be possible in the future?&lt;/h4&gt;
+&lt;p&gt;Currently, machine learning techniques are more popular than ever before and &lt;a href=&quot;http://spectrum.ieee.org/tech-talk/computing/software/monster-machine-defeats-prominent-pro-player&quot;&gt;one breakthrough in research&lt;/a&gt; is followed by &lt;a href=&quot;http://spectrum.ieee.org/tech-talk/semiconductors/processors/a-deep-learning-ai-chip-for-your-phone&quot;&gt;another one&lt;/a&gt;, which is great! Related methods are well suited to interpret big data and with increasing capabilities, potential threats also solidify. Very frequently, for instance, I see pictures of children posted on social media platforms or in non-encrypted chatrooms. As a result, children that grow up now probably have a perfect face recognition descriptor trained without ever touching a digital device themselves and without having had any choice. In theory, this could be used to identify billions of people in vast amounts of images uploaded in the future and also in video data like from surveillance cameras.
+Further, I think &lt;strong&gt;there is a danger of becoming slaves to our data&lt;/strong&gt;. People love ratings. We are not only rating restaurants and hotels, but also doctors and teachers. Why not let big data do the job of rating for us? The more data, the more accurate the rating. But what if you grew up in the wrong neighbourhood, had criminal friends and have pictures showing you drunk? You might not get a job, as you are rated as potentially dangerous – this is related to the car insurance example above. In such a future, you would make every decision based on how nice your digital trail would look like. Freedom? I don’t think so.
+For those that have concerns about &lt;a href=&quot;https://en.wikipedia.org/wiki/Technological_singularity&quot;&gt;technological singularity&lt;/a&gt;, please include big data into your nightmares. A lot of &lt;a href=&quot;http://www.bbc.co.uk/news/technology-30290540&quot;&gt;bright minds&lt;/a&gt; are discussing the danger of machines becoming more intelligent than us and related threats. I believe this threat is amplified by big data.
+Moreover, with the emerging &lt;a href=&quot;https://en.wikipedia.org/wiki/Internet_of_Things&quot;&gt;Internet of Things&lt;/a&gt; the amount of data we produce will increase sharply in the near future. This is gold for data-driven companies and &lt;a href=&quot;www.forbes.com/sites/rakeshsharma/2014/01/13/googles-acquisition-of-nest-and-your-privacy&quot;&gt;big players are already buying themselves in&lt;/a&gt;, whilst &lt;a href=&quot;http://www.theguardian.com/technology/2016/feb/09/internet-of-things-smart-home-devices-government-surveillance-james-clapper&quot;&gt;security agencies are not unaware of upcoming ways to spy&lt;/a&gt;. Bruce Schneier just &lt;a href=&quot;https://www.schneier.com/blog/archives/2016/02/the_internet_of_1.html&quot;&gt;published an article&lt;/a&gt; sharing similar concerns, but focusing on the Internet of Things.&lt;/p&gt;
+
+&lt;h4 id=&quot;arent-these-concerns-rather-theoretical&quot;&gt;Aren’t these concerns rather theoretical?&lt;/h4&gt;
+&lt;p&gt;I agree that most of my concerns relate to potential threats. Yet, the world is changing fast and I am pretty sure that due to the Internet of Things, robotics and AI it will look as different in 60 years as it did 60 years ago. There will be awesome new possibilities but we should not be ignorant to involved dangers. Instead, we should try to find secure solutions as soon as possible.
+If it were North Korea we are talking about, everybody would understand that big data might be a bad idea – it’s always the foreign that is dangerous. But regarding that resources are getting rare, climate is changing and that conflicts are out of control, it might take less than we think to get suspicious governments fueled by the fear of people.&lt;/p&gt;
+
+&lt;h4 id=&quot;what-can-we-do&quot;&gt;What can we do?&lt;/h4&gt;
+&lt;p&gt;Everybody can do do one’s bit, here are a few things I perceive as important:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Awareness:&lt;/strong&gt; Start having discussions on this topic, raise your voice. Without awareness there is little chance of being represented by politicians. Or maybe you are even politically active yourself.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Education, education, education!&lt;/strong&gt; I genuinely believe that many problems would not exist, if we had a more comprehensive education system. Douglas C. Engelbart once said something very true:&lt;/p&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;„The key thing about all the world’s big problems is that they have to be dealt with collectively. If we don’t get collectively smarter, we’re doomed.“&lt;/p&gt;
+    &lt;/blockquote&gt;
+
+    &lt;p&gt;When only 5% are aware of big data and even fewer people understand the implications, we  have a problem. Education is the fundament for both, a meaningful discussion and awareness.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Decentralization:&lt;/strong&gt; I understand that offering a variety of services brings important effects of synergy and it is very difficult to find an appropriate amount of regulatisation. And, maybe most important from a user’s perspective: Having as much data as possible with a single provider makes things easy. Yet, distributing data over many service providers clearly increases protection from exploitation. Sometimes, paying little money for a service guarantees encryption and you &lt;strong&gt;switch from being a product to using a product&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Self-hosting:&lt;/strong&gt; Even better than distributing your data would be to host as many services as possible by yourself or a person you trust. Perhaps, you know somebody with server administration expertise who can help you out, for instance, by setting up a family cloud.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Open-Source:&lt;/strong&gt; Using open-source software, it is not you who is transparent but the software you use, which is a major advantage. Regarding the &lt;a href=&quot;http://www.slate.com/articles/technology/bitwise/2015/08/windows_10_privacy_problems_here_s_how_bad_they_are_and_how_to_plug_them.html&quot;&gt;user agreements of some closed-source products&lt;/a&gt;, you can’t really know what’s happening with the data on your own devices. The code of popular open-source projects on the other hand is inspected by many independent people, resulting in trustworthiness. Have a look at &lt;a href=&quot;https://prism-break.org/en/&quot;&gt;prism-break&lt;/a&gt;, there might be open-source products suiting you well.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Security audits:&lt;/strong&gt; For some, especially commercial products, there are comprehensible reasons for not publishing the source-code. In this case, the company should at least allow security audits to allow some level of transparency.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;No backdoors!&lt;/strong&gt; The discussion about forcing companies to implement backdoors in products reappears again and again. This is snakeoil. First, it leads to one instance – most likely some security agency, which is typically &lt;a href=&quot;http://www.rollingstone.com/politics/news/q-a-senator-ron-wyden-on-nsa-surveillance-and-government-transparency-20130815&quot;&gt;only superficially controlled&lt;/a&gt; by democratic institutions – having access to all your data. Second, backdoors themselves impose a security risk. How could you know that they are not used for industrial espionage or by hackers?
+Choose your products wisely. By preferring products of companies that care about data privacy you hit those that treat your data irresponsibly. &lt;a href=&quot;https://thehackernews.com/2015/09/lenovo-laptop-virus.html&quot;&gt;Some vendors&lt;/a&gt; for instance, have a record of including backdoors, which should not be tolerated by customers.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Encryption:&lt;/strong&gt; Last but not least, encrypt your data. It will be much harder to exploit your data, if it is encrypted; maybe even impossible. I can’t see any reason why you would choose an unencrypted messenger over an encrypted one. Modern ones are easy to use and when none of your friends has one, you could at least install both. I am sure someone will follow your example. You wouldn’t simply share your house key with strangers or allow them to listen to your phone calls – why allow them to read your digital communication?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;This article covered my big data and data-privacy concerns at the same time. Synergy. There definitely are some potential threats and I hope that I could raise some awareness with this post. I am not trying to say that you should delete your account at any service provider, but you should know which data is generated, what can be deduced and how it could be used in the future.&lt;/p&gt;
+
+&lt;p&gt;I am by far not the only person concerned about data privacy. Robin Doherty wrote &lt;a href=&quot;https://robindoherty.com/2016/01/06/nothing-to-hide.html&quot;&gt;a nice article&lt;/a&gt; about the problems with the “I have nothing to hide” argument and Philip E. Agre elaborates more on &lt;a href=&quot;http://polaris.gseis.ucla.edu/pagre/arguments.html&quot;&gt;pro privacy arguments&lt;/a&gt;. Also, John Oliver dedicates &lt;a href=&quot;https://www.youtube.com/watch?v=XEVlyP4_11M&quot;&gt;one episode&lt;/a&gt; of his famous Last Week Tonight show to Government Surveillance. Furthermore, &lt;a href=&quot;http://surveillance.rsf.org/en/category/state-enemies/&quot;&gt;Reporters Without Borders&lt;/a&gt; and &lt;a href=&quot;http://www.theguardian.com/world/surveillance&quot;&gt;The Guardian&lt;/a&gt; provide special pages covering digital surveillance.&lt;/p&gt;
+
+&lt;p&gt;Let’s bring this article to a close with the words of Edward Snowden:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I don’t want to live in a world where everything that I say, everything I do, everyone I talk to, every expression of creativity or love or friendship is recorded.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Sun, 14 Feb 2016 15:10:02 +0100</pubDate>
+        <link>https://www.martinruenz.de/article/data-privacy/2016/02/14/the-dark-side-of-big-data.html</link>
+        <guid isPermaLink="true">https://www.martinruenz.de/article/data-privacy/2016/02/14/the-dark-side-of-big-data.html</guid>
+        
+        
+        <category>article</category>
+        
+        <category>data-privacy</category>
+        
+      </item>
+    
+  </channel>
+</rss>

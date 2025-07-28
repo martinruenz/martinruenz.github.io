@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Publications</title>
+  <meta name="description" content="This is my private page and its purpose is to present some of my research and to blog about things that interest me.
+">
+  <meta name="keywords" content="Martin Rünz, Martin Ruenz, Martin Runz, Computer Vision, Computer Graphics, Research, Blog">
+  <!-- <link rel="stylesheet" href="/js/lightgallery/css/lightgallery.css"> -->
+  <link rel="stylesheet" href="/js/lightgallery/css/lightgallery.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/hl-native.css">
+  <link rel="canonical" href="https://www.martinruenz.de/publications">
+  <link rel="alternate" type="application/rss+xml" title="Martin Rünz" href="https://www.martinruenz.de/feed.xml">
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+    <div class="nav-area">
+    <div class="wrapper">
+    <a class="site-title" href="/#page-content">Blog</a><a href="/feed.xml"><div class="icon icon--rss"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M12.8 16C12.8 8.978 7.022 3.2 0 3.2V0c8.777 0 16 7.223 16 16h-3.2zM2.194 11.61c1.21 0 2.195.985 2.195 2.196 0 1.21-.985 2.194-2.196 2.194C.984 16 0 15.017 0 13.806c0-1.21.983-2.195 2.194-2.195zM10.606 16h-3.11c0-4.113-3.383-7.497-7.496-7.497v-3.11c5.818 0 10.606 4.79 10.606 10.607z"/></svg></div></a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/talks/#page-content">Talks / Presentations</a>
+          
+        
+          
+          <a class="page-link" href="/publications#page-content">Publications</a>
+          
+        
+          
+          <a class="page-link" href="/about/#page-content">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+  </div>
+  </div>
+
+  <div class="thats-me">
+    <img src="/media/martin_150.jpg" class="animated hinge fadeInDown">
+    <h2 class="animated hinge fadeInDown" itemscope itemtype="http://schema.org/Person">
+      Hi, my name is <strong itemprop="name">Martin Rünz</strong>I am a Lead Research Scientist at <a href="https://www.synthesia.io/">Synthesia</a>!
+    </h2>
+  </div>
+  <!--<nav class="actions">
+    <a href="/about" class="button ghost">About</a>
+    <a href="/archive/master.zip" class="button ghost">Download</a>
+  </nav>-->
+
+</header>
+
+
+    <div class="page-content" id="page-content">
+      <div class="wrapper">
+        <div class="publications">
+
+  <ul class="post-list">
+    
+    
+      <li class="post publication" id="humanrf-2023">
+        <span class="icon--post"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 128 128" id="Layer_1" version="1.1" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><circle cx="64" cy="64" fill="#BE6B2F" r="63.5"/><path d="M94.3,27.8L92.2,30L36.3,97.6l-1.9,2.3l27.8,27.5c0.6,0,1.2,0,1.8,0c35.1,0,63.5-28.4,63.5-63.5   c0-1.1,0-2.3-0.1-3.4L94.3,27.8z" fill="#AA5D27"/><g><g><path d="M93.9,28C74,26.2,54,26.2,34.1,28C33,52.1,33,75.9,34.1,100c15.1,1.4,30.4,1.7,45.5,1     c5-8.9,10-17.7,15-26.2C94.9,59.2,94.6,43.7,93.9,28z" fill="#EBEBEB"/></g><g><path d="M78.4,85.5c0,0.1,6.9,1.5,16.3-10.7c-5,8.5-10.1,17.3-15,26.2C79.6,100.9,84.2,94.7,78.4,85.5z" fill="#CDCCCC"/></g><g><path d="M64.5,38.9c-7.2,0-14.4,0.1-21.6,0.3c0-0.3,0-0.7,0-1c7.2-0.2,14.4-0.3,21.6-0.3     C64.5,38.3,64.5,38.6,64.5,38.9z" fill="#809180"/></g><g><path d="M85.3,47.4c-14.2-0.2-28.3-0.2-42.5,0c0-0.3,0-0.7,0-1c14.1-0.3,28.3-0.3,42.5,0     C85.2,46.7,85.2,47,85.3,47.4z" fill="#809180"/></g><g><path d="M85.3,52.4c-14.2-0.2-28.4-0.2-42.6,0c0-0.3,0-0.7,0-1c14.2-0.2,28.4-0.2,42.6,0     C85.3,51.7,85.3,52,85.3,52.4z" fill="#809180"/></g><g><path d="M85.3,57.3c-14.2-0.1-28.4-0.1-42.6,0c0-0.3,0-0.7,0-1c14.2-0.1,28.4-0.1,42.6,0     C85.3,56.6,85.3,57,85.3,57.3z" fill="#809180"/></g><g><path d="M85.3,62.3c-14.2,0-28.4,0-42.6,0c0-0.3,0-0.7,0-1c14.2,0,28.4,0,42.6,0C85.3,61.6,85.3,62,85.3,62.3z" fill="#809180"/></g><g><path d="M85.3,67.3c-14.2,0.1-28.4,0.1-42.6,0c0-0.3,0-0.7,0-1c14.2,0.1,28.4,0.1,42.6,0     C85.3,66.6,85.3,66.9,85.3,67.3z" fill="#809180"/></g><g><path d="M85.3,72.3c-14.2,0.2-28.4,0.2-42.6,0c0-0.3,0-0.7,0-1c14.2,0.1,28.4,0.1,42.6,0     C85.3,71.6,85.3,71.9,85.3,72.3z" fill="#809180"/></g><g><path d="M85.2,77.3c-14.1,0.2-28.3,0.2-42.5,0c0-0.3,0-0.7,0-1c14.2,0.2,28.4,0.2,42.5,0     C85.3,76.6,85.2,76.9,85.2,77.3z" fill="#809180"/></g><g><path d="M85.2,82.2c-14.1,0.3-28.3,0.3-42.4,0c0-0.3,0-0.7,0-1c14.1,0.3,28.3,0.3,42.4,0     C85.2,81.5,85.2,81.9,85.2,82.2z" fill="#809180"/></g><g><path d="M75.7,87.4c-10.9,0.2-21.9,0.1-32.8-0.2c0-0.3,0-0.7,0-1c10.9,0.3,21.9,0.4,32.8,0.2     C75.7,86.7,75.7,87.1,75.7,87.4z" fill="#809180"/></g><g><path d="M69,92.5c-8.7,0.1-17.3,0-26-0.3c0-0.3,0-0.7,0-1c8.7,0.3,17.3,0.4,26,0.3C69,91.8,69,92.2,69,92.5z" fill="#809180"/></g></g></g></svg></span>
+
+        <p class="post-meta">
+          <time datetime="2023-08-01T00:00:00+02:00" itemprop="datePublished">Aug 2023</time>, SIGGRAPH
+        </p>
+
+        <h2>HumanRF: High-Fidelity Neural Radiance Fields for Humans in Motion</h2>
+        <div class="pub-authors">Mustafa Işık, <strong>Martin Rünz</strong>, Markos Georgopoulos, Taras Khakhulin, Jonathan Starck, Lourdes Agapito, Matthias Nießner</div>
+        <hr />
+
+        
+
+        
+        <div class="row" style="margin: 1.2em auto; text-align: center;">
+          <video width="100%" height="auto"
+            src="media/pubs/2023_humanrf.webm"
+            poster="media/pubs/2023_humanrf.webm.png"
+          controls>
+          	Here should be a video, but your browser does not support HTML5 (webm-)videos.
+          </video>
+        </div>
+        
+
+        <p>Representing human performance at high-fidelity is an essential building block in diverse applications, such as film production, computer games or videoconferencing. To close the gap to production-level quality, we introduce HumanRF, a 4D dynamic neural scene representation that captures full-body appearance in motion from multi-view video input, and enables playback from novel, unseen viewpoints. Our novel representation acts as a dynamic video encoding that captures fine details at high compression rates by factorizing space-time into a temporal matrix-vector decomposition. This allows us to obtain temporally coherent reconstructions of human actors for long sequences, while representing high-resolution details even in the context of challenging motion. While most research focuses on synthesizing at resolutions of 4MP or lower, we address the challenge of operating at 12MP. To this end, we introduce ActorsHQ, a novel multi-view dataset that provides 12MP footage from 160 cameras for 16 sequences with high-fidelity, per-frame mesh reconstructions. We demonstrate challenges that emerge from using such high-resolution data and show that our newly introduced HumanRF effectively leverages this data, making a significant step towards production-level quality novel view synthesis.</p>
+
+        <div class="publication-links">
+        
+
+        
+        <a title="Download PDF" alt="Download PDF"
+          href="https://arxiv.org/pdf/2305.06356">
+          <span class="icon--pdf icon--btn"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="49"
+   height="64"
+   viewBox="0 0 49 64"
+   id="svg3391">
+  <metadata
+     id="metadata3407">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3393">
+    <style
+       id="style3395" />
+  </defs>
+  <g
+     id="g3397">
+    <path
+       d="m 49,16.842 0,42.105 C 49,61.738 46.73,64 43.931,64 L 5.069,64 C 2.269,64 0,61.738 0,58.947 L 0,5.053 C 0,2.262 2.269,0 5.069,0 L 32.103,0 49,16.842 z"
+       id="path3399"
+       style="fill:#cb0606;fill-rule:evenodd" />
+    <path
+       d="m 49,15.899 0,2.096 -13.813,0 c -2.86,0 -4.179,-2.32 -4.179,-5.181 L 31.008,0 33.1,0 49,15.899 z"
+       id="path3401"
+       style="fill:#fb8d8d;fill-rule:evenodd" />
+    <path
+       d="M 37.606,34.047 C 37.17,33.903 36.75,33.83 36.345,33.83 c -0.46,0 -0.776,0.095 -0.949,0.285 -0.172,0.19 -0.258,0.526 -0.258,1.009 l 0,0.923 1.933,0 0,1.854 -1.933,0 0,7.635 -2.342,0 0,-7.635 -1.207,0 0,-1.854 1.207,0 0,-0.923 c 0,-1.176 0.292,-2.026 0.876,-2.551 0.584,-0.525 1.462,-0.787 2.636,-0.787 0.551,0 1.135,0.075 1.752,0.226 l -0.454,2.035 z m -9.81,10.566 c -0.436,0.368 -0.896,0.661 -1.38,0.878 -0.484,0.217 -1.034,0.325 -1.651,0.325 -1.198,0 -2.115,-0.431 -2.75,-1.293 -0.636,-0.863 -0.953,-2.081 -0.953,-3.655 0,-1.61 0.349,-2.861 1.048,-3.754 0.699,-0.892 1.68,-1.339 2.945,-1.339 0.448,0 0.907,0.092 1.379,0.276 0.472,0.184 0.863,0.418 1.171,0.701 l 0,-4.686 2.342,0 0,13.47 -2.151,0 0,-0.923 z m -0.191,-5.934 c -0.248,-0.223 -0.555,-0.421 -0.921,-0.593 -0.366,-0.171 -0.74,-0.257 -1.121,-0.257 -0.629,0 -1.134,0.27 -1.515,0.809 -0.382,0.54 -0.572,1.271 -0.572,2.194 0,0.911 0.156,1.625 0.467,2.144 0.312,0.519 0.794,0.778 1.448,0.778 0.387,0 0.782,-0.089 1.184,-0.267 0.402,-0.178 0.746,-0.397 1.03,-0.656 l 0,-4.152 z m -10.01,6.522 c -0.575,0.41 -1.261,0.615 -2.06,0.615 -1.053,0 -1.951,-0.328 -2.695,-0.986 l 0,4.279 -2.342,0 0,-13.062 2.16,0 0,0.931 c 0.436,-0.374 0.894,-0.668 1.375,-0.882 0.481,-0.214 1.033,-0.321 1.656,-0.321 1.204,0 2.121,0.422 2.75,1.267 0.629,0.844 0.944,2.071 0.944,3.681 0,1.02 -0.154,1.918 -0.463,2.696 -0.309,0.778 -0.75,1.372 -1.325,1.782 z m -1.107,-6.599 c -0.321,-0.516 -0.799,-0.773 -1.434,-0.773 -0.381,0 -0.773,0.089 -1.175,0.266 -0.403,0.178 -0.749,0.397 -1.039,0.656 l 0,4.152 c 0.248,0.224 0.555,0.421 0.921,0.593 0.366,0.172 0.742,0.258 1.13,0.258 0.641,0 1.148,-0.273 1.52,-0.819 0.372,-0.546 0.558,-1.271 0.558,-2.175 0,-0.923 -0.161,-1.642 -0.481,-2.158 z"
+       id="path3403"
+       style="fill:#ffffff;fill-rule:evenodd" />
+  </g>
+</svg>
+</span>
+
+        </a>
+        
+
+        
+        <a title="Visit project page" alt="Visit project page" href="https://synthesiaresearch.github.io/humanrf/"><i class="fa fa-external-link"></i></a>
+        
+      </div>
+      </li>
+    
+      <li class="post publication" id="learning-2023">
+        <span class="icon--post"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 128 128" id="Layer_1" version="1.1" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><circle cx="64" cy="64" fill="#BE6B2F" r="63.5"/><path d="M94.3,27.8L92.2,30L36.3,97.6l-1.9,2.3l27.8,27.5c0.6,0,1.2,0,1.8,0c35.1,0,63.5-28.4,63.5-63.5   c0-1.1,0-2.3-0.1-3.4L94.3,27.8z" fill="#AA5D27"/><g><g><path d="M93.9,28C74,26.2,54,26.2,34.1,28C33,52.1,33,75.9,34.1,100c15.1,1.4,30.4,1.7,45.5,1     c5-8.9,10-17.7,15-26.2C94.9,59.2,94.6,43.7,93.9,28z" fill="#EBEBEB"/></g><g><path d="M78.4,85.5c0,0.1,6.9,1.5,16.3-10.7c-5,8.5-10.1,17.3-15,26.2C79.6,100.9,84.2,94.7,78.4,85.5z" fill="#CDCCCC"/></g><g><path d="M64.5,38.9c-7.2,0-14.4,0.1-21.6,0.3c0-0.3,0-0.7,0-1c7.2-0.2,14.4-0.3,21.6-0.3     C64.5,38.3,64.5,38.6,64.5,38.9z" fill="#809180"/></g><g><path d="M85.3,47.4c-14.2-0.2-28.3-0.2-42.5,0c0-0.3,0-0.7,0-1c14.1-0.3,28.3-0.3,42.5,0     C85.2,46.7,85.2,47,85.3,47.4z" fill="#809180"/></g><g><path d="M85.3,52.4c-14.2-0.2-28.4-0.2-42.6,0c0-0.3,0-0.7,0-1c14.2-0.2,28.4-0.2,42.6,0     C85.3,51.7,85.3,52,85.3,52.4z" fill="#809180"/></g><g><path d="M85.3,57.3c-14.2-0.1-28.4-0.1-42.6,0c0-0.3,0-0.7,0-1c14.2-0.1,28.4-0.1,42.6,0     C85.3,56.6,85.3,57,85.3,57.3z" fill="#809180"/></g><g><path d="M85.3,62.3c-14.2,0-28.4,0-42.6,0c0-0.3,0-0.7,0-1c14.2,0,28.4,0,42.6,0C85.3,61.6,85.3,62,85.3,62.3z" fill="#809180"/></g><g><path d="M85.3,67.3c-14.2,0.1-28.4,0.1-42.6,0c0-0.3,0-0.7,0-1c14.2,0.1,28.4,0.1,42.6,0     C85.3,66.6,85.3,66.9,85.3,67.3z" fill="#809180"/></g><g><path d="M85.3,72.3c-14.2,0.2-28.4,0.2-42.6,0c0-0.3,0-0.7,0-1c14.2,0.1,28.4,0.1,42.6,0     C85.3,71.6,85.3,71.9,85.3,72.3z" fill="#809180"/></g><g><path d="M85.2,77.3c-14.1,0.2-28.3,0.2-42.5,0c0-0.3,0-0.7,0-1c14.2,0.2,28.4,0.2,42.5,0     C85.3,76.6,85.2,76.9,85.2,77.3z" fill="#809180"/></g><g><path d="M85.2,82.2c-14.1,0.3-28.3,0.3-42.4,0c0-0.3,0-0.7,0-1c14.1,0.3,28.3,0.3,42.4,0     C85.2,81.5,85.2,81.9,85.2,82.2z" fill="#809180"/></g><g><path d="M75.7,87.4c-10.9,0.2-21.9,0.1-32.8-0.2c0-0.3,0-0.7,0-1c10.9,0.3,21.9,0.4,32.8,0.2     C75.7,86.7,75.7,87.1,75.7,87.4z" fill="#809180"/></g><g><path d="M69,92.5c-8.7,0.1-17.3,0-26-0.3c0-0.3,0-0.7,0-1c8.7,0.3,17.3,0.4,26,0.3C69,91.8,69,92.2,69,92.5z" fill="#809180"/></g></g></g></svg></span>
+
+        <p class="post-meta">
+          <time datetime="2023-06-01T00:00:00+02:00" itemprop="datePublished">Jun 2023</time>, CVPR
+        </p>
+
+        <h2>Learning Neural Parametric Head Models</h2>
+        <div class="pub-authors">Simon Giebenhain, Tobias Kirschstein, Markos Georgopoulos, <strong>Martin Rünz</strong>, Lourdes Agapito, Matthias Nießner</div>
+        <hr />
+
+        
+
+        
+        <div class="row" style="margin: 1.2em auto; text-align: center;">
+          <video width="100%" height="auto"
+            src="media/pubs/2023_nphm.webm"
+            poster="media/pubs/2023_nphm.webm.png"
+          controls>
+          	Here should be a video, but your browser does not support HTML5 (webm-)videos.
+          </video>
+        </div>
+        
+
+        <p>We propose a novel 3D morphable model for complete human heads based on hybrid neural fields. At the core of our model lies a neural parametric representation that disentangles identity and expressions in disjoint latent spaces. To this end, we capture a person's identity in a canonical space as a signed distance field (SDF), and model facial expressions with a neural deformation field. In addition, our representation achieves high-fidelity local detail by introducing an ensemble of local fields centered around facial anchor points. To facilitate generalization, we train our model on a newly-captured dataset of over 3700 head scans from 203 different identities using a custom high-end 3D scanning setup. Our dataset significantly exceeds comparable existing datasets, both with respect to quality and completeness of geometry, averaging around 3.5 M mesh faces per scan. Finally, we demonstrate that our approach outperforms state-of-the-art methods in terms of fitting error and reconstruction quality.</p>
+
+        <div class="publication-links">
+        
+
+        
+        <a title="Download PDF" alt="Download PDF"
+          href="https://arxiv.org/pdf/2212.02761">
+          <span class="icon--pdf icon--btn"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="49"
+   height="64"
+   viewBox="0 0 49 64"
+   id="svg3391">
+  <metadata
+     id="metadata3407">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3393">
+    <style
+       id="style3395" />
+  </defs>
+  <g
+     id="g3397">
+    <path
+       d="m 49,16.842 0,42.105 C 49,61.738 46.73,64 43.931,64 L 5.069,64 C 2.269,64 0,61.738 0,58.947 L 0,5.053 C 0,2.262 2.269,0 5.069,0 L 32.103,0 49,16.842 z"
+       id="path3399"
+       style="fill:#cb0606;fill-rule:evenodd" />
+    <path
+       d="m 49,15.899 0,2.096 -13.813,0 c -2.86,0 -4.179,-2.32 -4.179,-5.181 L 31.008,0 33.1,0 49,15.899 z"
+       id="path3401"
+       style="fill:#fb8d8d;fill-rule:evenodd" />
+    <path
+       d="M 37.606,34.047 C 37.17,33.903 36.75,33.83 36.345,33.83 c -0.46,0 -0.776,0.095 -0.949,0.285 -0.172,0.19 -0.258,0.526 -0.258,1.009 l 0,0.923 1.933,0 0,1.854 -1.933,0 0,7.635 -2.342,0 0,-7.635 -1.207,0 0,-1.854 1.207,0 0,-0.923 c 0,-1.176 0.292,-2.026 0.876,-2.551 0.584,-0.525 1.462,-0.787 2.636,-0.787 0.551,0 1.135,0.075 1.752,0.226 l -0.454,2.035 z m -9.81,10.566 c -0.436,0.368 -0.896,0.661 -1.38,0.878 -0.484,0.217 -1.034,0.325 -1.651,0.325 -1.198,0 -2.115,-0.431 -2.75,-1.293 -0.636,-0.863 -0.953,-2.081 -0.953,-3.655 0,-1.61 0.349,-2.861 1.048,-3.754 0.699,-0.892 1.68,-1.339 2.945,-1.339 0.448,0 0.907,0.092 1.379,0.276 0.472,0.184 0.863,0.418 1.171,0.701 l 0,-4.686 2.342,0 0,13.47 -2.151,0 0,-0.923 z m -0.191,-5.934 c -0.248,-0.223 -0.555,-0.421 -0.921,-0.593 -0.366,-0.171 -0.74,-0.257 -1.121,-0.257 -0.629,0 -1.134,0.27 -1.515,0.809 -0.382,0.54 -0.572,1.271 -0.572,2.194 0,0.911 0.156,1.625 0.467,2.144 0.312,0.519 0.794,0.778 1.448,0.778 0.387,0 0.782,-0.089 1.184,-0.267 0.402,-0.178 0.746,-0.397 1.03,-0.656 l 0,-4.152 z m -10.01,6.522 c -0.575,0.41 -1.261,0.615 -2.06,0.615 -1.053,0 -1.951,-0.328 -2.695,-0.986 l 0,4.279 -2.342,0 0,-13.062 2.16,0 0,0.931 c 0.436,-0.374 0.894,-0.668 1.375,-0.882 0.481,-0.214 1.033,-0.321 1.656,-0.321 1.204,0 2.121,0.422 2.75,1.267 0.629,0.844 0.944,2.071 0.944,3.681 0,1.02 -0.154,1.918 -0.463,2.696 -0.309,0.778 -0.75,1.372 -1.325,1.782 z m -1.107,-6.599 c -0.321,-0.516 -0.799,-0.773 -1.434,-0.773 -0.381,0 -0.773,0.089 -1.175,0.266 -0.403,0.178 -0.749,0.397 -1.039,0.656 l 0,4.152 c 0.248,0.224 0.555,0.421 0.921,0.593 0.366,0.172 0.742,0.258 1.13,0.258 0.641,0 1.148,-0.273 1.52,-0.819 0.372,-0.546 0.558,-1.271 0.558,-2.175 0,-0.923 -0.161,-1.642 -0.481,-2.158 z"
+       id="path3403"
+       style="fill:#ffffff;fill-rule:evenodd" />
+  </g>
+</svg>
+</span>
+
+        </a>
+        
+
+        
+        <a title="Visit project page" alt="Visit project page" href="https://simongiebenhain.github.io/NPHM/"><i class="fa fa-external-link"></i></a>
+        
+      </div>
+      </li>
+    
+      <li class="post publication" id="dsp-slam-2021">
+        <span class="icon--post"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 128 128" id="Layer_1" version="1.1" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><circle cx="64" cy="64" fill="#BE6B2F" r="63.5"/><path d="M94.3,27.8L92.2,30L36.3,97.6l-1.9,2.3l27.8,27.5c0.6,0,1.2,0,1.8,0c35.1,0,63.5-28.4,63.5-63.5   c0-1.1,0-2.3-0.1-3.4L94.3,27.8z" fill="#AA5D27"/><g><g><path d="M93.9,28C74,26.2,54,26.2,34.1,28C33,52.1,33,75.9,34.1,100c15.1,1.4,30.4,1.7,45.5,1     c5-8.9,10-17.7,15-26.2C94.9,59.2,94.6,43.7,93.9,28z" fill="#EBEBEB"/></g><g><path d="M78.4,85.5c0,0.1,6.9,1.5,16.3-10.7c-5,8.5-10.1,17.3-15,26.2C79.6,100.9,84.2,94.7,78.4,85.5z" fill="#CDCCCC"/></g><g><path d="M64.5,38.9c-7.2,0-14.4,0.1-21.6,0.3c0-0.3,0-0.7,0-1c7.2-0.2,14.4-0.3,21.6-0.3     C64.5,38.3,64.5,38.6,64.5,38.9z" fill="#809180"/></g><g><path d="M85.3,47.4c-14.2-0.2-28.3-0.2-42.5,0c0-0.3,0-0.7,0-1c14.1-0.3,28.3-0.3,42.5,0     C85.2,46.7,85.2,47,85.3,47.4z" fill="#809180"/></g><g><path d="M85.3,52.4c-14.2-0.2-28.4-0.2-42.6,0c0-0.3,0-0.7,0-1c14.2-0.2,28.4-0.2,42.6,0     C85.3,51.7,85.3,52,85.3,52.4z" fill="#809180"/></g><g><path d="M85.3,57.3c-14.2-0.1-28.4-0.1-42.6,0c0-0.3,0-0.7,0-1c14.2-0.1,28.4-0.1,42.6,0     C85.3,56.6,85.3,57,85.3,57.3z" fill="#809180"/></g><g><path d="M85.3,62.3c-14.2,0-28.4,0-42.6,0c0-0.3,0-0.7,0-1c14.2,0,28.4,0,42.6,0C85.3,61.6,85.3,62,85.3,62.3z" fill="#809180"/></g><g><path d="M85.3,67.3c-14.2,0.1-28.4,0.1-42.6,0c0-0.3,0-0.7,0-1c14.2,0.1,28.4,0.1,42.6,0     C85.3,66.6,85.3,66.9,85.3,67.3z" fill="#809180"/></g><g><path d="M85.3,72.3c-14.2,0.2-28.4,0.2-42.6,0c0-0.3,0-0.7,0-1c14.2,0.1,28.4,0.1,42.6,0     C85.3,71.6,85.3,71.9,85.3,72.3z" fill="#809180"/></g><g><path d="M85.2,77.3c-14.1,0.2-28.3,0.2-42.5,0c0-0.3,0-0.7,0-1c14.2,0.2,28.4,0.2,42.5,0     C85.3,76.6,85.2,76.9,85.2,77.3z" fill="#809180"/></g><g><path d="M85.2,82.2c-14.1,0.3-28.3,0.3-42.4,0c0-0.3,0-0.7,0-1c14.1,0.3,28.3,0.3,42.4,0     C85.2,81.5,85.2,81.9,85.2,82.2z" fill="#809180"/></g><g><path d="M75.7,87.4c-10.9,0.2-21.9,0.1-32.8-0.2c0-0.3,0-0.7,0-1c10.9,0.3,21.9,0.4,32.8,0.2     C75.7,86.7,75.7,87.1,75.7,87.4z" fill="#809180"/></g><g><path d="M69,92.5c-8.7,0.1-17.3,0-26-0.3c0-0.3,0-0.7,0-1c8.7,0.3,17.3,0.4,26,0.3C69,91.8,69,92.2,69,92.5z" fill="#809180"/></g></g></g></svg></span>
+
+        <p class="post-meta">
+          <time datetime="2021-12-01T00:00:00+01:00" itemprop="datePublished">Dec 2021</time>, 3DV
+        </p>
+
+        <h2>DSP-SLAM: Object oriented SLAM with deep shape priors</h2>
+        <div class="pub-authors">Jingwen Wang, <strong>Martin Rünz</strong>, Lourdes Agapito</div>
+        <hr />
+
+        
+
+        
+        <div class="row" style="margin: 1.2em auto; text-align: center;">
+          <video width="100%" height="auto"
+            src="media/pubs/2021_dspslam.webm"
+            poster="media/pubs/2021_dspslam.webm.png"
+          controls>
+          	Here should be a video, but your browser does not support HTML5 (webm-)videos.
+          </video>
+        </div>
+        
+
+        <p>We propose DSP-SLAM, an object-oriented SLAM system that builds a rich and accurate joint map of dense 3D models for foreground objects, and sparse landmark points to represent the background. DSP-SLAM takes as input the 3D point cloud reconstructed by a feature-based SLAM system and equips it with the ability to enhance its sparse map with dense reconstructions of detected objects. Objects are detected via semantic instance segmentation, and their shape and pose is estimated using category-specific deep shape embeddings as priors, via a novel second order optimization. Our object-aware bundle adjustment builds a pose-graph to jointly optimize camera poses, object locations and feature points. DSP-SLAM can operate at 10 frames per second on 3 different input modalities: monocular, stereo, or stereo+LiDAR. We demonstrate DSP-SLAM operating at almost frame rate on monocular-RGB sequences from the Friburg and Redwood-OS datasets, and on stereo+LiDAR sequences on the KITTI odometry dataset showing that it achieves high-quality full object reconstructions, even from partial observations, while maintaining a consistent global map. Our evaluation shows improvements in object pose and shape reconstruction with respect to recent deep prior-based reconstruction methods and reductions in camera tracking drift on the KITTI dataset.</p>
+
+        <div class="publication-links">
+        
+
+        
+        <a title="Download PDF" alt="Download PDF"
+          href="https://arxiv.org/pdf/2108.09481">
+          <span class="icon--pdf icon--btn"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="49"
+   height="64"
+   viewBox="0 0 49 64"
+   id="svg3391">
+  <metadata
+     id="metadata3407">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3393">
+    <style
+       id="style3395" />
+  </defs>
+  <g
+     id="g3397">
+    <path
+       d="m 49,16.842 0,42.105 C 49,61.738 46.73,64 43.931,64 L 5.069,64 C 2.269,64 0,61.738 0,58.947 L 0,5.053 C 0,2.262 2.269,0 5.069,0 L 32.103,0 49,16.842 z"
+       id="path3399"
+       style="fill:#cb0606;fill-rule:evenodd" />
+    <path
+       d="m 49,15.899 0,2.096 -13.813,0 c -2.86,0 -4.179,-2.32 -4.179,-5.181 L 31.008,0 33.1,0 49,15.899 z"
+       id="path3401"
+       style="fill:#fb8d8d;fill-rule:evenodd" />
+    <path
+       d="M 37.606,34.047 C 37.17,33.903 36.75,33.83 36.345,33.83 c -0.46,0 -0.776,0.095 -0.949,0.285 -0.172,0.19 -0.258,0.526 -0.258,1.009 l 0,0.923 1.933,0 0,1.854 -1.933,0 0,7.635 -2.342,0 0,-7.635 -1.207,0 0,-1.854 1.207,0 0,-0.923 c 0,-1.176 0.292,-2.026 0.876,-2.551 0.584,-0.525 1.462,-0.787 2.636,-0.787 0.551,0 1.135,0.075 1.752,0.226 l -0.454,2.035 z m -9.81,10.566 c -0.436,0.368 -0.896,0.661 -1.38,0.878 -0.484,0.217 -1.034,0.325 -1.651,0.325 -1.198,0 -2.115,-0.431 -2.75,-1.293 -0.636,-0.863 -0.953,-2.081 -0.953,-3.655 0,-1.61 0.349,-2.861 1.048,-3.754 0.699,-0.892 1.68,-1.339 2.945,-1.339 0.448,0 0.907,0.092 1.379,0.276 0.472,0.184 0.863,0.418 1.171,0.701 l 0,-4.686 2.342,0 0,13.47 -2.151,0 0,-0.923 z m -0.191,-5.934 c -0.248,-0.223 -0.555,-0.421 -0.921,-0.593 -0.366,-0.171 -0.74,-0.257 -1.121,-0.257 -0.629,0 -1.134,0.27 -1.515,0.809 -0.382,0.54 -0.572,1.271 -0.572,2.194 0,0.911 0.156,1.625 0.467,2.144 0.312,0.519 0.794,0.778 1.448,0.778 0.387,0 0.782,-0.089 1.184,-0.267 0.402,-0.178 0.746,-0.397 1.03,-0.656 l 0,-4.152 z m -10.01,6.522 c -0.575,0.41 -1.261,0.615 -2.06,0.615 -1.053,0 -1.951,-0.328 -2.695,-0.986 l 0,4.279 -2.342,0 0,-13.062 2.16,0 0,0.931 c 0.436,-0.374 0.894,-0.668 1.375,-0.882 0.481,-0.214 1.033,-0.321 1.656,-0.321 1.204,0 2.121,0.422 2.75,1.267 0.629,0.844 0.944,2.071 0.944,3.681 0,1.02 -0.154,1.918 -0.463,2.696 -0.309,0.778 -0.75,1.372 -1.325,1.782 z m -1.107,-6.599 c -0.321,-0.516 -0.799,-0.773 -1.434,-0.773 -0.381,0 -0.773,0.089 -1.175,0.266 -0.403,0.178 -0.749,0.397 -1.039,0.656 l 0,4.152 c 0.248,0.224 0.555,0.421 0.921,0.593 0.366,0.172 0.742,0.258 1.13,0.258 0.641,0 1.148,-0.273 1.52,-0.819 0.372,-0.546 0.558,-1.271 0.558,-2.175 0,-0.923 -0.161,-1.642 -0.481,-2.158 z"
+       id="path3403"
+       style="fill:#ffffff;fill-rule:evenodd" />
+  </g>
+</svg>
+</span>
+
+        </a>
+        
+
+        
+        <a title="Visit project page" alt="Visit project page" href="https://jingwenwang95.github.io/dsp-slam/"><i class="fa fa-external-link"></i></a>
+        
+      </div>
+      </li>
+    
+      <li class="post publication" id="frodo-2020">
+        <span class="icon--post"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 128 128" id="Layer_1" version="1.1" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><circle cx="64" cy="64" fill="#BE6B2F" r="63.5"/><path d="M94.3,27.8L92.2,30L36.3,97.6l-1.9,2.3l27.8,27.5c0.6,0,1.2,0,1.8,0c35.1,0,63.5-28.4,63.5-63.5   c0-1.1,0-2.3-0.1-3.4L94.3,27.8z" fill="#AA5D27"/><g><g><path d="M93.9,28C74,26.2,54,26.2,34.1,28C33,52.1,33,75.9,34.1,100c15.1,1.4,30.4,1.7,45.5,1     c5-8.9,10-17.7,15-26.2C94.9,59.2,94.6,43.7,93.9,28z" fill="#EBEBEB"/></g><g><path d="M78.4,85.5c0,0.1,6.9,1.5,16.3-10.7c-5,8.5-10.1,17.3-15,26.2C79.6,100.9,84.2,94.7,78.4,85.5z" fill="#CDCCCC"/></g><g><path d="M64.5,38.9c-7.2,0-14.4,0.1-21.6,0.3c0-0.3,0-0.7,0-1c7.2-0.2,14.4-0.3,21.6-0.3     C64.5,38.3,64.5,38.6,64.5,38.9z" fill="#809180"/></g><g><path d="M85.3,47.4c-14.2-0.2-28.3-0.2-42.5,0c0-0.3,0-0.7,0-1c14.1-0.3,28.3-0.3,42.5,0     C85.2,46.7,85.2,47,85.3,47.4z" fill="#809180"/></g><g><path d="M85.3,52.4c-14.2-0.2-28.4-0.2-42.6,0c0-0.3,0-0.7,0-1c14.2-0.2,28.4-0.2,42.6,0     C85.3,51.7,85.3,52,85.3,52.4z" fill="#809180"/></g><g><path d="M85.3,57.3c-14.2-0.1-28.4-0.1-42.6,0c0-0.3,0-0.7,0-1c14.2-0.1,28.4-0.1,42.6,0     C85.3,56.6,85.3,57,85.3,57.3z" fill="#809180"/></g><g><path d="M85.3,62.3c-14.2,0-28.4,0-42.6,0c0-0.3,0-0.7,0-1c14.2,0,28.4,0,42.6,0C85.3,61.6,85.3,62,85.3,62.3z" fill="#809180"/></g><g><path d="M85.3,67.3c-14.2,0.1-28.4,0.1-42.6,0c0-0.3,0-0.7,0-1c14.2,0.1,28.4,0.1,42.6,0     C85.3,66.6,85.3,66.9,85.3,67.3z" fill="#809180"/></g><g><path d="M85.3,72.3c-14.2,0.2-28.4,0.2-42.6,0c0-0.3,0-0.7,0-1c14.2,0.1,28.4,0.1,42.6,0     C85.3,71.6,85.3,71.9,85.3,72.3z" fill="#809180"/></g><g><path d="M85.2,77.3c-14.1,0.2-28.3,0.2-42.5,0c0-0.3,0-0.7,0-1c14.2,0.2,28.4,0.2,42.5,0     C85.3,76.6,85.2,76.9,85.2,77.3z" fill="#809180"/></g><g><path d="M85.2,82.2c-14.1,0.3-28.3,0.3-42.4,0c0-0.3,0-0.7,0-1c14.1,0.3,28.3,0.3,42.4,0     C85.2,81.5,85.2,81.9,85.2,82.2z" fill="#809180"/></g><g><path d="M75.7,87.4c-10.9,0.2-21.9,0.1-32.8-0.2c0-0.3,0-0.7,0-1c10.9,0.3,21.9,0.4,32.8,0.2     C75.7,86.7,75.7,87.1,75.7,87.4z" fill="#809180"/></g><g><path d="M69,92.5c-8.7,0.1-17.3,0-26-0.3c0-0.3,0-0.7,0-1c8.7,0.3,17.3,0.4,26,0.3C69,91.8,69,92.2,69,92.5z" fill="#809180"/></g></g></g></svg></span>
+
+        <p class="post-meta">
+          <time datetime="2020-06-01T00:00:00+02:00" itemprop="datePublished">Jun 2020</time>, CVPR
+        </p>
+
+        <h2>FroDO: From Detections to 3D Objects</h2>
+        <div class="pub-authors"><strong>Martin Rünz</strong>*, Kejie Li*, Meng Tang, Lingni Ma, Chen Kong, Tanner Schmidt, Ian Reid, Lourdes Agapito, Julian Straub, Steven Lovegrove, Richard Newcombe</div>
+        <hr />
+
+        
+
+        
+        <div class="row" style="margin: 1.2em auto; text-align: center;">
+          <video width="100%" height="auto"
+            src="media/pubs/ruenz20cvpr.mp4"
+            poster="media/pubs/ruenz20cvpr.mp4.png"
+          controls>
+          	Here should be a video, but your browser does not support HTML5 (webm-)videos.
+          </video>
+        </div>
+        
+
+        <p>Object-oriented maps are important for scene understanding since they jointly capture geometry and semantics, allow individual instantiation and meaningful reasoning about objects. We introduce FroDO, a method for accurate 3D reconstruction of object instances from RGB video that infers object location, pose and shape in a coarse-to-fine manner. </br></br> Key to FroDO is to embed object shapes in a novel learnt space that allows seamless switching between sparse point cloud and dense DeepSDF decoding. Given an input sequence of localized RGB frames, FroDO  first aggregates 2D detections to instantiate a category-aware 3D bounding box per object. A shape code is regressed using an encoder network before optimizing shape and pose further under the learnt shape priors using sparse and dense shape representations. The optimization uses multi-view geometric, photometric and silhouette losses. We evaluate on real-world datasets, including Pix3D, Redwood-OS, and ScanNet, for single-view, multi-view, and multi-object reconstruction.</p>
+
+        <div class="publication-links">
+        
+
+        
+        <a title="Download PDF" alt="Download PDF"
+          href="media/pubs/ruenz20cvpr.pdf">
+          <span class="icon--pdf icon--btn"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="49"
+   height="64"
+   viewBox="0 0 49 64"
+   id="svg3391">
+  <metadata
+     id="metadata3407">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3393">
+    <style
+       id="style3395" />
+  </defs>
+  <g
+     id="g3397">
+    <path
+       d="m 49,16.842 0,42.105 C 49,61.738 46.73,64 43.931,64 L 5.069,64 C 2.269,64 0,61.738 0,58.947 L 0,5.053 C 0,2.262 2.269,0 5.069,0 L 32.103,0 49,16.842 z"
+       id="path3399"
+       style="fill:#cb0606;fill-rule:evenodd" />
+    <path
+       d="m 49,15.899 0,2.096 -13.813,0 c -2.86,0 -4.179,-2.32 -4.179,-5.181 L 31.008,0 33.1,0 49,15.899 z"
+       id="path3401"
+       style="fill:#fb8d8d;fill-rule:evenodd" />
+    <path
+       d="M 37.606,34.047 C 37.17,33.903 36.75,33.83 36.345,33.83 c -0.46,0 -0.776,0.095 -0.949,0.285 -0.172,0.19 -0.258,0.526 -0.258,1.009 l 0,0.923 1.933,0 0,1.854 -1.933,0 0,7.635 -2.342,0 0,-7.635 -1.207,0 0,-1.854 1.207,0 0,-0.923 c 0,-1.176 0.292,-2.026 0.876,-2.551 0.584,-0.525 1.462,-0.787 2.636,-0.787 0.551,0 1.135,0.075 1.752,0.226 l -0.454,2.035 z m -9.81,10.566 c -0.436,0.368 -0.896,0.661 -1.38,0.878 -0.484,0.217 -1.034,0.325 -1.651,0.325 -1.198,0 -2.115,-0.431 -2.75,-1.293 -0.636,-0.863 -0.953,-2.081 -0.953,-3.655 0,-1.61 0.349,-2.861 1.048,-3.754 0.699,-0.892 1.68,-1.339 2.945,-1.339 0.448,0 0.907,0.092 1.379,0.276 0.472,0.184 0.863,0.418 1.171,0.701 l 0,-4.686 2.342,0 0,13.47 -2.151,0 0,-0.923 z m -0.191,-5.934 c -0.248,-0.223 -0.555,-0.421 -0.921,-0.593 -0.366,-0.171 -0.74,-0.257 -1.121,-0.257 -0.629,0 -1.134,0.27 -1.515,0.809 -0.382,0.54 -0.572,1.271 -0.572,2.194 0,0.911 0.156,1.625 0.467,2.144 0.312,0.519 0.794,0.778 1.448,0.778 0.387,0 0.782,-0.089 1.184,-0.267 0.402,-0.178 0.746,-0.397 1.03,-0.656 l 0,-4.152 z m -10.01,6.522 c -0.575,0.41 -1.261,0.615 -2.06,0.615 -1.053,0 -1.951,-0.328 -2.695,-0.986 l 0,4.279 -2.342,0 0,-13.062 2.16,0 0,0.931 c 0.436,-0.374 0.894,-0.668 1.375,-0.882 0.481,-0.214 1.033,-0.321 1.656,-0.321 1.204,0 2.121,0.422 2.75,1.267 0.629,0.844 0.944,2.071 0.944,3.681 0,1.02 -0.154,1.918 -0.463,2.696 -0.309,0.778 -0.75,1.372 -1.325,1.782 z m -1.107,-6.599 c -0.321,-0.516 -0.799,-0.773 -1.434,-0.773 -0.381,0 -0.773,0.089 -1.175,0.266 -0.403,0.178 -0.749,0.397 -1.039,0.656 l 0,4.152 c 0.248,0.224 0.555,0.421 0.921,0.593 0.366,0.172 0.742,0.258 1.13,0.258 0.641,0 1.148,-0.273 1.52,-0.819 0.372,-0.546 0.558,-1.271 0.558,-2.175 0,-0.923 -0.161,-1.642 -0.481,-2.158 z"
+       id="path3403"
+       style="fill:#ffffff;fill-rule:evenodd" />
+  </g>
+</svg>
+</span>
+
+        </a>
+        
+
+        
+        <a title="Visit project page" alt="Visit project page" href="https://research.fb.com/publications/frodo-from-detections-to-3d-objects/"><i class="fa fa-external-link"></i></a>
+        
+      </div>
+      </li>
+    
+      <li class="post publication" id="maskfusion-2018">
+        <span class="icon--post"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 128 128" id="Layer_1" version="1.1" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><circle cx="64" cy="64" fill="#BE6B2F" r="63.5"/><path d="M94.3,27.8L92.2,30L36.3,97.6l-1.9,2.3l27.8,27.5c0.6,0,1.2,0,1.8,0c35.1,0,63.5-28.4,63.5-63.5   c0-1.1,0-2.3-0.1-3.4L94.3,27.8z" fill="#AA5D27"/><g><g><path d="M93.9,28C74,26.2,54,26.2,34.1,28C33,52.1,33,75.9,34.1,100c15.1,1.4,30.4,1.7,45.5,1     c5-8.9,10-17.7,15-26.2C94.9,59.2,94.6,43.7,93.9,28z" fill="#EBEBEB"/></g><g><path d="M78.4,85.5c0,0.1,6.9,1.5,16.3-10.7c-5,8.5-10.1,17.3-15,26.2C79.6,100.9,84.2,94.7,78.4,85.5z" fill="#CDCCCC"/></g><g><path d="M64.5,38.9c-7.2,0-14.4,0.1-21.6,0.3c0-0.3,0-0.7,0-1c7.2-0.2,14.4-0.3,21.6-0.3     C64.5,38.3,64.5,38.6,64.5,38.9z" fill="#809180"/></g><g><path d="M85.3,47.4c-14.2-0.2-28.3-0.2-42.5,0c0-0.3,0-0.7,0-1c14.1-0.3,28.3-0.3,42.5,0     C85.2,46.7,85.2,47,85.3,47.4z" fill="#809180"/></g><g><path d="M85.3,52.4c-14.2-0.2-28.4-0.2-42.6,0c0-0.3,0-0.7,0-1c14.2-0.2,28.4-0.2,42.6,0     C85.3,51.7,85.3,52,85.3,52.4z" fill="#809180"/></g><g><path d="M85.3,57.3c-14.2-0.1-28.4-0.1-42.6,0c0-0.3,0-0.7,0-1c14.2-0.1,28.4-0.1,42.6,0     C85.3,56.6,85.3,57,85.3,57.3z" fill="#809180"/></g><g><path d="M85.3,62.3c-14.2,0-28.4,0-42.6,0c0-0.3,0-0.7,0-1c14.2,0,28.4,0,42.6,0C85.3,61.6,85.3,62,85.3,62.3z" fill="#809180"/></g><g><path d="M85.3,67.3c-14.2,0.1-28.4,0.1-42.6,0c0-0.3,0-0.7,0-1c14.2,0.1,28.4,0.1,42.6,0     C85.3,66.6,85.3,66.9,85.3,67.3z" fill="#809180"/></g><g><path d="M85.3,72.3c-14.2,0.2-28.4,0.2-42.6,0c0-0.3,0-0.7,0-1c14.2,0.1,28.4,0.1,42.6,0     C85.3,71.6,85.3,71.9,85.3,72.3z" fill="#809180"/></g><g><path d="M85.2,77.3c-14.1,0.2-28.3,0.2-42.5,0c0-0.3,0-0.7,0-1c14.2,0.2,28.4,0.2,42.5,0     C85.3,76.6,85.2,76.9,85.2,77.3z" fill="#809180"/></g><g><path d="M85.2,82.2c-14.1,0.3-28.3,0.3-42.4,0c0-0.3,0-0.7,0-1c14.1,0.3,28.3,0.3,42.4,0     C85.2,81.5,85.2,81.9,85.2,82.2z" fill="#809180"/></g><g><path d="M75.7,87.4c-10.9,0.2-21.9,0.1-32.8-0.2c0-0.3,0-0.7,0-1c10.9,0.3,21.9,0.4,32.8,0.2     C75.7,86.7,75.7,87.1,75.7,87.4z" fill="#809180"/></g><g><path d="M69,92.5c-8.7,0.1-17.3,0-26-0.3c0-0.3,0-0.7,0-1c8.7,0.3,17.3,0.4,26,0.3C69,91.8,69,92.2,69,92.5z" fill="#809180"/></g></g></g></svg></span>
+
+        <p class="post-meta">
+          <time datetime="2018-10-01T00:00:00+02:00" itemprop="datePublished">Oct 2018</time>, ISMAR
+        </p>
+
+        <h2>MaskFusion: Real-Time Recognition, Tracking and Reconstruction of Multiple Moving Objects</h2>
+        <div class="pub-authors"><strong>Martin Rünz</strong>, Maud Buffier, Lourdes Agapito</div>
+        <hr />
+
+        
+
+        
+        <div class="row" style="margin: 1.2em auto; text-align: center;">
+          <video width="100%" height="auto"
+            src="media/pubs/ruenz18ismar.webm"
+            poster="media/pubs/ruenz18ismar.webm.png"
+          controls>
+          	Here should be a video, but your browser does not support HTML5 (webm-)videos.
+          </video>
+        </div>
+        
+
+        <p>We present MaskFusion, a <i>real-time, object-aware, semantic and dynamic RGB-D SLAM system</i> that goes beyond traditional systems which output a purely geometric map of a static scene. MaskFusion recognizes, segments and assigns semantic class labels to different objects in the scene, while tracking and reconstructing them even when they move independently from the camera. </br></br> As an RGB-D camera scans a cluttered scene, image-based instance-level semantic segmentation creates semantic object masks that enable real-time object recognition and the creation of an object-level representation for the world map. Unlike previous recognition-based SLAM systems, MaskFusion does not require known models of the objects it can recognize, and can deal with multiple independent motions. MaskFusion takes full advantage of using instance-level semantic segmentation to enable semantic labels to be fused into an object-aware map, unlike recent semantics enabled SLAM systems that perform voxel-level semantic segmentation. We show augmented-reality applications that demonstrate the unique features of the map output by MaskFusion: instance-aware, semantic and dynamic.</p>
+
+        <div class="publication-links">
+        
+
+        
+        <a title="Download PDF" alt="Download PDF"
+          href="https://arxiv.org/pdf/1804.09194">
+          <span class="icon--pdf icon--btn"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="49"
+   height="64"
+   viewBox="0 0 49 64"
+   id="svg3391">
+  <metadata
+     id="metadata3407">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3393">
+    <style
+       id="style3395" />
+  </defs>
+  <g
+     id="g3397">
+    <path
+       d="m 49,16.842 0,42.105 C 49,61.738 46.73,64 43.931,64 L 5.069,64 C 2.269,64 0,61.738 0,58.947 L 0,5.053 C 0,2.262 2.269,0 5.069,0 L 32.103,0 49,16.842 z"
+       id="path3399"
+       style="fill:#cb0606;fill-rule:evenodd" />
+    <path
+       d="m 49,15.899 0,2.096 -13.813,0 c -2.86,0 -4.179,-2.32 -4.179,-5.181 L 31.008,0 33.1,0 49,15.899 z"
+       id="path3401"
+       style="fill:#fb8d8d;fill-rule:evenodd" />
+    <path
+       d="M 37.606,34.047 C 37.17,33.903 36.75,33.83 36.345,33.83 c -0.46,0 -0.776,0.095 -0.949,0.285 -0.172,0.19 -0.258,0.526 -0.258,1.009 l 0,0.923 1.933,0 0,1.854 -1.933,0 0,7.635 -2.342,0 0,-7.635 -1.207,0 0,-1.854 1.207,0 0,-0.923 c 0,-1.176 0.292,-2.026 0.876,-2.551 0.584,-0.525 1.462,-0.787 2.636,-0.787 0.551,0 1.135,0.075 1.752,0.226 l -0.454,2.035 z m -9.81,10.566 c -0.436,0.368 -0.896,0.661 -1.38,0.878 -0.484,0.217 -1.034,0.325 -1.651,0.325 -1.198,0 -2.115,-0.431 -2.75,-1.293 -0.636,-0.863 -0.953,-2.081 -0.953,-3.655 0,-1.61 0.349,-2.861 1.048,-3.754 0.699,-0.892 1.68,-1.339 2.945,-1.339 0.448,0 0.907,0.092 1.379,0.276 0.472,0.184 0.863,0.418 1.171,0.701 l 0,-4.686 2.342,0 0,13.47 -2.151,0 0,-0.923 z m -0.191,-5.934 c -0.248,-0.223 -0.555,-0.421 -0.921,-0.593 -0.366,-0.171 -0.74,-0.257 -1.121,-0.257 -0.629,0 -1.134,0.27 -1.515,0.809 -0.382,0.54 -0.572,1.271 -0.572,2.194 0,0.911 0.156,1.625 0.467,2.144 0.312,0.519 0.794,0.778 1.448,0.778 0.387,0 0.782,-0.089 1.184,-0.267 0.402,-0.178 0.746,-0.397 1.03,-0.656 l 0,-4.152 z m -10.01,6.522 c -0.575,0.41 -1.261,0.615 -2.06,0.615 -1.053,0 -1.951,-0.328 -2.695,-0.986 l 0,4.279 -2.342,0 0,-13.062 2.16,0 0,0.931 c 0.436,-0.374 0.894,-0.668 1.375,-0.882 0.481,-0.214 1.033,-0.321 1.656,-0.321 1.204,0 2.121,0.422 2.75,1.267 0.629,0.844 0.944,2.071 0.944,3.681 0,1.02 -0.154,1.918 -0.463,2.696 -0.309,0.778 -0.75,1.372 -1.325,1.782 z m -1.107,-6.599 c -0.321,-0.516 -0.799,-0.773 -1.434,-0.773 -0.381,0 -0.773,0.089 -1.175,0.266 -0.403,0.178 -0.749,0.397 -1.039,0.656 l 0,4.152 c 0.248,0.224 0.555,0.421 0.921,0.593 0.366,0.172 0.742,0.258 1.13,0.258 0.641,0 1.148,-0.273 1.52,-0.819 0.372,-0.546 0.558,-1.271 0.558,-2.175 0,-0.923 -0.161,-1.642 -0.481,-2.158 z"
+       id="path3403"
+       style="fill:#ffffff;fill-rule:evenodd" />
+  </g>
+</svg>
+</span>
+
+        </a>
+        
+
+        
+        <a title="Visit project page" alt="Visit project page" href="http://visual.cs.ucl.ac.uk/pubs/maskfusion/"><i class="fa fa-external-link"></i></a>
+        
+      </div>
+      </li>
+    
+      <li class="post publication" id="co-fusion-2017">
+        <span class="icon--post"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 128 128" id="Layer_1" version="1.1" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><circle cx="64" cy="64" fill="#BE6B2F" r="63.5"/><path d="M94.3,27.8L92.2,30L36.3,97.6l-1.9,2.3l27.8,27.5c0.6,0,1.2,0,1.8,0c35.1,0,63.5-28.4,63.5-63.5   c0-1.1,0-2.3-0.1-3.4L94.3,27.8z" fill="#AA5D27"/><g><g><path d="M93.9,28C74,26.2,54,26.2,34.1,28C33,52.1,33,75.9,34.1,100c15.1,1.4,30.4,1.7,45.5,1     c5-8.9,10-17.7,15-26.2C94.9,59.2,94.6,43.7,93.9,28z" fill="#EBEBEB"/></g><g><path d="M78.4,85.5c0,0.1,6.9,1.5,16.3-10.7c-5,8.5-10.1,17.3-15,26.2C79.6,100.9,84.2,94.7,78.4,85.5z" fill="#CDCCCC"/></g><g><path d="M64.5,38.9c-7.2,0-14.4,0.1-21.6,0.3c0-0.3,0-0.7,0-1c7.2-0.2,14.4-0.3,21.6-0.3     C64.5,38.3,64.5,38.6,64.5,38.9z" fill="#809180"/></g><g><path d="M85.3,47.4c-14.2-0.2-28.3-0.2-42.5,0c0-0.3,0-0.7,0-1c14.1-0.3,28.3-0.3,42.5,0     C85.2,46.7,85.2,47,85.3,47.4z" fill="#809180"/></g><g><path d="M85.3,52.4c-14.2-0.2-28.4-0.2-42.6,0c0-0.3,0-0.7,0-1c14.2-0.2,28.4-0.2,42.6,0     C85.3,51.7,85.3,52,85.3,52.4z" fill="#809180"/></g><g><path d="M85.3,57.3c-14.2-0.1-28.4-0.1-42.6,0c0-0.3,0-0.7,0-1c14.2-0.1,28.4-0.1,42.6,0     C85.3,56.6,85.3,57,85.3,57.3z" fill="#809180"/></g><g><path d="M85.3,62.3c-14.2,0-28.4,0-42.6,0c0-0.3,0-0.7,0-1c14.2,0,28.4,0,42.6,0C85.3,61.6,85.3,62,85.3,62.3z" fill="#809180"/></g><g><path d="M85.3,67.3c-14.2,0.1-28.4,0.1-42.6,0c0-0.3,0-0.7,0-1c14.2,0.1,28.4,0.1,42.6,0     C85.3,66.6,85.3,66.9,85.3,67.3z" fill="#809180"/></g><g><path d="M85.3,72.3c-14.2,0.2-28.4,0.2-42.6,0c0-0.3,0-0.7,0-1c14.2,0.1,28.4,0.1,42.6,0     C85.3,71.6,85.3,71.9,85.3,72.3z" fill="#809180"/></g><g><path d="M85.2,77.3c-14.1,0.2-28.3,0.2-42.5,0c0-0.3,0-0.7,0-1c14.2,0.2,28.4,0.2,42.5,0     C85.3,76.6,85.2,76.9,85.2,77.3z" fill="#809180"/></g><g><path d="M85.2,82.2c-14.1,0.3-28.3,0.3-42.4,0c0-0.3,0-0.7,0-1c14.1,0.3,28.3,0.3,42.4,0     C85.2,81.5,85.2,81.9,85.2,82.2z" fill="#809180"/></g><g><path d="M75.7,87.4c-10.9,0.2-21.9,0.1-32.8-0.2c0-0.3,0-0.7,0-1c10.9,0.3,21.9,0.4,32.8,0.2     C75.7,86.7,75.7,87.1,75.7,87.4z" fill="#809180"/></g><g><path d="M69,92.5c-8.7,0.1-17.3,0-26-0.3c0-0.3,0-0.7,0-1c8.7,0.3,17.3,0.4,26,0.3C69,91.8,69,92.2,69,92.5z" fill="#809180"/></g></g></g></svg></span>
+
+        <p class="post-meta">
+          <time datetime="2017-05-01T00:00:00+02:00" itemprop="datePublished">May 2017</time>, ICRA
+        </p>
+
+        <h2>Co-Fusion: Real-time Segmentation, Tracking and Fusion of Multiple Objects</h2>
+        <div class="pub-authors"><strong>Martin Rünz</strong>, Lourdes Agapito</div>
+        <hr />
+
+        
+
+        
+        <div class="row" style="margin: 1.2em auto; text-align: center;">
+          <video width="100%" height="auto"
+            src="media/pubs/ruenz17icra.webm"
+            poster="media/pubs/ruenz17icra.webm.png"
+          controls>
+          	Here should be a video, but your browser does not support HTML5 (webm-)videos.
+          </video>
+        </div>
+        
+
+        <p>In this paper we introduce a new dense SLAM system that takes a live stream of RGB-D images as input and segments the scene into different objects, using either motion or semantic cues, while simultaneously tracking and reconstructing their 3D shape in real time. </br></br> Crucially, we use a multiple model fitting approach where each object can move independently from the background and still be effectively tracked and its shape fused over time using only the information from pixels associated with that object label. Previous attempts to deal with dynamic scenes have typically considered moving regions as outliers that are of no interest to the robot, and consequently do not model their shape or track their motion over time. In contrast, we enable the robot to maintain 3D models for each of the segmented objects and to improve them over time through fusion. As a result, our system has the benefit to enable a robot to maintain a scene description at the object level which has the potential to allow interactions with its working environment; even in the case of dynamic scenes.</p>
+
+        <div class="publication-links">
+        
+
+        
+        <a title="Download PDF" alt="Download PDF"
+          href="media/pubs/ruenz17icra.pdf">
+          <span class="icon--pdf icon--btn"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="49"
+   height="64"
+   viewBox="0 0 49 64"
+   id="svg3391">
+  <metadata
+     id="metadata3407">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3393">
+    <style
+       id="style3395" />
+  </defs>
+  <g
+     id="g3397">
+    <path
+       d="m 49,16.842 0,42.105 C 49,61.738 46.73,64 43.931,64 L 5.069,64 C 2.269,64 0,61.738 0,58.947 L 0,5.053 C 0,2.262 2.269,0 5.069,0 L 32.103,0 49,16.842 z"
+       id="path3399"
+       style="fill:#cb0606;fill-rule:evenodd" />
+    <path
+       d="m 49,15.899 0,2.096 -13.813,0 c -2.86,0 -4.179,-2.32 -4.179,-5.181 L 31.008,0 33.1,0 49,15.899 z"
+       id="path3401"
+       style="fill:#fb8d8d;fill-rule:evenodd" />
+    <path
+       d="M 37.606,34.047 C 37.17,33.903 36.75,33.83 36.345,33.83 c -0.46,0 -0.776,0.095 -0.949,0.285 -0.172,0.19 -0.258,0.526 -0.258,1.009 l 0,0.923 1.933,0 0,1.854 -1.933,0 0,7.635 -2.342,0 0,-7.635 -1.207,0 0,-1.854 1.207,0 0,-0.923 c 0,-1.176 0.292,-2.026 0.876,-2.551 0.584,-0.525 1.462,-0.787 2.636,-0.787 0.551,0 1.135,0.075 1.752,0.226 l -0.454,2.035 z m -9.81,10.566 c -0.436,0.368 -0.896,0.661 -1.38,0.878 -0.484,0.217 -1.034,0.325 -1.651,0.325 -1.198,0 -2.115,-0.431 -2.75,-1.293 -0.636,-0.863 -0.953,-2.081 -0.953,-3.655 0,-1.61 0.349,-2.861 1.048,-3.754 0.699,-0.892 1.68,-1.339 2.945,-1.339 0.448,0 0.907,0.092 1.379,0.276 0.472,0.184 0.863,0.418 1.171,0.701 l 0,-4.686 2.342,0 0,13.47 -2.151,0 0,-0.923 z m -0.191,-5.934 c -0.248,-0.223 -0.555,-0.421 -0.921,-0.593 -0.366,-0.171 -0.74,-0.257 -1.121,-0.257 -0.629,0 -1.134,0.27 -1.515,0.809 -0.382,0.54 -0.572,1.271 -0.572,2.194 0,0.911 0.156,1.625 0.467,2.144 0.312,0.519 0.794,0.778 1.448,0.778 0.387,0 0.782,-0.089 1.184,-0.267 0.402,-0.178 0.746,-0.397 1.03,-0.656 l 0,-4.152 z m -10.01,6.522 c -0.575,0.41 -1.261,0.615 -2.06,0.615 -1.053,0 -1.951,-0.328 -2.695,-0.986 l 0,4.279 -2.342,0 0,-13.062 2.16,0 0,0.931 c 0.436,-0.374 0.894,-0.668 1.375,-0.882 0.481,-0.214 1.033,-0.321 1.656,-0.321 1.204,0 2.121,0.422 2.75,1.267 0.629,0.844 0.944,2.071 0.944,3.681 0,1.02 -0.154,1.918 -0.463,2.696 -0.309,0.778 -0.75,1.372 -1.325,1.782 z m -1.107,-6.599 c -0.321,-0.516 -0.799,-0.773 -1.434,-0.773 -0.381,0 -0.773,0.089 -1.175,0.266 -0.403,0.178 -0.749,0.397 -1.039,0.656 l 0,4.152 c 0.248,0.224 0.555,0.421 0.921,0.593 0.366,0.172 0.742,0.258 1.13,0.258 0.641,0 1.148,-0.273 1.52,-0.819 0.372,-0.546 0.558,-1.271 0.558,-2.175 0,-0.923 -0.161,-1.642 -0.481,-2.158 z"
+       id="path3403"
+       style="fill:#ffffff;fill-rule:evenodd" />
+  </g>
+</svg>
+</span>
+
+        </a>
+        
+
+        
+        <a title="Visit project page" alt="Visit project page" href="http://visual.cs.ucl.ac.uk/pubs/cofusion/index.html"><i class="fa fa-external-link"></i></a>
+        
+      </div>
+      </li>
+    
+      <li class="post publication" id="camera-agnostic-2016">
+        <span class="icon--post"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 128 128" id="Layer_1" version="1.1" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><circle cx="64" cy="64" fill="#BE6B2F" r="63.5"/><path d="M94.3,27.8L92.2,30L36.3,97.6l-1.9,2.3l27.8,27.5c0.6,0,1.2,0,1.8,0c35.1,0,63.5-28.4,63.5-63.5   c0-1.1,0-2.3-0.1-3.4L94.3,27.8z" fill="#AA5D27"/><g><g><path d="M93.9,28C74,26.2,54,26.2,34.1,28C33,52.1,33,75.9,34.1,100c15.1,1.4,30.4,1.7,45.5,1     c5-8.9,10-17.7,15-26.2C94.9,59.2,94.6,43.7,93.9,28z" fill="#EBEBEB"/></g><g><path d="M78.4,85.5c0,0.1,6.9,1.5,16.3-10.7c-5,8.5-10.1,17.3-15,26.2C79.6,100.9,84.2,94.7,78.4,85.5z" fill="#CDCCCC"/></g><g><path d="M64.5,38.9c-7.2,0-14.4,0.1-21.6,0.3c0-0.3,0-0.7,0-1c7.2-0.2,14.4-0.3,21.6-0.3     C64.5,38.3,64.5,38.6,64.5,38.9z" fill="#809180"/></g><g><path d="M85.3,47.4c-14.2-0.2-28.3-0.2-42.5,0c0-0.3,0-0.7,0-1c14.1-0.3,28.3-0.3,42.5,0     C85.2,46.7,85.2,47,85.3,47.4z" fill="#809180"/></g><g><path d="M85.3,52.4c-14.2-0.2-28.4-0.2-42.6,0c0-0.3,0-0.7,0-1c14.2-0.2,28.4-0.2,42.6,0     C85.3,51.7,85.3,52,85.3,52.4z" fill="#809180"/></g><g><path d="M85.3,57.3c-14.2-0.1-28.4-0.1-42.6,0c0-0.3,0-0.7,0-1c14.2-0.1,28.4-0.1,42.6,0     C85.3,56.6,85.3,57,85.3,57.3z" fill="#809180"/></g><g><path d="M85.3,62.3c-14.2,0-28.4,0-42.6,0c0-0.3,0-0.7,0-1c14.2,0,28.4,0,42.6,0C85.3,61.6,85.3,62,85.3,62.3z" fill="#809180"/></g><g><path d="M85.3,67.3c-14.2,0.1-28.4,0.1-42.6,0c0-0.3,0-0.7,0-1c14.2,0.1,28.4,0.1,42.6,0     C85.3,66.6,85.3,66.9,85.3,67.3z" fill="#809180"/></g><g><path d="M85.3,72.3c-14.2,0.2-28.4,0.2-42.6,0c0-0.3,0-0.7,0-1c14.2,0.1,28.4,0.1,42.6,0     C85.3,71.6,85.3,71.9,85.3,72.3z" fill="#809180"/></g><g><path d="M85.2,77.3c-14.1,0.2-28.3,0.2-42.5,0c0-0.3,0-0.7,0-1c14.2,0.2,28.4,0.2,42.5,0     C85.3,76.6,85.2,76.9,85.2,77.3z" fill="#809180"/></g><g><path d="M85.2,82.2c-14.1,0.3-28.3,0.3-42.4,0c0-0.3,0-0.7,0-1c14.1,0.3,28.3,0.3,42.4,0     C85.2,81.5,85.2,81.9,85.2,82.2z" fill="#809180"/></g><g><path d="M75.7,87.4c-10.9,0.2-21.9,0.1-32.8-0.2c0-0.3,0-0.7,0-1c10.9,0.3,21.9,0.4,32.8,0.2     C75.7,86.7,75.7,87.1,75.7,87.4z" fill="#809180"/></g><g><path d="M69,92.5c-8.7,0.1-17.3,0-26-0.3c0-0.3,0-0.7,0-1c8.7,0.3,17.3,0.4,26,0.3C69,91.8,69,92.2,69,92.5z" fill="#809180"/></g></g></g></svg></span>
+
+        <p class="post-meta">
+          <time datetime="2016-09-01T00:00:00+02:00" itemprop="datePublished">Sep 2016</time>, GCPR
+        </p>
+
+        <h2>Camera-Agnostic Monocular SLAM and Semi-dense 3D Reconstruction</h2>
+        <div class="pub-authors"><strong>Martin Rünz</strong>, Frank Neuhaus, Christian Winkens, Dietrich Paulus</div>
+        <hr />
+
+        
+        <img src="media/pubs/ruenz16gcpr.jpg" />
+        
+
+        
+
+        <p>This paper discusses localisation and mapping techniques based on a single camera. After introducing the given problem, which is known as monocular SLAM, a new camera agnostic monocular SLAM system (CAM-SLAM) is presented. It was developed within the scope of this work and is inspired by recently proposed SLAM-methods. In contrast to most other systems, it supports any central camera model such as for omnidirectional cameras. Experiments show that CAM-SLAM features similar accuracy as state-of-the-art methods, while being considerably more flexible.</p>
+
+        <div class="publication-links">
+        
+        <a href="media/pubs/ruenz16gcpr.bibtex" title="Download Bibtex" alt="Download Bibtex"><span class="icon--bibtex icon--btn"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="1060.28"
+   viewBox="0 0 1060.28 342.32"
+   height="342.32"
+   id="svg2">
+  <metadata
+     id="metadata27">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://web.resource.org/cc/PublicDomain" />
+        <dc:title></dc:title>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://web.resource.org/cc/PublicDomain">
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Reproduction" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Distribution" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs4">
+    <marker
+       markerUnits="strokeWidth"
+       refX="0"
+       refY="5"
+       markerWidth="4"
+       markerHeight="3"
+       orient="auto"
+       viewBox="0 0 10 10"
+       id="ArrowEnd">
+      <path
+         d="M 0,0 10,5 0,10 0,0 z"
+         id="path7" />
+    </marker>
+    <marker
+       markerUnits="strokeWidth"
+       refX="10"
+       refY="5"
+       markerWidth="4"
+       markerHeight="3"
+       orient="auto"
+       viewBox="0 0 10 10"
+       id="ArrowStart">
+      <path
+         d="M 10,0 0,5 10,10 10,0 z"
+         id="path10" />
+    </marker>
+  </defs>
+  <g
+     transform="matrix(14.04287,0,0,14.04287,0,0.09131875)"
+     id="g12">
+    <path
+       d="M 0,0.00396729 0,0.60199 c 1.73,0 2.007,0 2.007,1.117 l 0,13.45701 c 0,1.117 -0.27301,1.117 -2.007,1.117 l 0,0.598 8.496,0 c 3.16,0 5.211,-2.25 5.211,-4.5 0,-2.227 -2.028,-4.12904 -4.668,-4.305 C 11.406,7.61798 13.062,6.03601 13.062,4.15698 13.062,2.10602 11.039,0 7.851,0 L 0,0.00396729 z M 3.60899,7.90698 l 0,-6.328 C 3.60899,0.734985 3.656,0.609985 4.64,0.609985 l 3.145,0 c 2.429,0 3.511,1.984005 3.511,3.523015 0,1.88702 -1.50001,3.77398 -4.152,3.77398 l -3.53501,0 z M 4.64,16.305 c -0.98,0 -1.027,-0.125 -1.027,-0.969 l 0,-7.02704 4.54299,0 c 2.52701,0 3.75801,2.26604 3.75801,4.08604 0,1.816 -1.399,3.91 -4.07501,3.91"
+       id="path14"
+       style="fill:#000000;stroke:none" />
+    <path
+       d="m 18.41,5.99701 c 0,-1.06305 0.125,-1.18805 1.918,-1.18805 l 0,-0.59796 c -0.84,0.02399 -2.129,0.07501 -2.774,0.07501 -0.644,0 -1.933,-0.047 -2.773,-0.07501 l 0,0.59796 c 1.711,0 1.832,0.125 1.832,1.18805 l 0,9.11699 c 0,1.062 -0.117,1.187 -1.832,1.187 l 0,0.598 c 0.84,-0.024 2.129,-0.07 2.773,-0.07 0.645,0 1.93,0.046 2.774,0.07 l 0,-0.598 c -1.793,0 -1.918,-0.121 -1.918,-1.187"
+       id="path16"
+       style="fill:#000000;stroke:none" />
+    <path
+       d="m 21.75,4.20398 0,0.59698 c 1.636,0 1.757,0.14905 1.757,1.16401 l 0,9.16803 c 0,1.016 -0.121,1.164 -1.757,1.164 l 0,0.598 7.476,0 c 2.746,0 4.481,-1.68 4.481,-3.406 0,-1.606 -1.586,-2.965 -3.739,-3.235 1.758,-0.36704 3.168,-1.48001 3.168,-2.91403 0,-1.55396 -1.73,-3.13599 -4.429,-3.13599 l -6.957,0 z m 3.359,5.80002 0,-4.13602 c 0,-0.98498 0.125,-1.05902 1,-1.05902 l 2.402,0 c 2.278,0 2.653,1.92206 2.653,2.51202 0,0.88599 -0.649,2.68302 -3.254,2.68302 l -2.801,0 z m 0,0.5 3.719,0 c 2.105,0 2.777,1.907 2.777,2.961 0,1.129 -0.816,2.836 -3.074,2.836 l -2.43,0 c -0.867,0 -0.988,-0.074 -0.988,-1.078"
+       id="path18"
+       style="fill:#000000;stroke:none" />
+    <path
+       d="m 48.628,0.0469971 -14.3,0 -0.418,5.4769929 0.445,0 c 0.32,-4.10199 0.672,-4.820011 4.512,-4.820011 0.445,0 1.168,0 1.367,0 0.473,0.074036 0.473,0.375001 0.473,0.945011 l 0,13.48001 c 0,0.895 -0.075,1.168 -2.161,1.168 l -0.703,0 0,0.598 c 1.188,-0.023 2.426,-0.047 3.641,-0.047 1.211,0 2.453,0.024 3.64,0.047 l 0,-0.598 -0.691,0 c -2.055,0 -2.129,-0.273 -2.129,-1.168 l 0,-13.48001 c 0,-0.547 0,-0.843997 0.446,-0.945011 0.195,0 0.914,0 1.359,0 3.789,0 4.16,0.713991 4.48,4.820011 l 0.446,0"
+       id="path20"
+       style="fill:#000000;stroke:none" />
+    <path
+       d="m 60.957,18.133 -0.446,0 c -0.543,3.672 -0.863,5.668 -5.219,5.668 l -3.437,0 c -0.988,0 -1.035,-0.125 -1.035,-0.976 l 0,-6.922 2.336,0 c 2.336,0 2.558,0.855 2.558,2.945 l 0.399,0 0,-6.441 -0.399,0 c 0,2.054 -0.222,2.894 -2.558,2.894 l -2.336,0 0,-6.137 c 0,-0.83502 0.047,-0.96002 1.035,-0.96002 l 3.387,0 c 3.832,0 4.277,1.52301 4.625,4.79602 l 0.445,0 -0.594,-5.47601 -12.539,0 0,0.67999 c 1.754,0 2.035,0 2.035,1.11304 l 0,13.36298 c 0,1.113 -0.277,1.113 -2.035,1.113 l 0,0.598 12.887,0"
+       id="path22"
+       style="fill:#000000;stroke:none" />
+    <path
+       d="m 67.73,7.52399 3.664,-5.297 c 0.367,-0.52002 1.113,-1.590027 3.145,-1.617005 l 0,-0.5980221 C 73.972,0.05896 73.031,0.05896 72.437,0.05896 c -0.816,0 -1.832,0 -2.449,-0.0469971 l 0,0.5980221 c 0.793,0.073975 0.988,0.570005 0.988,0.968995 0,0.29602 -0.121,0.49603 -0.297,0.742 L 67.41,7.06299 63.746,1.70001 C 63.574,1.42999 63.55,1.35199 63.55,1.27802 c 0,-0.22303 0.27,-0.645024 1.09,-0.668035 l 0,-0.5980221 C 63.847,0.05896 62.636,0.05896 61.82,0.05896 c -0.641,0 -1.879,0 -2.477,-0.0469971 l 0,0.5980221 c 1.36,0 1.805,0.051026 2.352,0.820005 l 4.777,7.01599 -4.308,6.29302 c -1.063,1.539 -2.672,1.566 -3.145,1.566 l 0,0.598 c 0.566,-0.047 1.508,-0.047 2.102,-0.047 0.668,0 1.832,0 2.449,0.047 l 0,-0.598 c -0.766,-0.074 -0.988,-0.57 -0.988,-0.969 0,-0.32 0.121,-0.496 0.246,-0.672 l 3.961,-5.781 4.308,6.332 c 0.195,0.274 0.195,0.348 0.195,0.422 0,0.195 -0.222,0.621 -1.089,0.672 l 0,0.598 c 0.793,-0.047 2.004,-0.047 2.82,-0.047 0.641,0 1.879,0 2.48,0.047 l 0,-0.598 c -1.586,0 -1.836,-0.121 -2.328,-0.82"
+       id="path24"
+       style="fill:#000000;stroke:none" />
+  </g>
+</svg>
+</span>
+</a>
+        
+
+        
+        <a title="Download PDF" alt="Download PDF"
+          href="media/pubs/ruenz16gcpr.pdf">
+          <span class="icon--pdf icon--btn"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="49"
+   height="64"
+   viewBox="0 0 49 64"
+   id="svg3391">
+  <metadata
+     id="metadata3407">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3393">
+    <style
+       id="style3395" />
+  </defs>
+  <g
+     id="g3397">
+    <path
+       d="m 49,16.842 0,42.105 C 49,61.738 46.73,64 43.931,64 L 5.069,64 C 2.269,64 0,61.738 0,58.947 L 0,5.053 C 0,2.262 2.269,0 5.069,0 L 32.103,0 49,16.842 z"
+       id="path3399"
+       style="fill:#cb0606;fill-rule:evenodd" />
+    <path
+       d="m 49,15.899 0,2.096 -13.813,0 c -2.86,0 -4.179,-2.32 -4.179,-5.181 L 31.008,0 33.1,0 49,15.899 z"
+       id="path3401"
+       style="fill:#fb8d8d;fill-rule:evenodd" />
+    <path
+       d="M 37.606,34.047 C 37.17,33.903 36.75,33.83 36.345,33.83 c -0.46,0 -0.776,0.095 -0.949,0.285 -0.172,0.19 -0.258,0.526 -0.258,1.009 l 0,0.923 1.933,0 0,1.854 -1.933,0 0,7.635 -2.342,0 0,-7.635 -1.207,0 0,-1.854 1.207,0 0,-0.923 c 0,-1.176 0.292,-2.026 0.876,-2.551 0.584,-0.525 1.462,-0.787 2.636,-0.787 0.551,0 1.135,0.075 1.752,0.226 l -0.454,2.035 z m -9.81,10.566 c -0.436,0.368 -0.896,0.661 -1.38,0.878 -0.484,0.217 -1.034,0.325 -1.651,0.325 -1.198,0 -2.115,-0.431 -2.75,-1.293 -0.636,-0.863 -0.953,-2.081 -0.953,-3.655 0,-1.61 0.349,-2.861 1.048,-3.754 0.699,-0.892 1.68,-1.339 2.945,-1.339 0.448,0 0.907,0.092 1.379,0.276 0.472,0.184 0.863,0.418 1.171,0.701 l 0,-4.686 2.342,0 0,13.47 -2.151,0 0,-0.923 z m -0.191,-5.934 c -0.248,-0.223 -0.555,-0.421 -0.921,-0.593 -0.366,-0.171 -0.74,-0.257 -1.121,-0.257 -0.629,0 -1.134,0.27 -1.515,0.809 -0.382,0.54 -0.572,1.271 -0.572,2.194 0,0.911 0.156,1.625 0.467,2.144 0.312,0.519 0.794,0.778 1.448,0.778 0.387,0 0.782,-0.089 1.184,-0.267 0.402,-0.178 0.746,-0.397 1.03,-0.656 l 0,-4.152 z m -10.01,6.522 c -0.575,0.41 -1.261,0.615 -2.06,0.615 -1.053,0 -1.951,-0.328 -2.695,-0.986 l 0,4.279 -2.342,0 0,-13.062 2.16,0 0,0.931 c 0.436,-0.374 0.894,-0.668 1.375,-0.882 0.481,-0.214 1.033,-0.321 1.656,-0.321 1.204,0 2.121,0.422 2.75,1.267 0.629,0.844 0.944,2.071 0.944,3.681 0,1.02 -0.154,1.918 -0.463,2.696 -0.309,0.778 -0.75,1.372 -1.325,1.782 z m -1.107,-6.599 c -0.321,-0.516 -0.799,-0.773 -1.434,-0.773 -0.381,0 -0.773,0.089 -1.175,0.266 -0.403,0.178 -0.749,0.397 -1.039,0.656 l 0,4.152 c 0.248,0.224 0.555,0.421 0.921,0.593 0.366,0.172 0.742,0.258 1.13,0.258 0.641,0 1.148,-0.273 1.52,-0.819 0.372,-0.546 0.558,-1.271 0.558,-2.175 0,-0.923 -0.161,-1.642 -0.481,-2.158 z"
+       id="path3403"
+       style="fill:#ffffff;fill-rule:evenodd" />
+  </g>
+</svg>
+</span>
+
+        </a>
+        
+
+        
+      </div>
+      </li>
+    
+      <li class="post publication" id="master-thesis-2015">
+        <span class="icon--post"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 128 128" id="Layer_1" version="1.1" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><circle cx="64" cy="64" fill="#455E6B" r="63.5"/><path d="M100.7,49.2l-3.3,3.6L56,53.7L20.7,62H20l63.5,62.4c22.2-7.2,39.1-26.3,43.1-49.8L100.7,49.2z" fill="#364E59"/><g><polygon fill="#6D3C3C" points="112.7,69.6 112.7,71.4 77.8,105.9 77.8,103.2 108.8,72   "/><polygon fill="#976263" points="15.3,56 15.3,57.6 77.8,105.9 77.8,103.2 29.1,62.9   "/><polygon fill="#5B2C2C" points="107.7,66.8 112.7,69.6 77.8,103.8 15.3,56 21.6,52.5   "/><polygon fill="#DBB560" points="21.7,51 32.6,44.3 55.8,65.8 50.5,70.9   "/><path d="M36.4,42.7l-13.3,7.9c0,0,8.1-1.2,27.3,20.2l6.9-16.7L36.4,42.7z" fill="#EDCD7B"/><path d="M77.8,100.1c0,0-16.5-23.9-28.3-25.3l1-3.9l11.8-3.4l18,10.8L80.9,92L77.8,100.1z" fill="#FFE2A4"/><path d="M80.2,42.8c0,0,22.1-2.2,28.5,20.7L78,95c0,0-9.5-19.2-27.6-24.1L80.2,42.8z" fill="#EDCD7B"/><path d="M80.2,42.8c0,0-10.6-23.6-24.1-20.4L23.1,48c0,0,11.3-5.2,27.3,22.9L80.2,42.8z" fill="#FFE2A4"/><polygon fill="#C79D49" points="108.8,63.5 108.8,68.9 77.8,100.1 78,95   "/><polygon fill="#FFE2A4" points="21.7,51 50.5,70.9 49.5,74.8 19.2,54.6   "/><g><path d="M100.9,60.1c-6.2-11.8-19.5-13.3-19.7-13.3l0.1-1c0.1,0,14,1.6,20.5,13.8L100.9,60.1z" fill="#B3873A"/></g><g><path d="M97.3,64.3c-6.4-12.3-19.3-14-19.4-14l0.1-1c0.1,0,13.5,1.8,20.2,14.6L97.3,64.3z" fill="#B3873A"/></g><g><path d="M93.7,68.5C86.8,56,74.9,54.1,74.8,54.1l0.1-1c0.1,0,12.5,2,19.6,14.9L93.7,68.5z" fill="#B3873A"/></g><g><path d="M89.7,72.9C83,59.6,70.5,58.4,70.4,58.4l0.1-1c0.1,0,13.2,1.3,20.1,15L89.7,72.9z" fill="#B3873A"/></g><g><path d="M86.1,76.9c-6.8-12.8-19-14.6-19.1-14.6l0.1-1c0.1,0,12.9,1.9,19.9,15.1L86.1,76.9z" fill="#B3873A"/></g><g><path d="M81.9,81.7C75.2,68.3,63.3,66,63.2,66l0.2-1c0.1,0,12.6,2.5,19.5,16.2L81.9,81.7z" fill="#B3873A"/></g><g><path d="M78.2,85.6c-6.7-13.3-18.7-16.2-18.8-16.2l0.2-1c0.1,0,12.5,3,19.5,16.7L78.2,85.6z" fill="#B3873A"/></g><path d="M58.1,26L58,26.9c0.1,0,6.5,0.9,15.2,15.3l0.7-0.6C65,26.9,58.4,26,58.1,26z" fill="#DBB560"/><path d="M54.2,29.2l-0.1,0.9c0.1,0,6.6,0.9,15.3,15.4l0.7-0.6C61.2,30.2,54.5,29.3,54.2,29.2z" fill="#DBB560"/><path d="M50.4,32.5l-0.1,0.9c0.1,0,6.6,0.9,15.3,15.5l0.7-0.6C57.4,33.4,50.7,32.5,50.4,32.5z" fill="#DBB560"/><path d="M46.5,35.7l-0.1,0.9c0.1,0,6.6,0.9,15.4,15.6l0.7-0.6C53.5,36.6,46.8,35.7,46.5,35.7z" fill="#DBB560"/><path d="M42.6,38.9l-0.1,0.9c0.1,0,6.7,0.9,15.5,15.8l0.7-0.6C49.7,39.9,42.9,39,42.6,38.9z" fill="#DBB560"/><path d="M38.8,42.2l-0.1,0.9c0.1,0,6.7,0.9,15.5,15.9l0.7-0.6C45.9,43.1,39.1,42.2,38.8,42.2z" fill="#DBB560"/><path d="M34.9,45.4l-0.1,0.9c0.1,0,6.7,0.9,15.6,16l0,0l0.7-0.6C42.1,46.4,35.2,45.5,34.9,45.4z" fill="#DBB560"/></g></g></svg></span>
+
+        <p class="post-meta">
+          <time datetime="2015-09-01T00:00:00+02:00" itemprop="datePublished">Sep 2015</time>
+        </p>
+
+        <h2>Master-Thesis: Camera-Agnostic Monocular SLAM and Semi-Dense 3D Reconstruction</h2>
+        <div class="pub-authors"><strong>Martin Rünz</strong></div>
+        <hr />
+
+        
+        <img src="media/pubs/ruenz15master.jpg" />
+        
+
+        
+
+        <p>This thesis discusses localization and mapping techniques based on a single camera. After introducing the given problem, which is known as monocular SLAM, an overview of related publications is provided. Relevant mathematical principles are presented and subsequently used to compare available methods in the abstract. During this comparison, state-of-the-art methods are analysed thoroughly. Various camera models are studied with emphasis on omnidirectional cameras, and corresponding techniques are investigated. Employing omnidirectional cameras imposes special requirements that are not met by common SLAM-methods. In this thesis, techniques that are applicable for traditional as well as omnidirectional cameras are evaluated. A new camera agnostic monocular SLAM system (CAM-SLAM) is presented. It was developed within the scope of this thesis and is inspired by recently proposed SLAM-methods. In contrast to most other systems, it supports any central camera model. Experiments show that CAM-SLAM features similar accuracy as state-of- the-art methods, while being considerably more flexible.</p>
+
+        <div class="publication-links">
+        
+        <a href="media/pubs/ruenz15master.bibtex" title="Download Bibtex" alt="Download Bibtex"><span class="icon--bibtex icon--btn"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="1060.28"
+   viewBox="0 0 1060.28 342.32"
+   height="342.32"
+   id="svg2">
+  <metadata
+     id="metadata27">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://web.resource.org/cc/PublicDomain" />
+        <dc:title></dc:title>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://web.resource.org/cc/PublicDomain">
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Reproduction" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Distribution" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs4">
+    <marker
+       markerUnits="strokeWidth"
+       refX="0"
+       refY="5"
+       markerWidth="4"
+       markerHeight="3"
+       orient="auto"
+       viewBox="0 0 10 10"
+       id="ArrowEnd">
+      <path
+         d="M 0,0 10,5 0,10 0,0 z"
+         id="path7" />
+    </marker>
+    <marker
+       markerUnits="strokeWidth"
+       refX="10"
+       refY="5"
+       markerWidth="4"
+       markerHeight="3"
+       orient="auto"
+       viewBox="0 0 10 10"
+       id="ArrowStart">
+      <path
+         d="M 10,0 0,5 10,10 10,0 z"
+         id="path10" />
+    </marker>
+  </defs>
+  <g
+     transform="matrix(14.04287,0,0,14.04287,0,0.09131875)"
+     id="g12">
+    <path
+       d="M 0,0.00396729 0,0.60199 c 1.73,0 2.007,0 2.007,1.117 l 0,13.45701 c 0,1.117 -0.27301,1.117 -2.007,1.117 l 0,0.598 8.496,0 c 3.16,0 5.211,-2.25 5.211,-4.5 0,-2.227 -2.028,-4.12904 -4.668,-4.305 C 11.406,7.61798 13.062,6.03601 13.062,4.15698 13.062,2.10602 11.039,0 7.851,0 L 0,0.00396729 z M 3.60899,7.90698 l 0,-6.328 C 3.60899,0.734985 3.656,0.609985 4.64,0.609985 l 3.145,0 c 2.429,0 3.511,1.984005 3.511,3.523015 0,1.88702 -1.50001,3.77398 -4.152,3.77398 l -3.53501,0 z M 4.64,16.305 c -0.98,0 -1.027,-0.125 -1.027,-0.969 l 0,-7.02704 4.54299,0 c 2.52701,0 3.75801,2.26604 3.75801,4.08604 0,1.816 -1.399,3.91 -4.07501,3.91"
+       id="path14"
+       style="fill:#000000;stroke:none" />
+    <path
+       d="m 18.41,5.99701 c 0,-1.06305 0.125,-1.18805 1.918,-1.18805 l 0,-0.59796 c -0.84,0.02399 -2.129,0.07501 -2.774,0.07501 -0.644,0 -1.933,-0.047 -2.773,-0.07501 l 0,0.59796 c 1.711,0 1.832,0.125 1.832,1.18805 l 0,9.11699 c 0,1.062 -0.117,1.187 -1.832,1.187 l 0,0.598 c 0.84,-0.024 2.129,-0.07 2.773,-0.07 0.645,0 1.93,0.046 2.774,0.07 l 0,-0.598 c -1.793,0 -1.918,-0.121 -1.918,-1.187"
+       id="path16"
+       style="fill:#000000;stroke:none" />
+    <path
+       d="m 21.75,4.20398 0,0.59698 c 1.636,0 1.757,0.14905 1.757,1.16401 l 0,9.16803 c 0,1.016 -0.121,1.164 -1.757,1.164 l 0,0.598 7.476,0 c 2.746,0 4.481,-1.68 4.481,-3.406 0,-1.606 -1.586,-2.965 -3.739,-3.235 1.758,-0.36704 3.168,-1.48001 3.168,-2.91403 0,-1.55396 -1.73,-3.13599 -4.429,-3.13599 l -6.957,0 z m 3.359,5.80002 0,-4.13602 c 0,-0.98498 0.125,-1.05902 1,-1.05902 l 2.402,0 c 2.278,0 2.653,1.92206 2.653,2.51202 0,0.88599 -0.649,2.68302 -3.254,2.68302 l -2.801,0 z m 0,0.5 3.719,0 c 2.105,0 2.777,1.907 2.777,2.961 0,1.129 -0.816,2.836 -3.074,2.836 l -2.43,0 c -0.867,0 -0.988,-0.074 -0.988,-1.078"
+       id="path18"
+       style="fill:#000000;stroke:none" />
+    <path
+       d="m 48.628,0.0469971 -14.3,0 -0.418,5.4769929 0.445,0 c 0.32,-4.10199 0.672,-4.820011 4.512,-4.820011 0.445,0 1.168,0 1.367,0 0.473,0.074036 0.473,0.375001 0.473,0.945011 l 0,13.48001 c 0,0.895 -0.075,1.168 -2.161,1.168 l -0.703,0 0,0.598 c 1.188,-0.023 2.426,-0.047 3.641,-0.047 1.211,0 2.453,0.024 3.64,0.047 l 0,-0.598 -0.691,0 c -2.055,0 -2.129,-0.273 -2.129,-1.168 l 0,-13.48001 c 0,-0.547 0,-0.843997 0.446,-0.945011 0.195,0 0.914,0 1.359,0 3.789,0 4.16,0.713991 4.48,4.820011 l 0.446,0"
+       id="path20"
+       style="fill:#000000;stroke:none" />
+    <path
+       d="m 60.957,18.133 -0.446,0 c -0.543,3.672 -0.863,5.668 -5.219,5.668 l -3.437,0 c -0.988,0 -1.035,-0.125 -1.035,-0.976 l 0,-6.922 2.336,0 c 2.336,0 2.558,0.855 2.558,2.945 l 0.399,0 0,-6.441 -0.399,0 c 0,2.054 -0.222,2.894 -2.558,2.894 l -2.336,0 0,-6.137 c 0,-0.83502 0.047,-0.96002 1.035,-0.96002 l 3.387,0 c 3.832,0 4.277,1.52301 4.625,4.79602 l 0.445,0 -0.594,-5.47601 -12.539,0 0,0.67999 c 1.754,0 2.035,0 2.035,1.11304 l 0,13.36298 c 0,1.113 -0.277,1.113 -2.035,1.113 l 0,0.598 12.887,0"
+       id="path22"
+       style="fill:#000000;stroke:none" />
+    <path
+       d="m 67.73,7.52399 3.664,-5.297 c 0.367,-0.52002 1.113,-1.590027 3.145,-1.617005 l 0,-0.5980221 C 73.972,0.05896 73.031,0.05896 72.437,0.05896 c -0.816,0 -1.832,0 -2.449,-0.0469971 l 0,0.5980221 c 0.793,0.073975 0.988,0.570005 0.988,0.968995 0,0.29602 -0.121,0.49603 -0.297,0.742 L 67.41,7.06299 63.746,1.70001 C 63.574,1.42999 63.55,1.35199 63.55,1.27802 c 0,-0.22303 0.27,-0.645024 1.09,-0.668035 l 0,-0.5980221 C 63.847,0.05896 62.636,0.05896 61.82,0.05896 c -0.641,0 -1.879,0 -2.477,-0.0469971 l 0,0.5980221 c 1.36,0 1.805,0.051026 2.352,0.820005 l 4.777,7.01599 -4.308,6.29302 c -1.063,1.539 -2.672,1.566 -3.145,1.566 l 0,0.598 c 0.566,-0.047 1.508,-0.047 2.102,-0.047 0.668,0 1.832,0 2.449,0.047 l 0,-0.598 c -0.766,-0.074 -0.988,-0.57 -0.988,-0.969 0,-0.32 0.121,-0.496 0.246,-0.672 l 3.961,-5.781 4.308,6.332 c 0.195,0.274 0.195,0.348 0.195,0.422 0,0.195 -0.222,0.621 -1.089,0.672 l 0,0.598 c 0.793,-0.047 2.004,-0.047 2.82,-0.047 0.641,0 1.879,0 2.48,0.047 l 0,-0.598 c -1.586,0 -1.836,-0.121 -2.328,-0.82"
+       id="path24"
+       style="fill:#000000;stroke:none" />
+  </g>
+</svg>
+</span>
+</a>
+        
+
+        
+        <a title="Download PDF" alt="Download PDF"
+          href="media/pubs/ruenz15master.pdf">
+          <span class="icon--pdf icon--btn"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="49"
+   height="64"
+   viewBox="0 0 49 64"
+   id="svg3391">
+  <metadata
+     id="metadata3407">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3393">
+    <style
+       id="style3395" />
+  </defs>
+  <g
+     id="g3397">
+    <path
+       d="m 49,16.842 0,42.105 C 49,61.738 46.73,64 43.931,64 L 5.069,64 C 2.269,64 0,61.738 0,58.947 L 0,5.053 C 0,2.262 2.269,0 5.069,0 L 32.103,0 49,16.842 z"
+       id="path3399"
+       style="fill:#cb0606;fill-rule:evenodd" />
+    <path
+       d="m 49,15.899 0,2.096 -13.813,0 c -2.86,0 -4.179,-2.32 -4.179,-5.181 L 31.008,0 33.1,0 49,15.899 z"
+       id="path3401"
+       style="fill:#fb8d8d;fill-rule:evenodd" />
+    <path
+       d="M 37.606,34.047 C 37.17,33.903 36.75,33.83 36.345,33.83 c -0.46,0 -0.776,0.095 -0.949,0.285 -0.172,0.19 -0.258,0.526 -0.258,1.009 l 0,0.923 1.933,0 0,1.854 -1.933,0 0,7.635 -2.342,0 0,-7.635 -1.207,0 0,-1.854 1.207,0 0,-0.923 c 0,-1.176 0.292,-2.026 0.876,-2.551 0.584,-0.525 1.462,-0.787 2.636,-0.787 0.551,0 1.135,0.075 1.752,0.226 l -0.454,2.035 z m -9.81,10.566 c -0.436,0.368 -0.896,0.661 -1.38,0.878 -0.484,0.217 -1.034,0.325 -1.651,0.325 -1.198,0 -2.115,-0.431 -2.75,-1.293 -0.636,-0.863 -0.953,-2.081 -0.953,-3.655 0,-1.61 0.349,-2.861 1.048,-3.754 0.699,-0.892 1.68,-1.339 2.945,-1.339 0.448,0 0.907,0.092 1.379,0.276 0.472,0.184 0.863,0.418 1.171,0.701 l 0,-4.686 2.342,0 0,13.47 -2.151,0 0,-0.923 z m -0.191,-5.934 c -0.248,-0.223 -0.555,-0.421 -0.921,-0.593 -0.366,-0.171 -0.74,-0.257 -1.121,-0.257 -0.629,0 -1.134,0.27 -1.515,0.809 -0.382,0.54 -0.572,1.271 -0.572,2.194 0,0.911 0.156,1.625 0.467,2.144 0.312,0.519 0.794,0.778 1.448,0.778 0.387,0 0.782,-0.089 1.184,-0.267 0.402,-0.178 0.746,-0.397 1.03,-0.656 l 0,-4.152 z m -10.01,6.522 c -0.575,0.41 -1.261,0.615 -2.06,0.615 -1.053,0 -1.951,-0.328 -2.695,-0.986 l 0,4.279 -2.342,0 0,-13.062 2.16,0 0,0.931 c 0.436,-0.374 0.894,-0.668 1.375,-0.882 0.481,-0.214 1.033,-0.321 1.656,-0.321 1.204,0 2.121,0.422 2.75,1.267 0.629,0.844 0.944,2.071 0.944,3.681 0,1.02 -0.154,1.918 -0.463,2.696 -0.309,0.778 -0.75,1.372 -1.325,1.782 z m -1.107,-6.599 c -0.321,-0.516 -0.799,-0.773 -1.434,-0.773 -0.381,0 -0.773,0.089 -1.175,0.266 -0.403,0.178 -0.749,0.397 -1.039,0.656 l 0,4.152 c 0.248,0.224 0.555,0.421 0.921,0.593 0.366,0.172 0.742,0.258 1.13,0.258 0.641,0 1.148,-0.273 1.52,-0.819 0.372,-0.546 0.558,-1.271 0.558,-2.175 0,-0.923 -0.161,-1.642 -0.481,-2.158 z"
+       id="path3403"
+       style="fill:#ffffff;fill-rule:evenodd" />
+  </g>
+</svg>
+</span>
+
+        </a>
+        
+
+        
+      </div>
+      </li>
+    
+      <li class="post publication" id="bachelor-thesis-2012">
+        <span class="icon--post"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 128 128" id="Layer_1" version="1.1" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><circle cx="64" cy="64" fill="#455E6B" r="63.5"/><path d="M100.7,49.2l-3.3,3.6L56,53.7L20.7,62H20l63.5,62.4c22.2-7.2,39.1-26.3,43.1-49.8L100.7,49.2z" fill="#364E59"/><g><polygon fill="#6D3C3C" points="112.7,69.6 112.7,71.4 77.8,105.9 77.8,103.2 108.8,72   "/><polygon fill="#976263" points="15.3,56 15.3,57.6 77.8,105.9 77.8,103.2 29.1,62.9   "/><polygon fill="#5B2C2C" points="107.7,66.8 112.7,69.6 77.8,103.8 15.3,56 21.6,52.5   "/><polygon fill="#DBB560" points="21.7,51 32.6,44.3 55.8,65.8 50.5,70.9   "/><path d="M36.4,42.7l-13.3,7.9c0,0,8.1-1.2,27.3,20.2l6.9-16.7L36.4,42.7z" fill="#EDCD7B"/><path d="M77.8,100.1c0,0-16.5-23.9-28.3-25.3l1-3.9l11.8-3.4l18,10.8L80.9,92L77.8,100.1z" fill="#FFE2A4"/><path d="M80.2,42.8c0,0,22.1-2.2,28.5,20.7L78,95c0,0-9.5-19.2-27.6-24.1L80.2,42.8z" fill="#EDCD7B"/><path d="M80.2,42.8c0,0-10.6-23.6-24.1-20.4L23.1,48c0,0,11.3-5.2,27.3,22.9L80.2,42.8z" fill="#FFE2A4"/><polygon fill="#C79D49" points="108.8,63.5 108.8,68.9 77.8,100.1 78,95   "/><polygon fill="#FFE2A4" points="21.7,51 50.5,70.9 49.5,74.8 19.2,54.6   "/><g><path d="M100.9,60.1c-6.2-11.8-19.5-13.3-19.7-13.3l0.1-1c0.1,0,14,1.6,20.5,13.8L100.9,60.1z" fill="#B3873A"/></g><g><path d="M97.3,64.3c-6.4-12.3-19.3-14-19.4-14l0.1-1c0.1,0,13.5,1.8,20.2,14.6L97.3,64.3z" fill="#B3873A"/></g><g><path d="M93.7,68.5C86.8,56,74.9,54.1,74.8,54.1l0.1-1c0.1,0,12.5,2,19.6,14.9L93.7,68.5z" fill="#B3873A"/></g><g><path d="M89.7,72.9C83,59.6,70.5,58.4,70.4,58.4l0.1-1c0.1,0,13.2,1.3,20.1,15L89.7,72.9z" fill="#B3873A"/></g><g><path d="M86.1,76.9c-6.8-12.8-19-14.6-19.1-14.6l0.1-1c0.1,0,12.9,1.9,19.9,15.1L86.1,76.9z" fill="#B3873A"/></g><g><path d="M81.9,81.7C75.2,68.3,63.3,66,63.2,66l0.2-1c0.1,0,12.6,2.5,19.5,16.2L81.9,81.7z" fill="#B3873A"/></g><g><path d="M78.2,85.6c-6.7-13.3-18.7-16.2-18.8-16.2l0.2-1c0.1,0,12.5,3,19.5,16.7L78.2,85.6z" fill="#B3873A"/></g><path d="M58.1,26L58,26.9c0.1,0,6.5,0.9,15.2,15.3l0.7-0.6C65,26.9,58.4,26,58.1,26z" fill="#DBB560"/><path d="M54.2,29.2l-0.1,0.9c0.1,0,6.6,0.9,15.3,15.4l0.7-0.6C61.2,30.2,54.5,29.3,54.2,29.2z" fill="#DBB560"/><path d="M50.4,32.5l-0.1,0.9c0.1,0,6.6,0.9,15.3,15.5l0.7-0.6C57.4,33.4,50.7,32.5,50.4,32.5z" fill="#DBB560"/><path d="M46.5,35.7l-0.1,0.9c0.1,0,6.6,0.9,15.4,15.6l0.7-0.6C53.5,36.6,46.8,35.7,46.5,35.7z" fill="#DBB560"/><path d="M42.6,38.9l-0.1,0.9c0.1,0,6.7,0.9,15.5,15.8l0.7-0.6C49.7,39.9,42.9,39,42.6,38.9z" fill="#DBB560"/><path d="M38.8,42.2l-0.1,0.9c0.1,0,6.7,0.9,15.5,15.9l0.7-0.6C45.9,43.1,39.1,42.2,38.8,42.2z" fill="#DBB560"/><path d="M34.9,45.4l-0.1,0.9c0.1,0,6.7,0.9,15.6,16l0,0l0.7-0.6C42.1,46.4,35.2,45.5,34.9,45.4z" fill="#DBB560"/></g></g></svg></span>
+
+        <p class="post-meta">
+          <time datetime="2012-05-01T00:00:00+02:00" itemprop="datePublished">May 2012</time>
+        </p>
+
+        <h2>Bachelor-Thesis: Real-Time Hair Simulation and Rendering</h2>
+        <div class="pub-authors"><strong>Martin Rünz</strong></div>
+        <hr />
+
+        
+        <img src="media/pubs/ruenz12bachelor.jpg" />
+        
+
+        
+
+        <p>My bachelor thesis presents real-time techniques for virtual hair generation, simulation and rendering and discusses a prototype which has been implemented within the scope of this thesis.  After examining properties  of  human  hair  in  section  2,  section  3  outlines  simulation  methods and explains mass-spring systems.  All simulation methods are based on particles, which are used to generate geometry (section 4) and to subsequently render hair strands. The Kajiya and Kay’s, Marschner and an artist friendly shading system are reviewed in section, before describing shadow and self-shadowing techniques, such as deep opacity maps in section 5. While the subjects of the first sections are platform-independent methods and properties, section 6 presents DirectX 11-oriented implementation details.  Finally,  the prototype is used to analyse the quality as well as the efficiency of covered techniques in section 7.</p>
+
+        <div class="publication-links">
+        
+        <a href="media/pubs/ruenz12bachelor.bibtex" title="Download Bibtex" alt="Download Bibtex"><span class="icon--bibtex icon--btn"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="1060.28"
+   viewBox="0 0 1060.28 342.32"
+   height="342.32"
+   id="svg2">
+  <metadata
+     id="metadata27">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://web.resource.org/cc/PublicDomain" />
+        <dc:title></dc:title>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://web.resource.org/cc/PublicDomain">
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Reproduction" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Distribution" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs4">
+    <marker
+       markerUnits="strokeWidth"
+       refX="0"
+       refY="5"
+       markerWidth="4"
+       markerHeight="3"
+       orient="auto"
+       viewBox="0 0 10 10"
+       id="ArrowEnd">
+      <path
+         d="M 0,0 10,5 0,10 0,0 z"
+         id="path7" />
+    </marker>
+    <marker
+       markerUnits="strokeWidth"
+       refX="10"
+       refY="5"
+       markerWidth="4"
+       markerHeight="3"
+       orient="auto"
+       viewBox="0 0 10 10"
+       id="ArrowStart">
+      <path
+         d="M 10,0 0,5 10,10 10,0 z"
+         id="path10" />
+    </marker>
+  </defs>
+  <g
+     transform="matrix(14.04287,0,0,14.04287,0,0.09131875)"
+     id="g12">
+    <path
+       d="M 0,0.00396729 0,0.60199 c 1.73,0 2.007,0 2.007,1.117 l 0,13.45701 c 0,1.117 -0.27301,1.117 -2.007,1.117 l 0,0.598 8.496,0 c 3.16,0 5.211,-2.25 5.211,-4.5 0,-2.227 -2.028,-4.12904 -4.668,-4.305 C 11.406,7.61798 13.062,6.03601 13.062,4.15698 13.062,2.10602 11.039,0 7.851,0 L 0,0.00396729 z M 3.60899,7.90698 l 0,-6.328 C 3.60899,0.734985 3.656,0.609985 4.64,0.609985 l 3.145,0 c 2.429,0 3.511,1.984005 3.511,3.523015 0,1.88702 -1.50001,3.77398 -4.152,3.77398 l -3.53501,0 z M 4.64,16.305 c -0.98,0 -1.027,-0.125 -1.027,-0.969 l 0,-7.02704 4.54299,0 c 2.52701,0 3.75801,2.26604 3.75801,4.08604 0,1.816 -1.399,3.91 -4.07501,3.91"
+       id="path14"
+       style="fill:#000000;stroke:none" />
+    <path
+       d="m 18.41,5.99701 c 0,-1.06305 0.125,-1.18805 1.918,-1.18805 l 0,-0.59796 c -0.84,0.02399 -2.129,0.07501 -2.774,0.07501 -0.644,0 -1.933,-0.047 -2.773,-0.07501 l 0,0.59796 c 1.711,0 1.832,0.125 1.832,1.18805 l 0,9.11699 c 0,1.062 -0.117,1.187 -1.832,1.187 l 0,0.598 c 0.84,-0.024 2.129,-0.07 2.773,-0.07 0.645,0 1.93,0.046 2.774,0.07 l 0,-0.598 c -1.793,0 -1.918,-0.121 -1.918,-1.187"
+       id="path16"
+       style="fill:#000000;stroke:none" />
+    <path
+       d="m 21.75,4.20398 0,0.59698 c 1.636,0 1.757,0.14905 1.757,1.16401 l 0,9.16803 c 0,1.016 -0.121,1.164 -1.757,1.164 l 0,0.598 7.476,0 c 2.746,0 4.481,-1.68 4.481,-3.406 0,-1.606 -1.586,-2.965 -3.739,-3.235 1.758,-0.36704 3.168,-1.48001 3.168,-2.91403 0,-1.55396 -1.73,-3.13599 -4.429,-3.13599 l -6.957,0 z m 3.359,5.80002 0,-4.13602 c 0,-0.98498 0.125,-1.05902 1,-1.05902 l 2.402,0 c 2.278,0 2.653,1.92206 2.653,2.51202 0,0.88599 -0.649,2.68302 -3.254,2.68302 l -2.801,0 z m 0,0.5 3.719,0 c 2.105,0 2.777,1.907 2.777,2.961 0,1.129 -0.816,2.836 -3.074,2.836 l -2.43,0 c -0.867,0 -0.988,-0.074 -0.988,-1.078"
+       id="path18"
+       style="fill:#000000;stroke:none" />
+    <path
+       d="m 48.628,0.0469971 -14.3,0 -0.418,5.4769929 0.445,0 c 0.32,-4.10199 0.672,-4.820011 4.512,-4.820011 0.445,0 1.168,0 1.367,0 0.473,0.074036 0.473,0.375001 0.473,0.945011 l 0,13.48001 c 0,0.895 -0.075,1.168 -2.161,1.168 l -0.703,0 0,0.598 c 1.188,-0.023 2.426,-0.047 3.641,-0.047 1.211,0 2.453,0.024 3.64,0.047 l 0,-0.598 -0.691,0 c -2.055,0 -2.129,-0.273 -2.129,-1.168 l 0,-13.48001 c 0,-0.547 0,-0.843997 0.446,-0.945011 0.195,0 0.914,0 1.359,0 3.789,0 4.16,0.713991 4.48,4.820011 l 0.446,0"
+       id="path20"
+       style="fill:#000000;stroke:none" />
+    <path
+       d="m 60.957,18.133 -0.446,0 c -0.543,3.672 -0.863,5.668 -5.219,5.668 l -3.437,0 c -0.988,0 -1.035,-0.125 -1.035,-0.976 l 0,-6.922 2.336,0 c 2.336,0 2.558,0.855 2.558,2.945 l 0.399,0 0,-6.441 -0.399,0 c 0,2.054 -0.222,2.894 -2.558,2.894 l -2.336,0 0,-6.137 c 0,-0.83502 0.047,-0.96002 1.035,-0.96002 l 3.387,0 c 3.832,0 4.277,1.52301 4.625,4.79602 l 0.445,0 -0.594,-5.47601 -12.539,0 0,0.67999 c 1.754,0 2.035,0 2.035,1.11304 l 0,13.36298 c 0,1.113 -0.277,1.113 -2.035,1.113 l 0,0.598 12.887,0"
+       id="path22"
+       style="fill:#000000;stroke:none" />
+    <path
+       d="m 67.73,7.52399 3.664,-5.297 c 0.367,-0.52002 1.113,-1.590027 3.145,-1.617005 l 0,-0.5980221 C 73.972,0.05896 73.031,0.05896 72.437,0.05896 c -0.816,0 -1.832,0 -2.449,-0.0469971 l 0,0.5980221 c 0.793,0.073975 0.988,0.570005 0.988,0.968995 0,0.29602 -0.121,0.49603 -0.297,0.742 L 67.41,7.06299 63.746,1.70001 C 63.574,1.42999 63.55,1.35199 63.55,1.27802 c 0,-0.22303 0.27,-0.645024 1.09,-0.668035 l 0,-0.5980221 C 63.847,0.05896 62.636,0.05896 61.82,0.05896 c -0.641,0 -1.879,0 -2.477,-0.0469971 l 0,0.5980221 c 1.36,0 1.805,0.051026 2.352,0.820005 l 4.777,7.01599 -4.308,6.29302 c -1.063,1.539 -2.672,1.566 -3.145,1.566 l 0,0.598 c 0.566,-0.047 1.508,-0.047 2.102,-0.047 0.668,0 1.832,0 2.449,0.047 l 0,-0.598 c -0.766,-0.074 -0.988,-0.57 -0.988,-0.969 0,-0.32 0.121,-0.496 0.246,-0.672 l 3.961,-5.781 4.308,6.332 c 0.195,0.274 0.195,0.348 0.195,0.422 0,0.195 -0.222,0.621 -1.089,0.672 l 0,0.598 c 0.793,-0.047 2.004,-0.047 2.82,-0.047 0.641,0 1.879,0 2.48,0.047 l 0,-0.598 c -1.586,0 -1.836,-0.121 -2.328,-0.82"
+       id="path24"
+       style="fill:#000000;stroke:none" />
+  </g>
+</svg>
+</span>
+</a>
+        
+
+        
+        <a title="Download PDF" alt="Download PDF"
+          href="media/pubs/ruenz12bachelor.pdf">
+          <span class="icon--pdf icon--btn"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="49"
+   height="64"
+   viewBox="0 0 49 64"
+   id="svg3391">
+  <metadata
+     id="metadata3407">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3393">
+    <style
+       id="style3395" />
+  </defs>
+  <g
+     id="g3397">
+    <path
+       d="m 49,16.842 0,42.105 C 49,61.738 46.73,64 43.931,64 L 5.069,64 C 2.269,64 0,61.738 0,58.947 L 0,5.053 C 0,2.262 2.269,0 5.069,0 L 32.103,0 49,16.842 z"
+       id="path3399"
+       style="fill:#cb0606;fill-rule:evenodd" />
+    <path
+       d="m 49,15.899 0,2.096 -13.813,0 c -2.86,0 -4.179,-2.32 -4.179,-5.181 L 31.008,0 33.1,0 49,15.899 z"
+       id="path3401"
+       style="fill:#fb8d8d;fill-rule:evenodd" />
+    <path
+       d="M 37.606,34.047 C 37.17,33.903 36.75,33.83 36.345,33.83 c -0.46,0 -0.776,0.095 -0.949,0.285 -0.172,0.19 -0.258,0.526 -0.258,1.009 l 0,0.923 1.933,0 0,1.854 -1.933,0 0,7.635 -2.342,0 0,-7.635 -1.207,0 0,-1.854 1.207,0 0,-0.923 c 0,-1.176 0.292,-2.026 0.876,-2.551 0.584,-0.525 1.462,-0.787 2.636,-0.787 0.551,0 1.135,0.075 1.752,0.226 l -0.454,2.035 z m -9.81,10.566 c -0.436,0.368 -0.896,0.661 -1.38,0.878 -0.484,0.217 -1.034,0.325 -1.651,0.325 -1.198,0 -2.115,-0.431 -2.75,-1.293 -0.636,-0.863 -0.953,-2.081 -0.953,-3.655 0,-1.61 0.349,-2.861 1.048,-3.754 0.699,-0.892 1.68,-1.339 2.945,-1.339 0.448,0 0.907,0.092 1.379,0.276 0.472,0.184 0.863,0.418 1.171,0.701 l 0,-4.686 2.342,0 0,13.47 -2.151,0 0,-0.923 z m -0.191,-5.934 c -0.248,-0.223 -0.555,-0.421 -0.921,-0.593 -0.366,-0.171 -0.74,-0.257 -1.121,-0.257 -0.629,0 -1.134,0.27 -1.515,0.809 -0.382,0.54 -0.572,1.271 -0.572,2.194 0,0.911 0.156,1.625 0.467,2.144 0.312,0.519 0.794,0.778 1.448,0.778 0.387,0 0.782,-0.089 1.184,-0.267 0.402,-0.178 0.746,-0.397 1.03,-0.656 l 0,-4.152 z m -10.01,6.522 c -0.575,0.41 -1.261,0.615 -2.06,0.615 -1.053,0 -1.951,-0.328 -2.695,-0.986 l 0,4.279 -2.342,0 0,-13.062 2.16,0 0,0.931 c 0.436,-0.374 0.894,-0.668 1.375,-0.882 0.481,-0.214 1.033,-0.321 1.656,-0.321 1.204,0 2.121,0.422 2.75,1.267 0.629,0.844 0.944,2.071 0.944,3.681 0,1.02 -0.154,1.918 -0.463,2.696 -0.309,0.778 -0.75,1.372 -1.325,1.782 z m -1.107,-6.599 c -0.321,-0.516 -0.799,-0.773 -1.434,-0.773 -0.381,0 -0.773,0.089 -1.175,0.266 -0.403,0.178 -0.749,0.397 -1.039,0.656 l 0,4.152 c 0.248,0.224 0.555,0.421 0.921,0.593 0.366,0.172 0.742,0.258 1.13,0.258 0.641,0 1.148,-0.273 1.52,-0.819 0.372,-0.546 0.558,-1.271 0.558,-2.175 0,-0.923 -0.161,-1.642 -0.481,-2.158 z"
+       id="path3403"
+       style="fill:#ffffff;fill-rule:evenodd" />
+  </g>
+</svg>
+</span>
+
+        </a>
+        
+
+        
+      </div>
+      </li>
+    
+      <li class="post publication" id="3dcis-2011">
+        <span class="icon--post"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 128 128" id="Layer_1" version="1.1" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><circle cx="64" cy="64" fill="#BE6B2F" r="63.5"/><path d="M94.3,27.8L92.2,30L36.3,97.6l-1.9,2.3l27.8,27.5c0.6,0,1.2,0,1.8,0c35.1,0,63.5-28.4,63.5-63.5   c0-1.1,0-2.3-0.1-3.4L94.3,27.8z" fill="#AA5D27"/><g><g><path d="M93.9,28C74,26.2,54,26.2,34.1,28C33,52.1,33,75.9,34.1,100c15.1,1.4,30.4,1.7,45.5,1     c5-8.9,10-17.7,15-26.2C94.9,59.2,94.6,43.7,93.9,28z" fill="#EBEBEB"/></g><g><path d="M78.4,85.5c0,0.1,6.9,1.5,16.3-10.7c-5,8.5-10.1,17.3-15,26.2C79.6,100.9,84.2,94.7,78.4,85.5z" fill="#CDCCCC"/></g><g><path d="M64.5,38.9c-7.2,0-14.4,0.1-21.6,0.3c0-0.3,0-0.7,0-1c7.2-0.2,14.4-0.3,21.6-0.3     C64.5,38.3,64.5,38.6,64.5,38.9z" fill="#809180"/></g><g><path d="M85.3,47.4c-14.2-0.2-28.3-0.2-42.5,0c0-0.3,0-0.7,0-1c14.1-0.3,28.3-0.3,42.5,0     C85.2,46.7,85.2,47,85.3,47.4z" fill="#809180"/></g><g><path d="M85.3,52.4c-14.2-0.2-28.4-0.2-42.6,0c0-0.3,0-0.7,0-1c14.2-0.2,28.4-0.2,42.6,0     C85.3,51.7,85.3,52,85.3,52.4z" fill="#809180"/></g><g><path d="M85.3,57.3c-14.2-0.1-28.4-0.1-42.6,0c0-0.3,0-0.7,0-1c14.2-0.1,28.4-0.1,42.6,0     C85.3,56.6,85.3,57,85.3,57.3z" fill="#809180"/></g><g><path d="M85.3,62.3c-14.2,0-28.4,0-42.6,0c0-0.3,0-0.7,0-1c14.2,0,28.4,0,42.6,0C85.3,61.6,85.3,62,85.3,62.3z" fill="#809180"/></g><g><path d="M85.3,67.3c-14.2,0.1-28.4,0.1-42.6,0c0-0.3,0-0.7,0-1c14.2,0.1,28.4,0.1,42.6,0     C85.3,66.6,85.3,66.9,85.3,67.3z" fill="#809180"/></g><g><path d="M85.3,72.3c-14.2,0.2-28.4,0.2-42.6,0c0-0.3,0-0.7,0-1c14.2,0.1,28.4,0.1,42.6,0     C85.3,71.6,85.3,71.9,85.3,72.3z" fill="#809180"/></g><g><path d="M85.2,77.3c-14.1,0.2-28.3,0.2-42.5,0c0-0.3,0-0.7,0-1c14.2,0.2,28.4,0.2,42.5,0     C85.3,76.6,85.2,76.9,85.2,77.3z" fill="#809180"/></g><g><path d="M85.2,82.2c-14.1,0.3-28.3,0.3-42.4,0c0-0.3,0-0.7,0-1c14.1,0.3,28.3,0.3,42.4,0     C85.2,81.5,85.2,81.9,85.2,82.2z" fill="#809180"/></g><g><path d="M75.7,87.4c-10.9,0.2-21.9,0.1-32.8-0.2c0-0.3,0-0.7,0-1c10.9,0.3,21.9,0.4,32.8,0.2     C75.7,86.7,75.7,87.1,75.7,87.4z" fill="#809180"/></g><g><path d="M69,92.5c-8.7,0.1-17.3,0-26-0.3c0-0.3,0-0.7,0-1c8.7,0.3,17.3,0.4,26,0.3C69,91.8,69,92.2,69,92.5z" fill="#809180"/></g></g></g></svg></span>
+
+        <p class="post-meta">
+          <time datetime="2011-07-01T00:00:00+02:00" itemprop="datePublished">Jul 2011</time>, MSV
+        </p>
+
+        <h2>3DCIS: A Real-time Browser-rendered 3D Campus Information System Based On WebGL</h2>
+        <div class="pub-authors">Nils Hering, <strong>Martin Rünz</strong>, Lubosz Sarnecki, Lutz Priese</div>
+        <hr />
+
+        
+        <img src="media/pubs/3dcis.jpg" />
+        
+
+        
+
+        <p>Most of the current real-time 3D web applications are only available with plug-ins as Flash or additional software as Java. Avoiding this drawback, the new WebGL technology provides hardware accelerated computer graphics for web browsers without requiring plug-ins. Using Blender, WebGL, the WebGL-expanding framework GLGE, and an in-house developed exporter B2G from Blender to GLGE we have realized the cutting-edge web application 3DCIS based on a complex 3D model of our campus. With 3DCIS one is able to explore the campus interactively and to become acquainted with local persons and institutions. Textual information about buildings, rooms and persons is linked with 3D model information to enhance the intuitive experience of 3DCIS.</p>
+
+        <div class="publication-links">
+        
+        <a href="media/pubs/hering11msv.bibtex" title="Download Bibtex" alt="Download Bibtex"><span class="icon--bibtex icon--btn"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="1060.28"
+   viewBox="0 0 1060.28 342.32"
+   height="342.32"
+   id="svg2">
+  <metadata
+     id="metadata27">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://web.resource.org/cc/PublicDomain" />
+        <dc:title></dc:title>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://web.resource.org/cc/PublicDomain">
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Reproduction" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Distribution" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs4">
+    <marker
+       markerUnits="strokeWidth"
+       refX="0"
+       refY="5"
+       markerWidth="4"
+       markerHeight="3"
+       orient="auto"
+       viewBox="0 0 10 10"
+       id="ArrowEnd">
+      <path
+         d="M 0,0 10,5 0,10 0,0 z"
+         id="path7" />
+    </marker>
+    <marker
+       markerUnits="strokeWidth"
+       refX="10"
+       refY="5"
+       markerWidth="4"
+       markerHeight="3"
+       orient="auto"
+       viewBox="0 0 10 10"
+       id="ArrowStart">
+      <path
+         d="M 10,0 0,5 10,10 10,0 z"
+         id="path10" />
+    </marker>
+  </defs>
+  <g
+     transform="matrix(14.04287,0,0,14.04287,0,0.09131875)"
+     id="g12">
+    <path
+       d="M 0,0.00396729 0,0.60199 c 1.73,0 2.007,0 2.007,1.117 l 0,13.45701 c 0,1.117 -0.27301,1.117 -2.007,1.117 l 0,0.598 8.496,0 c 3.16,0 5.211,-2.25 5.211,-4.5 0,-2.227 -2.028,-4.12904 -4.668,-4.305 C 11.406,7.61798 13.062,6.03601 13.062,4.15698 13.062,2.10602 11.039,0 7.851,0 L 0,0.00396729 z M 3.60899,7.90698 l 0,-6.328 C 3.60899,0.734985 3.656,0.609985 4.64,0.609985 l 3.145,0 c 2.429,0 3.511,1.984005 3.511,3.523015 0,1.88702 -1.50001,3.77398 -4.152,3.77398 l -3.53501,0 z M 4.64,16.305 c -0.98,0 -1.027,-0.125 -1.027,-0.969 l 0,-7.02704 4.54299,0 c 2.52701,0 3.75801,2.26604 3.75801,4.08604 0,1.816 -1.399,3.91 -4.07501,3.91"
+       id="path14"
+       style="fill:#000000;stroke:none" />
+    <path
+       d="m 18.41,5.99701 c 0,-1.06305 0.125,-1.18805 1.918,-1.18805 l 0,-0.59796 c -0.84,0.02399 -2.129,0.07501 -2.774,0.07501 -0.644,0 -1.933,-0.047 -2.773,-0.07501 l 0,0.59796 c 1.711,0 1.832,0.125 1.832,1.18805 l 0,9.11699 c 0,1.062 -0.117,1.187 -1.832,1.187 l 0,0.598 c 0.84,-0.024 2.129,-0.07 2.773,-0.07 0.645,0 1.93,0.046 2.774,0.07 l 0,-0.598 c -1.793,0 -1.918,-0.121 -1.918,-1.187"
+       id="path16"
+       style="fill:#000000;stroke:none" />
+    <path
+       d="m 21.75,4.20398 0,0.59698 c 1.636,0 1.757,0.14905 1.757,1.16401 l 0,9.16803 c 0,1.016 -0.121,1.164 -1.757,1.164 l 0,0.598 7.476,0 c 2.746,0 4.481,-1.68 4.481,-3.406 0,-1.606 -1.586,-2.965 -3.739,-3.235 1.758,-0.36704 3.168,-1.48001 3.168,-2.91403 0,-1.55396 -1.73,-3.13599 -4.429,-3.13599 l -6.957,0 z m 3.359,5.80002 0,-4.13602 c 0,-0.98498 0.125,-1.05902 1,-1.05902 l 2.402,0 c 2.278,0 2.653,1.92206 2.653,2.51202 0,0.88599 -0.649,2.68302 -3.254,2.68302 l -2.801,0 z m 0,0.5 3.719,0 c 2.105,0 2.777,1.907 2.777,2.961 0,1.129 -0.816,2.836 -3.074,2.836 l -2.43,0 c -0.867,0 -0.988,-0.074 -0.988,-1.078"
+       id="path18"
+       style="fill:#000000;stroke:none" />
+    <path
+       d="m 48.628,0.0469971 -14.3,0 -0.418,5.4769929 0.445,0 c 0.32,-4.10199 0.672,-4.820011 4.512,-4.820011 0.445,0 1.168,0 1.367,0 0.473,0.074036 0.473,0.375001 0.473,0.945011 l 0,13.48001 c 0,0.895 -0.075,1.168 -2.161,1.168 l -0.703,0 0,0.598 c 1.188,-0.023 2.426,-0.047 3.641,-0.047 1.211,0 2.453,0.024 3.64,0.047 l 0,-0.598 -0.691,0 c -2.055,0 -2.129,-0.273 -2.129,-1.168 l 0,-13.48001 c 0,-0.547 0,-0.843997 0.446,-0.945011 0.195,0 0.914,0 1.359,0 3.789,0 4.16,0.713991 4.48,4.820011 l 0.446,0"
+       id="path20"
+       style="fill:#000000;stroke:none" />
+    <path
+       d="m 60.957,18.133 -0.446,0 c -0.543,3.672 -0.863,5.668 -5.219,5.668 l -3.437,0 c -0.988,0 -1.035,-0.125 -1.035,-0.976 l 0,-6.922 2.336,0 c 2.336,0 2.558,0.855 2.558,2.945 l 0.399,0 0,-6.441 -0.399,0 c 0,2.054 -0.222,2.894 -2.558,2.894 l -2.336,0 0,-6.137 c 0,-0.83502 0.047,-0.96002 1.035,-0.96002 l 3.387,0 c 3.832,0 4.277,1.52301 4.625,4.79602 l 0.445,0 -0.594,-5.47601 -12.539,0 0,0.67999 c 1.754,0 2.035,0 2.035,1.11304 l 0,13.36298 c 0,1.113 -0.277,1.113 -2.035,1.113 l 0,0.598 12.887,0"
+       id="path22"
+       style="fill:#000000;stroke:none" />
+    <path
+       d="m 67.73,7.52399 3.664,-5.297 c 0.367,-0.52002 1.113,-1.590027 3.145,-1.617005 l 0,-0.5980221 C 73.972,0.05896 73.031,0.05896 72.437,0.05896 c -0.816,0 -1.832,0 -2.449,-0.0469971 l 0,0.5980221 c 0.793,0.073975 0.988,0.570005 0.988,0.968995 0,0.29602 -0.121,0.49603 -0.297,0.742 L 67.41,7.06299 63.746,1.70001 C 63.574,1.42999 63.55,1.35199 63.55,1.27802 c 0,-0.22303 0.27,-0.645024 1.09,-0.668035 l 0,-0.5980221 C 63.847,0.05896 62.636,0.05896 61.82,0.05896 c -0.641,0 -1.879,0 -2.477,-0.0469971 l 0,0.5980221 c 1.36,0 1.805,0.051026 2.352,0.820005 l 4.777,7.01599 -4.308,6.29302 c -1.063,1.539 -2.672,1.566 -3.145,1.566 l 0,0.598 c 0.566,-0.047 1.508,-0.047 2.102,-0.047 0.668,0 1.832,0 2.449,0.047 l 0,-0.598 c -0.766,-0.074 -0.988,-0.57 -0.988,-0.969 0,-0.32 0.121,-0.496 0.246,-0.672 l 3.961,-5.781 4.308,6.332 c 0.195,0.274 0.195,0.348 0.195,0.422 0,0.195 -0.222,0.621 -1.089,0.672 l 0,0.598 c 0.793,-0.047 2.004,-0.047 2.82,-0.047 0.641,0 1.879,0 2.48,0.047 l 0,-0.598 c -1.586,0 -1.836,-0.121 -2.328,-0.82"
+       id="path24"
+       style="fill:#000000;stroke:none" />
+  </g>
+</svg>
+</span>
+</a>
+        
+
+        
+
+        
+      </div>
+      </li>
+    
+    
+  </ul>
+
+<!--<p>Performed by </p>
+-->
+
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="footer">
+  <div class="container">
+    <ul class="icons">
+      
+      
+      <li>
+        <a href="https://github.com/martinruenz" class="icon-github" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="https://scholar.google.com/citations?user=Pz6kr-gAAAAJ" class="icon-scholar" target="_blank">
+          <i class="fa-solid fa-user-graduate"></i>
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/martin_ruenz" class="icon-twitter" target="_blank">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+      </li>
+      
+      
+      <li>
+        <a rel="me" href="https://sigmoid.social/@martin_ruenz" class="icon-mastodon" target="_blank">
+          <i class="fa-brands fa-mastodon"></i>
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/in/martinruenz" class="icon-linkedin" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </li>
+      
+    </ul>
+
+    <!--
+    <p class="quote">
+      <i>“The key thing about all the world's big problems is that they have to be dealt with collectively. If we don't get collectively smarter, we're doomed.”</i>
+      <small>– Douglas Engelbart</small>
+    </p>
+    -->
+    <p><small>Created with <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, theme inspired by <a href="http://nandomoreira.me/nandomoreira-jekyll-theme">Fernando Moreira</a></small></p>
+    <!--
+    <small class="clearfix">
+      Made with <a href="http://jekyllrb.com" target="_blank">Jekyll</a> • <a href="" target="_blank">Open source <i class="fa fa-heart"></i></a>
+    </small>
+    -->
+  </div>
+</footer>
+
+<a class="scroll-up fa fa-chevron-up bounce" href="#" data-position="0"></a>
+
+
+  </body>
+
+</html>

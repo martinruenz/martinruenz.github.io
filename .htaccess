@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# # Allow missing .html extension:
+# Test if file and directory does not exist
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# Try to internally add .html to path
+RewriteRule ^([^\.]+)$ $1.html [NC,L]

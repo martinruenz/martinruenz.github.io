@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Something is wrong when the ‘telephone app’ on your phone becomes 3rd party</title>
+  <meta name="description" content="Since I am not living in my home country, I frequently use two different SIM cards and prefer having a phone with dual-sim support. This limits your choice s...">
+  <meta name="keywords" content="Martin Rünz, Martin Ruenz, Martin Runz, Computer Vision, Computer Graphics, Research, Blog">
+  <!-- <link rel="stylesheet" href="/js/lightgallery/css/lightgallery.css"> -->
+  <link rel="stylesheet" href="/js/lightgallery/css/lightgallery.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/hl-native.css">
+  <link rel="canonical" href="https://www.martinruenz.de/article/data-privacy/2017/05/03/something-is-wrong.html">
+  <link rel="alternate" type="application/rss+xml" title="Martin Rünz" href="https://www.martinruenz.de/feed.xml">
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+    <div class="nav-area">
+    <div class="wrapper">
+    <a class="site-title" href="/#page-content">Blog</a><a href="/feed.xml"><div class="icon icon--rss"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M12.8 16C12.8 8.978 7.022 3.2 0 3.2V0c8.777 0 16 7.223 16 16h-3.2zM2.194 11.61c1.21 0 2.195.985 2.195 2.196 0 1.21-.985 2.194-2.196 2.194C.984 16 0 15.017 0 13.806c0-1.21.983-2.195 2.194-2.195zM10.606 16h-3.11c0-4.113-3.383-7.497-7.496-7.497v-3.11c5.818 0 10.606 4.79 10.606 10.607z"/></svg></div></a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/talks/#page-content">Talks / Presentations</a>
+          
+        
+          
+          <a class="page-link" href="/publications#page-content">Publications</a>
+          
+        
+          
+          <a class="page-link" href="/about/#page-content">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+  </div>
+  </div>
+
+  <div class="thats-me">
+    <img src="/media/martin_150.jpg" class="animated hinge fadeInDown">
+    <h2 class="animated hinge fadeInDown" itemscope itemtype="http://schema.org/Person">
+      Hi, my name is <strong itemprop="name">Martin Rünz</strong>I am a Lead Research Scientist at <a href="https://www.synthesia.io/">Synthesia</a>!
+    </h2>
+  </div>
+  <!--<nav class="actions">
+    <a href="/about" class="button ghost">About</a>
+    <a href="/archive/master.zip" class="button ghost">Download</a>
+  </nav>-->
+
+</header>
+
+
+    <div class="page-content" id="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <span class="icon--post"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 150 150" height="150px" id="Layer_1" version="1.1" viewBox="0 0 150 150" width="150px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><circle cx="75.008" cy="75" fill="#F15B5B" r="75"/></g><path d="M135.937,59.022L17.95,87.578l41.128,32.061L37.487,139.93c11.039,6.394,23.847,10.071,37.521,10.071  c39.556,0,71.937-30.63,74.773-69.463L135.937,59.022z" opacity="0.07"/><rect fill="#D1D3D4" height="9.657" transform="matrix(0.9873 0.1588 -0.1588 0.9873 18.0952 -8.4318)" width="4.864" x="59.376" y="104.184"/><path d="M54.249,121.801l-18.478,17.12c1.448,0.89,2.933,1.725,4.442,2.517l17.29-16.018L54.249,121.801z" fill="#D1D3D4"/><path d="M66.896,120.732c0.603-3.752-1.949-7.284-5.701-7.887c-3.754-0.605-7.286,1.945-7.89,5.697  c-0.604,3.756,1.947,7.285,5.701,7.891C62.758,127.037,66.292,124.484,66.896,120.732z" fill="#B1B3B6"/><path d="M52.302,93.787c0.388,5.494,4.493,10.211,10.171,11.125c5.674,0.915,11.055-2.272,13.148-7.372  L52.302,93.787z" fill="#B1B3B6"/><path d="M73.811,100.564c0.737-0.906,1.354-1.918,1.811-3.024l-23.319-3.753c0.085,1.192,0.354,2.348,0.768,3.439  L73.811,100.564z" opacity="0.15"/><path d="M129.613,75.097c0.358-2.189-1.139-4.274-3.328-4.633l-7.262-1.189c-2.189-0.358-4.275,1.14-4.634,3.33  l-2.472,15.067c-0.359,2.189,1.138,4.274,3.328,4.634l7.261,1.19c2.19,0.359,4.276-1.139,4.636-3.328L129.613,75.097z" fill="#B1B3B6"/><path d="M125.799,66.595c0.358-2.189-1.139-4.275-3.328-4.634l-12.25-2.008c-2.19-0.359-4.276,1.139-4.636,3.328  l-4.176,25.481c-0.36,2.19,1.138,4.275,3.328,4.635l12.248,2.01c2.189,0.359,4.275-1.139,4.634-3.328L125.799,66.595z" fill="#546670"/><path d="M104.359,97.498c-0.835,2.553-2.822,4.293-5.367,3.885L20.424,88.736c-2.545-0.409-4.293-2.822-3.885-5.367  l6.05-37.814c0.406-2.546,2.822-4.294,5.366-3.887l84.263,13.555c2.545,0.41,4.294,2.823,3.886,5.366L104.359,97.498z" fill="#D1D3D4"/><path d="M27.955,41.668c-2.544-0.408-4.96,1.34-5.366,3.887l-6.05,37.814c-0.408,2.545,1.34,4.958,3.885,5.367  l9.234,1.477l7.531-47.069L27.955,41.668z" fill="#B1B3B6"/><polygon opacity="0.2" points="19.912,62.287 19.563,64.459 110.231,79.044 110.908,76.924 "/><path d="M27.95,41.665c-2.553-0.406-4.953,1.332-5.359,3.882l-2.679,16.74l90.941,14.626l15.34-5.718l9.316-9.513  l0.427-2.66L27.95,41.665z" fill="#F1F1F3"/><path d="M27.95,41.667c-1.848-0.296-3.604,0.543-4.594,1.992l102.837,27.536l9.316-9.513l0.427-2.66L27.95,41.667z" fill="#FFFFFF"/><path d="M16.592,85.094c0.398,1.832,1.872,3.329,3.825,3.643l78.568,12.646c1.989,0.318,3.626-0.686,4.651-2.35  L16.592,85.094z" opacity="0.15"/><path d="M63.233,119.638c0-1.728-1.404-3.13-3.133-3.13s-3.134,1.402-3.134,3.13c0,1.731,1.405,3.132,3.134,3.132  S63.233,121.369,63.233,119.638z" fill="#939598"/><path d="M91.041,85.648c0.281-1.752-0.915-3.4-2.667-3.682c-1.752-0.279-3.398,0.914-3.68,2.666  c-0.279,1.752,0.912,3.4,2.666,3.682C89.113,88.592,90.761,87.4,91.041,85.648z" fill="#62BF82"/><circle cx="96.049" cy="86.365" fill="#DA5253" r="1.989"/></svg></span>
+    <h1 class="post-title" itemprop="name headline">Something is wrong when the ‘telephone app’ on your phone becomes 3rd party</h1><hr/>
+    <p class="post-meta">
+      <time datetime="2017-05-03T23:53:02+02:00" itemprop="datePublished">May 3, 2017</time>
+      
+    </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>Since I am not living in my home country, I frequently use two different SIM cards and prefer having a phone with dual-sim support. This limits your choice significantly when buying a new device and last time I bought one, I opted for the Wileyfox Swift. It was cheap, had most features I desired and shipped with CyanogenMod (Android) – which, I thought, might indicate that Wileyfox delivers a slim, privacy-aware system.</p>
+
+<p><a href="/media/truecaller/1.jpg"><img src="/media/truecaller/t1.jpg" alt="truecaller" title="truecaller" /></a> <a href="/media/truecaller/2.jpg"><img src="/media/truecaller/t2.jpg" alt="truecaller disable" title="truecaller disable" /></a></p>
+
+<p>Yesterday, I was delighted to see that Wileyfox provides an update to a new version of Android (7.1.1) and I didn’t hesitate long to install the upgrade. Concerns that the hardware might not hold-up to the new system showed to be unfounded and everything seemed to work just fine. But when I realised that the <em>dialler</em> now labelled itself as ‘<em>truecaller</em>’ – something I had never heard of, shoot, I didn’t even know the <em>dialler</em> is an app – it gave rise to a bad suspicion: Is some of my phone’s core functionality now provided by a 3rd party app? Indeed. Does it respect my privacy? No. Can I uninstall it again? No. Was I ever asked to comply with their terms and conditions? Of course not.</p>
+
+<p>Here is an excerpt of <em>truecaller</em>’s privacy policy:</p>
+
+<blockquote>
+  <p>When You install and use the Services, Truecaller will collect personal information from You and any devices You may use in Your interaction with our Services. This information may include e.g.: <strong>geo-location</strong>; Your <strong>IP address</strong>; <strong>device ID</strong> or <strong>unique identifier</strong>; <strong>device manufacturer</strong> and <strong>type</strong>; <strong>device and hardware settings</strong>; <strong>SIM card usage</strong>; <strong>applications installed</strong> on your device; <strong>ID for advertising</strong>; <strong>ad data</strong>, <strong>operating system</strong>; <strong>web browser</strong>; <strong>operator</strong>; <strong>IMSI</strong>; <strong>connection information</strong>; <strong>screen resolution</strong>; <strong>usage statistics</strong>; default <strong>communication applications</strong>; access to device <strong>address book</strong>; <strong>device log</strong> and event information; logs, keywords and meta <strong>data of incoming and outgoing calls and messages</strong>; <strong>version of the Services</strong> You use and other information based on Your interaction with our Services such as how the Services are being accessed (via another service, web site or a search engine); the <strong>pages You visit</strong> and <strong>features you use</strong> on the Services; the services and <strong>websites You engage with</strong> from the Services; <strong>content viewed by You</strong>, <strong>content You have commented on</strong> or sent to us and information about the ads You see and/or engage with; the <strong>search terms You use</strong>; <strong>order information</strong> and other usage activity and data logged by Truecaller’s servers from time to time. Truecaller may collect some of this information automatically through use of cookies and You can learn more about our use of cookies in our Cookie Policy.</p>
+</blockquote>
+
+<p>And somewhere later, not surprisingly:</p>
+
+<blockquote>
+  <p><strong>We transfer information to trusted vendors</strong>, service providers, and other partners who support our business and Services, such as providing technical infrastructure services, bug testing, analyzing how our Services are used, measuring the effectiveness of ads and services and facilitating payments as well as potential partners who may wish to work with us to provide other services.</p>
+</blockquote>
+
+<p>After reading this, the first thing I did was to send an email to the Wileyfox support to kindly ask for a way to uninstall the app and recover the the default <em>dialler</em>. The answer came quickly but was unsatisfying and of a generic type:</p>
+
+<blockquote>
+  <p>Hello Martin,</p>
+
+  <p>Thank you very much for your Email,</p>
+
+  <p>[…]</p>
+
+  <p>Truecaller Pro</p>
+
+  <ul>
+    <li>Wileyfox users receive 90 days of Truecaller Pro for free.</li>
+    <li>Truecaller Pro enables you to send contact requests to people outside of your network.</li>
+    <li>Truecaller Pro gives you an ad-free experience and Wileyfox users will not receive ads in  Truecaller even after the Pro subscription ends.</li>
+  </ul>
+
+  <p>Privacy Questions</p>
+
+  <ul>
+    <li>If you don’t register in Truecaller it works as an ordinary dialler.</li>
+    <li>To improve accuracy of the Caller ID service, users can share their contacts with the Truecaller community. This feature is optional and users can skip giving access to this.</li>
+    <li>Users who do not wish to use Truecaller as their dialler can opt-out and deactivate their account without impacting the usage of their dialler.</li>
+    <li>You can deactivate and unlist your number from Truecaller via this website: https://www.truecaller.com/unlist</li>
+  </ul>
+
+  <p><strong>Unfortunately you are unable to uninstall truecaller</strong> as this is the default dialer, you can use a 3rd party app if you would like to..</p>
+
+  <p>Many Kind Regards,</p>
+
+  <p>[…]</p>
+</blockquote>
+
+<p>My second email, asking if they can guarantee that no information is collected when not creating a <em>truecaller</em> account, received no answer until now. When disabling the application, the dialer simply disappears from the home-screen, without any replacement:</p>
+
+<p><a href="/media/truecaller/3.jpg"><img src="/media/truecaller/t3.jpg" alt="truecaller enabled" title="truecaller enabled" /></a> <a href="/media/truecaller/4.jpg"><img src="/media/truecaller/t4.jpg" alt="truecaller disabled: dialler gone" title="truecaller disabled: dialler gone" /></a></p>
+
+<p>This leaves me in an unpleasant spot as I, where I can, avoid using google services and now need to find an alternative dialling application. Isn’t this sweet? <strong>I am searching for a dialling application for my smartphone. A DIALLING application.</strong></p>
+
+<p>Of course, you can always root the phone and install custom roms. But this process takes some time and the development and compatibility with these roms is less than satisfactory. I’ll have to figure out my options when I have some spare time and hope, for the moment at least, to find a usable replacement on F-Droid.</p>
+
+<p>I am not sure if this move if even legal, but it’s certainly not an act of kindness to impose this kind of affiliate program on customers.</p>
+
+<p>What does this tell us about the state of Android? Well, two out of the three Android devices I’ve owned (different manufacturers) suffered from bloat / adware. But to be fair, a system should be open and as a consequence customisable by a manufacturer. It should not be designed, however, to have vital core functionality easily replaced with dubious 3rd party apps. I guess the burden is on the customers now: Double check which software you get with which device. Not being an apple fanboy, I have to admit: At least you know what you get when buying an Iphone. Heck, switching operating systems on mobiles should be as easy as on PCs.</p>
+
+<p>I would be glad to hear recommendations for smartphone hardware / software that values open-source and data-privacy, preferably dual-sim.</p>
+
+<p>Let’s finish this short article with the words of Ernst F. Schumacher:</p>
+<blockquote>
+  <p>Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius — and a lot of courage to move in the opposite direction.</p>
+</blockquote>
+
+<p><br /><br />
+<strong>UPDATE:</strong></p>
+
+<p>In the meantime, both <em>Wileyfox</em> and <em>truecaller</em> reached out to me – probably not unrelated to the attention this article got on <a href="https://news.ycombinator.com/item?id=14266423">hacknews</a>. Here are their statements:</p>
+
+<p>Wileyfox <em>(answering my mail asking weather truecaller collects data)</em></p>
+<blockquote>
+  <p>Hello Martin,
+Yes Truecaller will not <strong>have access</strong> to any information unless you sign up to their services.
+Kind Regards
+Wileyfox Customer Support</p>
+</blockquote>
+
+<p>And <em>truecaller</em></p>
+<blockquote>
+  <p>Hi Martin,</p>
+
+  <p>[…]</p>
+
+  <p>– It is completely optional to use the Truecaller service. While we do offer our service of identifying spam calls and unknown numbers, if the user does not want those services, simply just say ’Later’ on the first screen and the user will be able to use the dialler just like a standard Android dialler (it will still have Truecaller branding, but no information is being <strong>shared by Truecaller</strong> or vice versa) This means no profile will be created with your details, and no numbers will be shared. The <strong>privacy policy only applies for when you create an account</strong>.</p>
+
+  <p>– This also means, if you have already opted-in by creating an account and want to opt-out and stop using the features, and just use the app like a normal dialler, then you can just go to settings &gt; about &gt; deactivate. This will return the app to the state before you sign up (so as a normal dialler).</p>
+
+  <p>[…]</p>
+</blockquote>
+
+<p>I highly appreciate that both companies take customer relations serious and reached out to me.</p>
+
+<p>However, I am missing a clear statement, saying that <strong>no</strong> data is send to <em>truecaller</em> servers when I am not signing up – it should be commonly known by now that <em>anonymous</em> data usually is not really anonymous. Further, and more importantly, it doesn’t change the fact that there is a 3rd party app hooked into my phone’s system now and I have to to trust this party. The statement that <em>truecaller</em> has no access to my data is clearly false, as the app has all the privileges it requires to spy on lots of data. Given the recent history of privacy violations, I certainly do not intend to add <em>truecaller</em> to the list of companies I trust, especially regarding their buisness model.</p>
+
+  </div>
+
+  
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="footer">
+  <div class="container">
+    <ul class="icons">
+      
+      
+      <li>
+        <a href="https://github.com/martinruenz" class="icon-github" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="https://scholar.google.com/citations?user=Pz6kr-gAAAAJ" class="icon-scholar" target="_blank">
+          <i class="fa-solid fa-user-graduate"></i>
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/martin_ruenz" class="icon-twitter" target="_blank">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+      </li>
+      
+      
+      <li>
+        <a rel="me" href="https://sigmoid.social/@martin_ruenz" class="icon-mastodon" target="_blank">
+          <i class="fa-brands fa-mastodon"></i>
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/in/martinruenz" class="icon-linkedin" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </li>
+      
+    </ul>
+
+    <!--
+    <p class="quote">
+      <i>“The key thing about all the world's big problems is that they have to be dealt with collectively. If we don't get collectively smarter, we're doomed.”</i>
+      <small>– Douglas Engelbart</small>
+    </p>
+    -->
+    <p><small>Created with <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, theme inspired by <a href="http://nandomoreira.me/nandomoreira-jekyll-theme">Fernando Moreira</a></small></p>
+    <!--
+    <small class="clearfix">
+      Made with <a href="http://jekyllrb.com" target="_blank">Jekyll</a> • <a href="" target="_blank">Open source <i class="fa fa-heart"></i></a>
+    </small>
+    -->
+  </div>
+</footer>
+
+<a class="scroll-up fa fa-chevron-up bounce" href="#" data-position="0"></a>
+
+
+  </body>
+
+</html>
